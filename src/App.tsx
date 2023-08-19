@@ -27,6 +27,15 @@ import LiveDataScience from "./components/live-data-science";
 import LiveFullStackDevelopment from "./components/live-full-stack-development";
 import LiveIndustrialCourses from "./components/live-industrial-courses";
 import PowerBI from "./components/power-bi";
+import { PricingTable } from "./components/pricing-table";
+import { PrivacyPolicy } from "./components/privacy-policy";
+import { Profile } from "./components/profile";
+import { Python } from "./components/python";
+import { RefundPolicy } from "./components/refund-policy";
+import { Register } from "./components/register";
+import { TeachersDetails } from "./components/teachers-details";
+import { Teachers } from "./components/teachers";
+import { TermsandCondition } from "./components/terms-and-conditions";
 function App() {
   return (
     <BrowserRouter>
@@ -68,6 +77,15 @@ function App() {
           element={<LiveIndustrialCourses />}
         />
         <Route path="/powerbi" element={<PowerBI />} />
+        <Route path="/pricing-table" element={<PricingTable />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/profile" element={<Profile />} />
+        <Route path="/python" element={<Python />} />
+        <Route path="/refund-policy" element={<RefundPolicy />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/teachers-details" element={<TeachersDetails />} />
+        <Route path="/teachers" element={<Teachers />} />
+        <Route path="/terms-and-conditions" element={<TermsandCondition />} />
       </Routes>
     </BrowserRouter>
   );
