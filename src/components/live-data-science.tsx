@@ -1,6 +1,11 @@
+import capgemini from "../assets/img/Capgeminie800,600.png";
+
+
 const LiveDataScience = () => {
   return (
     <>
+      <img src={capgemini} alt="img" />
+      <div style={{ backgroundImage: "url(assets/img/slide-bg-1.jpeg)" }}></div>
       <div className="top-bar-area address-two-lines bg-dark text-light">
         <div className="container">
           <div className="row">
