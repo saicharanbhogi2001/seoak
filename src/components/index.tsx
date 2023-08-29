@@ -1,3 +1,34 @@
+import { useSpring, animated } from "react-spring";
+import Carousel from "../atoms";
+import Capgeminie150 from "../assets/img/Capgeminie150,80.png";
+import Dell from "../assets/img/Dell150,80.png";
+import hp from "../assets/img/hp150,80.png";
+import ibm from "../assets/img/ibm150,80.png";
+import google from "../assets/img/google150,80.png";
+import infosys from "../assets/img/infosys150,80.png";
+import landingpageimg from "../assets/img/landingpage.png";
+import logo from "../assets/img/logo.png";
+import logolight from "../assets/img/logo-light.png";
+import trainingcertificate from "../assets/img/Trainingcompletioncertificate.jpg";
+import courseCompletion from "../assets/img/Coursecompletioncertificate.jpg";
+import ActivePerformer from "../assets/img/Active Performer.jpg";
+import contactform from "../assets/img/contactform800,800.png";
+import { StudentReview } from "../atoms/ImageCarosal/StudentReview";
+import nsdc from "../assets/img/nsdc800,600.png";
+interface NumberProps {
+  n: number;
+}
+
+function NumberIncrementor({ n }: NumberProps) {
+  const { number } = useSpring({
+    from: { number: 0 },
+    number: n,
+    delay: 200,
+    config: { mass: 1, tension: 20, friction: 10 },
+  });
+  return <animated.div>{number.to((n) => n.toFixed(0))}</animated.div>;
+}
+
 const HostPage = () => {
   return (
     <>
@@ -85,7 +116,7 @@ const HostPage = () => {
                 <i className="fa fa-bars" />
               </button>
               <a className="navbar-brand" href="index.html">
-                <img src="assets/img/logo.png" className="logo" alt="Logo" />
+                <img src={logo} className="logo" alt="Logo" />
               </a>
             </div>
             {/* End Header Navigation */}
@@ -354,6 +385,7 @@ const HostPage = () => {
       {/* End Register Form */}
       {/* Start Banner 
     ============================================= */}
+
       <div className="banner-area content-top-heading less-paragraph text-normal">
         <div
           id="bootcarousel"
@@ -364,7 +396,7 @@ const HostPage = () => {
           <div className="carousel-inner text-light carousel-zoom">
             <div className="item active">
               <div
-                className="slider-thumb bg-fixed"
+                // className="slider-thumb bg-fixed"
                 style={{ backgroundImage: "url(assets/img/slide-bg-1.jpeg)" }}
               />
               <div className="box-table shadow dark">
@@ -511,63 +543,71 @@ const HostPage = () => {
               </p>
             </div>
             <div className="col-md-8 clients">
-              <div className="clients-items owl-carousel owl-theme text-center">
-                <div className="single-item">
-                  <a href="#">
-                    <img src="assets/img/Dell150,80.png" alt="Clients" />
-                  </a>
-                </div>
-                <div className="single-item">
-                  <a href="#">
-                    <img src="assets/img/Ibm150,80.png" alt="Clients" />
-                  </a>
-                </div>
-                <div className="single-item">
-                  <a href="#">
-                    <img src="assets/img/microsoft150,80.png" alt="Clients" />
-                  </a>
-                </div>
-                <div className="single-item">
-                  <a href="#">
-                    <img src="assets/img/Capgeminie150,80.png" alt="Clients" />
-                  </a>
-                </div>
-                <div className="single-item">
-                  <a href="#">
-                    <img src="assets/img/google150,80.png" alt="Clients" />
-                  </a>
-                </div>
-                <div className="single-item">
-                  <a href="#">
-                    <img src="assets/img/hcl150,80.png" alt="Clients" />
-                  </a>
-                </div>
-                <div className="single-item">
-                  <a href="#">
-                    <img src="assets/img/aws150,80.png" alt="Clients" />
-                  </a>
-                </div>
-                <div className="single-item">
-                  <a href="#">
-                    <img src="assets/img/hp150,80.png" alt="Clients" />
-                  </a>
-                </div>
-                <div className="single-item">
-                  <a href="#">
-                    <img src="assets/img/Wipro150,80.png" alt="Clients" />
-                  </a>
-                </div>
-                <div className="single-item">
-                  <a href="#">
-                    <img src="assets/img/tcs150,80 copy.png" alt="Clients" />
-                  </a>
-                </div>
-                <div className="single-item">
-                  <a href="#">
-                    <img src="assets/img/infosys150,80.png" alt="Clients" />
-                  </a>
-                </div>
-              </div>
+              <Carousel>
+                <img src={Capgeminie150} alt="Clients" />
+                <img src-={infosys} alt="Clients" />
+                <img src={ibm} alt="Clients" />
+                <img src={hp} alt="Clients" />
+                <img src={Dell} alt="Clients" />
+                <img src={google} alt="Clients" />
+              </Carousel>
+              {/* <div className="clients-items owl-carousel owl-theme text-center">
+                <Carousel>
+                  <div className="single-item">
+                    <a href="#">
+                      <img src={Capgeminie150} alt="Clients" />
+                    </a>
+                  </div>
+                  <div className="single-item">
+                    <a href="#">
+                      <img src={Dell} alt="Clients" />
+                    </a>
+                  </div>
+                  <div className="single-item">
+                    <a href="#">
+                      <img
+                        src="/assets/img/Capgeminie150,80.png"
+                        alt="Clients"
+                      />
+                    </a>
+                  </div>
+                  <div className="single-item">
+                    <a href="#">
+                      <img src="assets/img/google150,80.png" alt="Clients" />
+                    </a>
+                  </div>
+                  <div className="single-item">
+                    <a href="#">
+                      <img src="assets/img/hcl150,80.png" alt="Clients" />
+                    </a>
+                  </div>
+                  <div className="single-item">
+                    <a href="#">
+                      <img src="assets/img/aws150,80.png" alt="Clients" />
+                    </a>
+                  </div>
+                  <div className="single-item">
+                    <a href="#">
+                      <img src="assets/img/hp150,80.png" alt="Clients" />
+                    </a>
+                  </div>
+                  <div className="single-item">
+                    <a href="#">
+                      <img src="assets/img/Wipro150,80.png" alt="Clients" />
+                    </a>
+                  </div>
+                  <div className="single-item">
+                    <a href="#">
+                      <img src="assets/img/tcs150,80 copy.png" alt="Clients" />
+                    </a>
+                  </div>
+                  <div className="single-item">
+                    <a href="#">
+                      <img src="assets/img/infosys150,80.png" alt="Clients" />
+                    </a>
+                  </div>
+                </Carousel>
+              </div> */}
             </div>
           </div>
         </div>
@@ -581,9 +621,6 @@ const HostPage = () => {
             <div className="site-heading text-center">
               <div className="col-md-8 col-md-offset-2">
                 <h2>Our Promise For You</h2>
-                {/* <p>
-                      Discourse assurance estimable applauded to so. Him everything melancholy uncommonly but solicitude inhabiting projection off. Connection stimulated estimating excellence an to impression. 
-                  </p> */}
               </div>
             </div>
           </div>
@@ -681,15 +718,12 @@ const HostPage = () => {
           </div>
         </div>
       </div>
-      {/* End Top Categories */}
-      {/* Start About 
-    ============================================= */}
       <div className="about-area default-padding">
         <div className="container">
           <div className="row">
             <div className="about-info">
               <div className="col-md-6 thumb">
-                <img src="assets/img/800x800.png" alt="Thumb" />
+                <img src={landingpageimg} alt="Thumb" />
               </div>
               <div className="col-md-6 info">
                 <h5>Introduction</h5>
@@ -1202,7 +1236,10 @@ const HostPage = () => {
                   <i className="flaticon-contract" />
                 </div>
                 <div className="info">
-                  <span className="timer" data-to={1000} data-speed={5000} />
+                  {/* <span className="timer" data-to={1000} data-speed={5000} /> */}
+                  <div className="timer">
+                    <NumberIncrementor n={1000} />
+                  </div>
                   <span className="medium">No Of Students Enrolled</span>
                 </div>
               </div>
@@ -1213,7 +1250,9 @@ const HostPage = () => {
                   <i className="flaticon-professor" />
                 </div>
                 <div className="info">
-                  <span className="timer" data-to={100} data-speed={5000} />
+                  <div className="timer">
+                    <NumberIncrementor n={100} />
+                  </div>
                   <span className="medium">Mentors Enrolled</span>
                 </div>
               </div>
@@ -1224,7 +1263,9 @@ const HostPage = () => {
                   <i className="flaticon-online" />
                 </div>
                 <div className="info">
-                  <span className="timer" data-to={250} data-speed={5000} />
+                  <div className="timer">
+                    <NumberIncrementor n={250} />
+                  </div>
                   <span className="medium">Job Placements</span>
                 </div>
               </div>
@@ -1235,7 +1276,9 @@ const HostPage = () => {
                   <i className="flaticon-reading" />
                 </div>
                 <div className="info">
-                  <span className="timer" data-to={1000} data-speed={5000} />
+                  <div className="timer">
+                    <NumberIncrementor n={1000} />
+                  </div>
                   <span className="medium">Certificates Issued</span>
                 </div>
               </div>
@@ -1243,9 +1286,6 @@ const HostPage = () => {
           </div>
         </div>
       </div>
-      {/* End Fun Factor */}
-      {/* Start Advisor Area
-    ============================================= */}
       <section
         id="advisor"
         className="advisor-area bg-gray carousel-shadow default-padding bottom-less"
@@ -1259,38 +1299,15 @@ const HostPage = () => {
               </div>
             </div>
           </div>
-          <div className="row">
-            <div className="col-md-12">
-              <div className="advisor-items advisor-carousel-solid owl-carousel owl-theme text-center text-light">
-                {/* Single Item */}
-                <div className="advisor-item">
-                  <div className="info-box">
-                    <img src="assets/img/microsoft800,600.png" alt="Thumb" />
-                  </div>
-                </div>
-                {/* Single Item */}
-                {/* Single Item */}
-                <div className="advisor-item">
-                  <div className="info-box">
-                    <img src="assets/img/ibm800,600.png" alt="Thumb" />
-                  </div>
-                </div>
-                {/* Single Item */}
-                {/* Single Item */}
-                <div className="advisor-item">
-                  <div className="info-box">
-                    <img src="assets/img/google800,600.png" alt="Thumb" />
-                  </div>
-                </div>
-                {/* Single Item */}
-                {/* Single Item */}
-                <div className="advisor-item">
-                  <div className="info-box">
-                    <img src="assets/img/nsdc800,600.png" alt="Thumb" />
-                  </div>
-                </div>
-                {/* Single Item */}
-              </div>
+          <div className="certificate-section">
+            <div className="info-certified">
+              <img src={ibm} alt="Thumb" />
+            </div>
+            <div className="info-certified">
+              <img src={google} alt="Thumb" />
+            </div>
+            <div className="info-certified">
+              <img src={nsdc} alt="Thumb" />
             </div>
           </div>
         </div>
@@ -1307,6 +1324,29 @@ const HostPage = () => {
                 <p>Read Our Successfull Students Reviews</p>
               </div>
             </div>
+          </div>
+          <div className="student-review-section">
+            <StudentReview
+              domainInfo={
+                "I cannot thank the training and placement department of SEOAK enough for their unwavering dedication to providing exceptional training and creating abundant placement opportunities."
+              }
+              studentName={"Praveen"}
+              studentDomain={"Full Stack Web Development"}
+            />
+            <StudentReview
+              domainInfo={
+                "I cannot thank the training and placement department of SEOAK enough for their unwavering dedication to providing exceptional training and creating abundant placement opportunities."
+              }
+              studentName={"Praveen"}
+              studentDomain={"Full Stack Web Development"}
+            />
+            <StudentReview
+              domainInfo={
+                "I cannot thank the training and placement department of SEOAK enough for their unwavering dedication to providing exceptional training and creating abundant placement opportunities."
+              }
+              studentName={"Praveen"}
+              studentDomain={"Full Stack Web Development"}
+            />
           </div>
           <div className="row">
             <div className="col-md-12">
@@ -1385,9 +1425,6 @@ const HostPage = () => {
           </div>
         </div>
       </div>
-      {/* End Testimonials */}
-      {/* Start Advisor Area
-    ============================================= */}
       <section
         id="advisor"
         className="advisor-area bg-gray carousel-shadow default-padding bottom-less"
@@ -1401,39 +1438,56 @@ const HostPage = () => {
               </div>
             </div>
           </div>
+          <div className="certificate-section">
+            <div className="certificate-card">
+              <img src={trainingcertificate} alt="Thumb" />
+              <div className="info-box">
+                <div className="inform-title">
+                  <h4 className="certificate-title">
+                    Training Completion Certificate
+                  </h4>
+                </div>
+              </div>
+            </div>
+            <div className="certificate-card">
+              <img src={courseCompletion} alt="Thumb" />
+              <div className="info-box">
+                <div className="inform-title">
+                  <h4 className="certificate-title">
+                    Course Completion Certificate
+                  </h4>
+                </div>
+              </div>
+            </div>
+            <div className="certificate-card">
+              <img src={ActivePerformer} alt="Thumb" />
+              <div className="info-box">
+                <div className="inform-title">
+                  <h4 className="certificate-title">
+                    Active Performer Certificate
+                  </h4>
+                </div>
+              </div>
+            </div>
+          </div>
           <div className="row">
             <div className="col-md-12">
               <div className="advisor-items advisor-carousel-solid owl-carousel owl-theme text-center text-light">
                 {/* Single Item */}
                 <div className="advisor-item">
-                  <div className="info-box">
-                    <img
-                      src="assets/img/Course completion certificate.jpg"
-                      alt="Thumb"
-                    />
-                    <div className="info-title">
-                      <h4>Course Completion Certificate</h4>
-                    </div>
-                  </div>
+                  <div className="info-box"></div>
                 </div>
                 {/* Single Item */}
                 {/* Single Item */}
                 <div className="advisor-item">
                   <div className="info-box">
-                    <img
-                      src="assets/img/Training completion certificate.jpg"
-                      alt="Thumb"
-                    />
                     <div className="info-title">
                       <h4>Training Completion Certificate</h4>
                     </div>
                   </div>
                 </div>
-                {/* Single Item */}
-                {/* Single Item */}
                 <div className="advisor-item">
                   <div className="info-box">
-                    <img src="assets/img/Active Performer.jpg" alt="Thumb" />
                     <div className="info-title">
                       <h4>Active Performer Certificate</h4>
                     </div>
@@ -1523,7 +1577,7 @@ const HostPage = () => {
                 </form>
               </div>
               <div className="col-md-6 thumb">
-                <img src="assets/img/contactform800,800.png" alt="Thumb" />
+                <img src={contactform} alt="Thumb" />
               </div>
             </div>
           </div>
@@ -1811,7 +1865,7 @@ const HostPage = () => {
             <div className="f-items">
               <div className="col-md-4 item">
                 <div className="f-item">
-                  <img src="assets/img/logo-light.png" alt="Logo" />
+                  <img src={logolight} alt="Logo" />
                   <p>
                     At Seoak, we take pride in our team of highly talented
                     professionals who possess over 15 years of combined

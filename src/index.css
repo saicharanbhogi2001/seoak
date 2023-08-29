@@ -268,7 +268,48 @@ input {
     rgba(204, 223, 247, 1) 100%
   );
 }
-
+.student-review-section {
+  gap: 5px;
+  display: flex;
+}
+.certificate-section {
+  display: flex;
+  margin-top: -30px;
+  align-items: center;
+  justify-content: center;
+  width: 80vw;
+  gap: 50px;
+}
+.certificate-card {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  -moz-box-shadow: 0 0 10px #cccccc;
+  -webkit-box-shadow: 0 0 10px #cccccc;
+  -o-box-shadow: 0 0 10px #cccccc;
+  box-shadow: 0 0 10px #cccccc;
+  background: #ffffff;
+}
+.inform-title {
+  background: #ffffff none repeat scroll 0 0;
+  bottom: 0;
+  left: 0;
+  padding: 25px;
+  position: relative;
+  right: 0;
+  text-align: center;
+  transform: inherit;
+  width: 100%;
+}
+.certificate-title {
+  color: #002147;
+  transition: all 500ms ease 0s;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+.info-certified {
+  width: 300px;
+}
 .bg-light {
   background-color: #ffffff;
 }
