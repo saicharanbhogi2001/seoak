@@ -277,15 +277,6 @@ const AdvancedAI = () => {
                   {/* End Thumbnail */}
                   {/* Course Meta */}
                   <div className="course-meta">
-                    {/* <div class="item author">
-                                <div class="thumb">
-                                    <a href="#"><img alt="Thumb" src="assets/img/100x100.png"></a>
-                                </div>
-                                <div class="desc">
-                                    <h4>Author</h4>
-                                    <a href="#">Munil Druva</a>
-                                </div>
-                            </div> */}
                     <div className="item category">
                       <h4>Category</h4>
                       <a href="#">Programming</a>

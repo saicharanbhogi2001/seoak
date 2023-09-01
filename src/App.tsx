@@ -1,6 +1,7 @@
 import ErrorPage from "./components/404";
 import LiveChatGpt from "./components/line-chat-gpt";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { CoursePage } from "./components/Module";
 import LoginPage from "./components/login";
 import AboutUs from "./components/about-us";
 import AdvancedAI from "./components/advanced-ai";
@@ -36,9 +37,15 @@ import { Register } from "./components/register";
 import { TeachersDetails } from "./components/teachers-details";
 import { Teachers } from "./components/teachers";
 import { TermsandCondition } from "./components/terms-and-conditions";
+import { EnrolledCountSection } from "./atoms/EnrolledSection";
+// import { ThemeProvider } from "styled-components";
+import { PromiseCardsSection } from "./Organisms/PromiseCardsSection";
+// import themeObject from "./theme.ts";
+// export const themeOptions: Theme = createTheme(themeObject);
 function App() {
   return (
     <BrowserRouter>
+      {/* <ThemeProvider theme={}> */}
       <Routes>
         <Route path="/" element={<HostPage />} />
         <Route path="/sign-in" element={<LoginPage />} />
@@ -80,15 +87,27 @@ function App() {
         <Route path="/pricing-table" element={<PricingTable />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/profile" element={<Profile />} />
-        <Route path="/python" element={<Python />} />
+        <Route
+          path="/python"
+          element={
+            <Python
+              coursetitle={"Python Programming"}
+              imgtitle={"PythonImage"}
+            />
+          }
+        />
         <Route path="/refund-policy" element={<RefundPolicy />} />
         <Route path="/register" element={<Register />} />
         <Route path="/teachers-details" element={<TeachersDetails />} />
         <Route path="/teachers" element={<Teachers />} />
         <Route path="/terms-and-conditions" element={<TermsandCondition />} />
+        <Route path="/autoincrement" element={<EnrolledCountSection />} />
+        <Route path="/Promisecardsection" element={<PromiseCardsSection />} />
+        {/* use below route to all course pages */}
+        <Route path="/CoursePage" element={<CoursePage />} />
       </Routes>
+      {/* </ThemeProvider> */}
     </BrowserRouter>
   );
 }
-
 export default App;
