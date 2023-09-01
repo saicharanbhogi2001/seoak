@@ -1,47 +1,8 @@
+import HeaderInformation from "../atoms/header.tsx";
 export const TermsandCondition = () => {
   return (
     <>
-      <div className="top-bar-area address-two-lines bg-dark text-light">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-8 address-info">
-              <div className="info box">
-                <ul>
-                  <li>
-                    <span>
-                      <i className="fas fa-map" /> Address
-                    </span>
-                    Madhapur, Telangana.
-                  </li>
-                  <li>
-                    <span>
-                      <i className="fas fa-envelope-open" /> Email
-                    </span>
-                    support@seoak.in
-                  </li>
-                  <li>
-                    <span>
-                      <i className="fas fa-phone" /> Contact
-                    </span>
-                    +91&nbsp;79811 93524
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div className="user-login text-right col-md-4">
-              <a className="popup-with-form" href="#register-form">
-                <i className="fas fa-edit" /> Register
-              </a>
-              <a className="popup-with-form" href="#login-form">
-                <i className="fas fa-user" /> Login
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      {/* End Header Top */}
-      {/* Header 
-      ============================================= */}
+      <HeaderInformation />
       <header id="home">
         {/* Start Navigation */}
         <nav className="navbar navbar-default navbar-sticky bootsnav">
