@@ -13,6 +13,7 @@ interface CourseProps {
   imgtitle: any;
   courseDescriptionpara?: string;
 }
+import HeaderInformation from "../atoms/header.tsx";
 export const Python = ({
   coursetitle,
   imgtitle,
@@ -24,45 +25,166 @@ export const Python = ({
     "Data Science is an interdisciplinary field that combines statistics, mathematics, programming, and domain expertise to extract valuable insights and knowledge from data. It involves analyzing and interpreting large volumes of data to make informed business decisions, solve complex problems, and drive innovation. Data Science has applications in various industries, including finance, healthcare, marketing, and technology. The Data Science Fundamentals course provides students with a comprehensive understanding of the core concepts and techniques used in data science.";
   return (
     <>
-      <div className="top-bar-area address-two-lines bg-dark text-light">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-8 address-info">
-              <div className="info box">
-                <ul>
-                  <li>
-                    <span>
-                      <i className="fas fa-map" /> Address
-                    </span>
-                    Madhapur, Telangana.
-                  </li>
-                  <li>
-                    <span>
-                      <i className="fas fa-envelope-open" /> Email
-                    </span>
-                    support@seoak.in
-                  </li>
-                  <li>
-                    <span>
-                      <i className="fas fa-phone" /> Contact
-                    </span>
-                    +91&nbsp;95025 49362
-                  </li>
-                </ul>
+      <HeaderInformation />
+      <header id="home">
+        {/* Start Navigation */}
+        <nav className="navbar navbar-default navbar-sticky bootsnav">
+          {/* Start Top Search */}
+          <div className="container">
+            <div className="row">
+              <div className="top-search">
+                <div className="input-group">
+                  <form action="#">
+                    <input
+                      type="text"
+                      name="text"
+                      className="form-control"
+                      placeholder="Search"
+                    />
+                    <button type="submit">
+                      <i className="fas fa-search" />
+                    </button>
+                  </form>
+                </div>
               </div>
             </div>
-            <div className="user-login text-right col-md-4">
-              <a href="https://docs.google.com/forms/d/e/1FAIpQLSeM_1nUTx2DaBUxSR5xXgoTjKfE71wt0trYPAHYSf8t5QWB8g/viewform">
-                <i className="fas fa-edit" /> Register
-              </a>
-              <a className="popup-with-form" href="#login-form">
-                <i className="fas fa-user" /> Login
+          </div>
+          {/* End Top Search */}
+          <div className="container">
+            {/* Start Atribute Navigation */}
+            {/* <div class="attr-nav">
+                <ul>
+                    <li class="search"><a href="#"><i class="fa fa-search"></i></a></li>
+                </ul>
+            </div>         */}
+            {/* End Atribute Navigation */}
+            {/* Start Header Navigation */}
+            <div className="navbar-header">
+              <button
+                type="button"
+                className="navbar-toggle"
+                data-toggle="collapse"
+                data-target="#navbar-menu"
+              >
+                <i className="fa fa-bars" />
+              </button>
+              <a className="navbar-brand" href="index.html">
+                <img src="assets/img/logo.png" className="logo" alt="Logo" />
               </a>
             </div>
+            {/* End Header Navigation */}
+            {/* Collect the nav links, forms, and other content for toggling */}
+            <div className="collapse navbar-collapse" id="navbar-menu">
+              <ul
+                className="nav navbar-nav navbar-right"
+                data-in="#"
+                data-out="#"
+              >
+                <li className="#">
+                  <a href="index.html" className="dropdown-toggle active">
+                    Home
+                  </a>
+                </li>
+                <li className="dropdown megamenu-fw">
+                  <a href="about-us.html" className="active">
+                    About Us
+                  </a>
+                </li>
+                <li className="dropdown">
+                  <a
+                    href="certified-courses.html"
+                    className="dropdown-toggle active"
+                    data-toggle="dropdown"
+                  >
+                    Certified Courses
+                  </a>
+                  <ul className="dropdown-menu">
+                    <li>
+                      <a href="c-language.html">C Language</a>
+                    </li>
+                    <li>
+                      <a href="c++-language.html">C++ Language</a>
+                    </li>
+                    <li>
+                      <a href="java-programming.html">JAVA Programming</a>
+                    </li>
+                    <li>
+                      <a href="powerbi.html">Power BI</a>
+                    </li>
+                    <li>
+                      <a href="python.html">Python</a>
+                    </li>
+                    <li>
+                      <a href="DSA.html">
+                        DSA (Data Structures &amp; Algorithm)
+                      </a>
+                    </li>
+                    <li>
+                      <a href="full-stack-development.html">
+                        Full Stack Web Development
+                      </a>
+                    </li>
+                    <li>
+                      <a href="data-science.html">Data Science</a>
+                    </li>
+                    <li>
+                      <a href="cloud-computing.html">Cloud Computing</a>
+                    </li>
+                    <li>
+                      <a href="cyber-security.html">Cyber Security</a>
+                    </li>
+                    <li>
+                      <a href="advanced-ai.html">Advanced AI</a>
+                    </li>
+                    <li>
+                      <a href="chat-gpt.html">Chat GPT</a>
+                    </li>
+                  </ul>
+                </li>
+                <li className="dropdown">
+                  <a
+                    href="live-industrial-courses.html"
+                    className="dropdown-toggle active"
+                    data-toggle="dropdown"
+                  >
+                    Live Training Courses
+                  </a>
+                  <ul className="dropdown-menu">
+                    <li>
+                      <a href="full-stack-development.html">
+                        Full Stack Web Development
+                      </a>
+                    </li>
+                    <li>
+                      <a href="data-science.html">Data Science</a>
+                    </li>
+                    <li>
+                      <a href="cloud-computing.html">Cloud Computing</a>
+                    </li>
+                    <li>
+                      <a href="cyber-security.html">Cyber Security</a>
+                    </li>
+                    <li>
+                      <a href="advanced-ai.html">Advanced AI</a>
+                    </li>
+                    <li>
+                      <a href="chat-gpt.html">Chat GPT</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="contact.html">contact</a>
+                </li>
+              </ul>
+            </div>
+            {/* /.navbar-collapse */}
           </div>
-        </div>
-      </div>
-      <Header />
+        </nav>
+        {/* End Navigation */}
+      </header>
+      {/* End Header */}
+      {/* Start Banner 
+      ============================================= */}
       <div
         className="banner-area auto-height banner-box text-default text-light bg-gradient bg-fixed"
         style={{ backgroundImage: `url(${landingimage})` }}

@@ -1,42 +1,8 @@
+import HeaderInformation from "../atoms/header.tsx";
 export const Register = () => {
   return (
     <>
-      <div className="top-bar-area address-two-lines bg-dark text-light">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-8 address-info">
-              <div className="info box">
-                <ul>
-                  <li>
-                    <span>
-                      <i className="fas fa-map" /> Address
-                    </span>
-                    California, TX 70240
-                  </li>
-                  <li>
-                    <span>
-                      <i className="fas fa-envelope-open" /> Email
-                    </span>
-                    Info@gmail.com
-                  </li>
-                  <li>
-                    <span>
-                      <i className="fas fa-phone" /> Contact
-                    </span>
-                    +123 456 7890
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div className="user-login text-right col-md-4">
-              <a href="#">Apply Now</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      {/* End Header Top */}
-      {/* Header 
-      ============================================= */}
+      <HeaderInformation />
       <header id="home">
         {/* Start Navigation */}
         <nav className="navbar navbar-default attr-border navbar-sticky bootsnav">
