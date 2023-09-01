@@ -34,7 +34,7 @@ const HeaderInformation = () => {
             <a href="https://docs.google.com/forms/d/e/1FAIpQLSeM_1nUTx2DaBUxSR5xXgoTjKfE71wt0trYPAHYSf8t5QWB8g/viewform">
               <i className="fas fa-edit" /> Register
             </a>
-            <a className="popup-with-form" href="#login-form">
+            <a className="popup-with-form" href="/sign-in">
               <i className="fas fa-user" /> Login
             </a>
           </div>

@@ -167,7 +167,7 @@ export const Header = () => {
                 onClick={() => setMobileMenu((p) => !p)}
               />
             </button>
-            <a className="navbar-brand" href="index.html">
+            <a className="navbar-brand" href="/">
               <img src={logo} className="logo" alt="Logo" />
             </a>
           </div>

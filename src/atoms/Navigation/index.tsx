@@ -119,7 +119,7 @@ const NavigationComponent = () => {
               </li>
               <li className="dropdown">
                 <a
-                  href="live-industrial-courses.html"
+                  href="/live-industrial-courses"
                   className="dropdown-toggle active"
                   data-toggle="dropdown"
                 >
@@ -127,7 +127,7 @@ const NavigationComponent = () => {
                 </a>
                 <ul className="dropdown-menu">
                   <li>
-                    <a href="full-stack-development.html">
+                    <a href="/full-stack-development">
                       Full Stack Web Development
                     </a>
                   </li>
