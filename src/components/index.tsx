@@ -15,6 +15,8 @@ import ActivePerformer from "../assets/img/Active Performer.jpg";
 import contactform from "../assets/img/contactform800,800.png";
 import { StudentReview } from "../atoms/ImageCarosal/StudentReview";
 import nsdc from "../assets/img/nsdc800,600.png";
+import { ReactSlider } from "../atoms/DraggableSlider";
+import DraggableCardSlider from "../atoms/imageSlider";
 interface NumberProps {
   n: number;
 }
@@ -28,7 +30,6 @@ function NumberIncrementor({ n }: NumberProps) {
   });
   return <animated.div>{number.to((n) => n.toFixed(0))}</animated.div>;
 }
-
 const HostPage = () => {
   return (
     <>
@@ -543,71 +544,13 @@ const HostPage = () => {
               </p>
             </div>
             <div className="col-md-8 clients">
-              <Carousel>
+              <DraggableCardSlider>
                 <img src={Capgeminie150} alt="Clients" />
-                <img src-={infosys} alt="Clients" />
                 <img src={ibm} alt="Clients" />
                 <img src={hp} alt="Clients" />
                 <img src={Dell} alt="Clients" />
                 <img src={google} alt="Clients" />
-              </Carousel>
-              {/* <div className="clients-items owl-carousel owl-theme text-center">
-                <Carousel>
-                  <div className="single-item">
-                    <a href="#">
-                      <img src={Capgeminie150} alt="Clients" />
-                    </a>
-                  </div>
-                  <div className="single-item">
-                    <a href="#">
-                      <img src={Dell} alt="Clients" />
-                    </a>
-                  </div>
-                  <div className="single-item">
-                    <a href="#">
-                      <img
-                        src="/assets/img/Capgeminie150,80.png"
-                        alt="Clients"
-                      />
-                    </a>
-                  </div>
-                  <div className="single-item">
-                    <a href="#">
-                      <img src="assets/img/google150,80.png" alt="Clients" />
-                    </a>
-                  </div>
-                  <div className="single-item">
-                    <a href="#">
-                      <img src="assets/img/hcl150,80.png" alt="Clients" />
-                    </a>
-                  </div>
-                  <div className="single-item">
-                    <a href="#">
-                      <img src="assets/img/aws150,80.png" alt="Clients" />
-                    </a>
-                  </div>
-                  <div className="single-item">
-                    <a href="#">
-                      <img src="assets/img/hp150,80.png" alt="Clients" />
-                    </a>
-                  </div>
-                  <div className="single-item">
-                    <a href="#">
-                      <img src="assets/img/Wipro150,80.png" alt="Clients" />
-                    </a>
-                  </div>
-                  <div className="single-item">
-                    <a href="#">
-                      <img src="assets/img/tcs150,80 copy.png" alt="Clients" />
-                    </a>
-                  </div>
-                  <div className="single-item">
-                    <a href="#">
-                      <img src="assets/img/infosys150,80.png" alt="Clients" />
-                    </a>
-                  </div>
-                </Carousel>
-              </div> */}
+              </DraggableCardSlider>
             </div>
           </div>
         </div>
@@ -1236,7 +1179,6 @@ const HostPage = () => {
                   <i className="flaticon-contract" />
                 </div>
                 <div className="info">
-                  {/* <span className="timer" data-to={1000} data-speed={5000} /> */}
                   <div className="timer">
                     <NumberIncrementor n={1000} />
                   </div>
