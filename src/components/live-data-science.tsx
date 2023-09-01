@@ -1,4 +1,4 @@
-import HeaderInformation from "../atoms/navigation.tsx";
+import HeaderInformation from "../atoms/header.tsx";
 import capgemini from "../assets/img/Capgeminie800,600.png";
 
 const LiveDataScience = () => {

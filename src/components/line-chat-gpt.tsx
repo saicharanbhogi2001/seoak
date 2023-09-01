@@ -1,4 +1,4 @@
-import HeaderInformation from "../atoms/navigation.tsx";
+import HeaderInformation from "../atoms/header.tsx";
 // import "../assets/css/bootstrap.min.css";
 
 const LiveChatGpt = () => {

@@ -1,4 +1,4 @@
-import HeaderInformation from "../atoms/navigation.tsx";
+import HeaderInformation from "../atoms/header.tsx";
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 //@ts-ignore
 import { useSpring, animated } from "react-spring";
