@@ -1,6 +1,9 @@
 import { FooterSection } from "../atoms/Footer/index.tsx";
 import HeaderInformation from "../atoms/header.tsx";
 import NavigationComponent from "../atoms/Navigation/index.tsx";
+import image1 from "../assets/img/slide-bg-2.jpeg";
+import image2 from "../assets/img/800x600.png";
+
 export const TeachersDetails = () => {
   return (
     <>
@@ -8,7 +11,7 @@ export const TeachersDetails = () => {
       <NavigationComponent />
       <div
         className="breadcrumb-area shadow dark text-center bg-fixed text-light"
-        style={{ backgroundImage: "url(assets/img/2440x1578.png)" }}
+        style={{ backgroundImage: `url(${image1})` }}
       >
         <div className="container">
           <div className="row">
@@ -36,7 +39,7 @@ export const TeachersDetails = () => {
         <div className="container">
           <div className="row">
             <div className="col-md-5 thumb">
-              <img src="assets/img/800x600.png" alt="Thumb" />
+              <img src={image2} alt="Thumb" />
               <div className="desc">
                 <h4>Professor Sayed Kunal</h4>
                 <span>Senior Programmer</span>

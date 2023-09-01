@@ -1,6 +1,20 @@
 import { FooterSection } from "../atoms/Footer/index.tsx";
 import NavigationComponent from "../atoms/Navigation/index.tsx";
 import HeaderInformation from "../atoms/header.tsx";
+import AboutUsImage from "../assets/img/about-bg.jpg";
+import javaImage from "../assets/img/javaprogramming.png";
+import cImage from "../assets/img/clanguage.png";
+import cppImage from "../assets/img/c++language.png";
+import cybersecurityImage from "../assets/img/cybersecurity.png";
+import powerbiImage from "../assets/img/powerbi.png";
+import artificalIntelliganceImage from "../assets/img/artificialintelligence.png";
+import chatgptImage from "../assets/img/CHATGPT.png";
+import pythonImage from "../assets/img/pythonprogramming.png";
+import fullStackImage from "../assets/img/fullstackwebdevelopment.png";
+import DataScienceImage from "../assets/img/datascience.png";
+import cloudImage from "../assets/img/cloudcomputing.png";
+import dsaImage from "../assets/img/dsa.png";
+
 const CertifiedCourses = () => {
   return (
     <>
@@ -8,7 +22,7 @@ const CertifiedCourses = () => {
       <NavigationComponent />
       <div
         className="breadcrumb-area shadow dark text-center bg-fixed text-light"
-        style={{ backgroundImage: "url(assets/img/about-bg.jpg)" }}
+        style={{ backgroundImage: `url(${AboutUsImage})` }}
       >
         <div className="container">
           <div className="row">
@@ -39,8 +53,9 @@ const CertifiedCourses = () => {
                   <div className="thumb">
                     <a href="#">
                       <img
-                        src="assets/img/popularcoursesJavaProgramming.png"
+                        src={javaImage}
                         alt="Thumb"
+                        style={{ height: "300px" }}
                       />
                     </a>
                     <div className="price">
@@ -91,8 +106,9 @@ const CertifiedCourses = () => {
                   <div className="thumb">
                     <a href="#">
                       <img
-                        src="assets/img/popularcoursesCLanguage.png"
+                        src={cImage}
                         alt="Thumb"
+                        style={{ height: "300px" }}
                       />
                     </a>
                     <div className="price">
@@ -143,8 +159,9 @@ const CertifiedCourses = () => {
                   <div className="thumb">
                     <a href="#">
                       <img
-                        src="assets/img/popularcoursesC++Language.png"
+                        src={cppImage}
                         alt="Thumb"
+                        style={{ height: "300px" }}
                       />
                     </a>
                     <div className="price">
@@ -195,8 +212,9 @@ const CertifiedCourses = () => {
                   <div className="thumb">
                     <a href="#">
                       <img
-                        src="assets/img/popularcoursespowerbi.png"
+                        src={powerbiImage}
                         alt="Thumb"
+                        style={{ height: "300px" }}
                       />
                     </a>
                     <div className="price">
@@ -247,8 +265,9 @@ const CertifiedCourses = () => {
                   <div className="thumb">
                     <a href="#">
                       <img
-                        src="assets/img/popularcoursesartificialintellegence.png"
+                        src={artificalIntelliganceImage}
                         alt="Thumb"
+                        style={{ height: "300px" }}
                       />
                     </a>
                     <div className="price">
@@ -299,8 +318,9 @@ const CertifiedCourses = () => {
                   <div className="thumb">
                     <a href="#">
                       <img
-                        src="assets/img/popularcoursesCyberSecurity.png"
+                        src={cybersecurityImage}
                         alt="Thumb"
+                        style={{ height: "300px" }}
                       />
                     </a>
                     <div className="price">
@@ -351,8 +371,9 @@ const CertifiedCourses = () => {
                   <div className="thumb">
                     <a href="#">
                       <img
-                        src="assets/img/popularcourseschatgpt.png"
+                        src={chatgptImage}
                         alt="Thumb"
+                        style={{ height: "300px" }}
                       />
                     </a>
                     <div className="price">
@@ -403,8 +424,9 @@ const CertifiedCourses = () => {
                   <div className="thumb">
                     <a href="#">
                       <img
-                        src="assets/img/popularcoursesFullStack.png"
+                        src={fullStackImage}
                         alt="Thumb"
+                        style={{ height: "300px" }}
                       />
                     </a>
                     <div className="price">
@@ -455,8 +477,9 @@ const CertifiedCourses = () => {
                   <div className="thumb">
                     <a href="#">
                       <img
-                        src="assets/img/popularcoursesdatascience.png"
+                        src={DataScienceImage}
                         alt="Thumb"
+                        style={{ height: "300px" }}
                       />
                     </a>
                     <div className="price">
@@ -507,8 +530,9 @@ const CertifiedCourses = () => {
                   <div className="thumb">
                     <a href="#">
                       <img
-                        src="assets/img/popularcoursescloudcomputing.png"
+                        src={cloudImage}
                         alt="Thumb"
+                        style={{ height: "300px" }}
                       />
                     </a>
                     <div className="price">
@@ -559,8 +583,9 @@ const CertifiedCourses = () => {
                   <div className="thumb">
                     <a href="#">
                       <img
-                        src="assets/img/pythonprogrammingsquare.png"
+                        src={pythonImage}
                         alt="Thumb"
+                        style={{ height: "300px" }}
                       />
                     </a>
                     <div className="price">
@@ -610,7 +635,11 @@ const CertifiedCourses = () => {
                 <div className="item">
                   <div className="thumb">
                     <a href="#">
-                      <img src="assets/img/dsasquare.png" alt="Thumb" />
+                      <img
+                        src={dsaImage}
+                        alt="Thumb"
+                        style={{ height: "300px" }}
+                      />
                     </a>
                     <div className="price">
                       <b>Price: 5,000₹</b>

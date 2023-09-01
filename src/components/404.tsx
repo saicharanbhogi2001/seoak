@@ -1,6 +1,7 @@
 import { FooterSection } from "../atoms/Footer/index.tsx";
 import NavigationComponent from "../atoms/Navigation/index.tsx";
 import HeaderInformation from "../atoms/header.tsx";
+import Error404Image from "../assets/img/about-bg.jpg";
 
 const ErrorPage = () => {
   return (
@@ -9,7 +10,7 @@ const ErrorPage = () => {
       <NavigationComponent />
       <div
         className="breadcrumb-area shadow dark text-center bg-fixed text-light"
-        style={{ backgroundImage: "url(assets/img/2440x1578.png)" }}
+        style={{ backgroundImage: ` url(${Error404Image})` }}
       >
         <div className="container">
           <div className="row">

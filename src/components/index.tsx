@@ -20,9 +20,9 @@ import ActivePerformer from "../assets/img/Active Performer.jpg";
 import contactform from "../assets/img/contactform800,800.png";
 import { StudentReview } from "../atoms/ImageCarosal/StudentReview";
 import nsdc from "../assets/img/nsdc800,600.png";
-import { ReactSlider } from "../atoms/DraggableSlider";
 import DraggableCardSlider from "../atoms/imageSlider";
 import { FooterSection } from "../atoms/Footer/index.tsx";
+import CoursesCarousel from "../atoms/ImageCarosal/StudentReview/CoursesCoursel/index.tsx";
 interface NumberProps {
   n: number;
 }
@@ -654,16 +654,10 @@ const HostPage = () => {
             <div className="site-heading text-center">
               <div className="col-md-8 col-md-offset-2">
                 <h2>Popular Courses</h2>
-                <p>
-                  Discourse assurance estimable applauded to so. Him everything
-                  melancholy uncommonly but solicitude inhabiting projection
-                  off. Connection stimulated estimating excellence an to
-                  impression.
-                </p>
               </div>
             </div>
           </div>
-          <div className="row">
+          {/* <div className="row">
             <div className="col-md-12">
               <div className="popular-courses-items popular-courses-carousel owl-carousel owl-theme">
                 <div className="item">
@@ -975,7 +969,167 @@ const HostPage = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
+          {/* <div className="row">
+            <div className="col-md-12">
+              <div className="popular-courses-items popular-courses-carousel owl-carousel owl-theme">
+                <div className="item">
+                  <div className="thumb">
+                    <a href="#">
+                      <img
+                        src="assets/img/popularcoursesartificialintellegence.png"
+                        alt="Thumb"
+                      />
+                    </a>
+                    <div className="price">
+                      <b>Price: 10,000₹</b>
+                    </div>
+                  </div>
+                  <div className="info">
+                    <div className="author-info">
+                      <div className="thumb">
+                        <a href="#">
+                          <img src="assets/img/100x100.png" alt="Thumb" />
+                        </a>
+                      </div>
+                      <div className="others">
+                        <a href="#">Munil Druva</a>
+                        <div className="rating">
+                          <i className="fas fa-star"></i>
+                          <i className="fas fa-star"></i>
+                          <i className="fas fa-star"></i>
+                          <i className="fas fa-star"></i>
+                          <i className="fas fa-star-half-alt"></i>
+                          <span>4.5 (23,890)</span>
+                        </div>
+                      </div>
+                    </div>
+                    <h4>
+                      <a href="#">Artificial Intelligence</a>
+                    </h4>
+                    <p>
+                      Would day nor ask walls known. But preserved advantage are
+                      but and certainty earnestly enjoyment.
+                    </p>
+                    <div className="bottom-info">
+                      <ul>
+                        <li>
+                          <i className="fas fa-user"></i> 170
+                        </li>
+                        <li>
+                          <i className="fas fa-clock"></i> 72:00hrs
+                        </li>
+                      </ul>
+                      <a href="live-advanced-ai.html">Know Now</a>
+                    </div>
+                  </div>
+                </div>
+                <div className="item">
+                  <div className="thumb">
+                    <a href="#">
+                      <img
+                        src="assets/img/popularcoursesartificialintellegence.png"
+                        alt="Thumb"
+                      />
+                    </a>
+                    <div className="price">
+                      <b>Price: 10,000₹</b>
+                    </div>
+                  </div>
+                  <div className="info">
+                    <div className="author-info">
+                      <div className="thumb">
+                        <a href="#">
+                          <img src="assets/img/100x100.png" alt="Thumb" />
+                        </a>
+                      </div>
+                      <div className="others">
+                        <a href="#">Munil Druva</a>
+                        <div className="rating">
+                          <i className="fas fa-star"></i>
+                          <i className="fas fa-star"></i>
+                          <i className="fas fa-star"></i>
+                          <i className="fas fa-star"></i>
+                          <i className="fas fa-star-half-alt"></i>
+                          <span>4.5 (23,890)</span>
+                        </div>
+                      </div>
+                    </div>
+                    <h4>
+                      <a href="#">Artificial Intelligence</a>
+                    </h4>
+                    <p>
+                      Would day nor ask walls known. But preserved advantage are
+                      but and certainty earnestly enjoyment.
+                    </p>
+                    <div className="bottom-info">
+                      <ul>
+                        <li>
+                          <i className="fas fa-user"></i> 170
+                        </li>
+                        <li>
+                          <i className="fas fa-clock"></i> 72:00hrs
+                        </li>
+                      </ul>
+                      <a href="live-advanced-ai.html">Know Now</a>
+                    </div>
+                  </div>
+                </div>
+                <div className="item">
+                  <div className="thumb">
+                    <a href="#">
+                      <img
+                        src="assets/img/popularcoursesartificialintellegence.png"
+                        alt="Thumb"
+                      />
+                    </a>
+                    <div className="price">
+                      <b>Price: 10,000₹</b>
+                    </div>
+                  </div>
+                  <div className="info">
+                    <div className="author-info">
+                      <div className="thumb">
+                        <a href="#">
+                          <img src="assets/img/100x100.png" alt="Thumb" />
+                        </a>
+                      </div>
+                      <div className="others">
+                        <a href="#">Munil Druva</a>
+                        <div className="rating">
+                          <i className="fas fa-star"></i>
+                          <i className="fas fa-star"></i>
+                          <i className="fas fa-star"></i>
+                          <i className="fas fa-star"></i>
+                          <i className="fas fa-star-half-alt"></i>
+                          <span>4.5 (23,890)</span>
+                        </div>
+                      </div>
+                    </div>
+                    <h4>
+                      <a href="#">Artificial Intelligence</a>
+                    </h4>
+                    <p>
+                      Would day nor ask walls known. But preserved advantage are
+                      but and certainty earnestly enjoyment.
+                    </p>
+                    <div className="bottom-info">
+                      <ul>
+                        <li>
+                          <i className="fas fa-user"></i> 170
+                        </li>
+                        <li>
+                          <i className="fas fa-clock"></i> 72:00hrs
+                        </li>
+                      </ul>
+                      <a href="live-advanced-ai.html">Know Now</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> */}
+          {/* <CoursesCarousel /> */}
         </div>
       </div>
       <div

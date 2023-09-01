@@ -271,6 +271,13 @@ input {
 .student-review-section {
   gap: 5px;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  @media (max-width: 900px) {
+    flex-wrap: wrap;
+    width: 80vw;
+    margin: auto;
+  }
 }
 .certificate-section {
   display: flex;
@@ -279,7 +286,14 @@ input {
   justify-content: center;
   width: 80vw;
   gap: 50px;
+  @media (max-width: 900px) {
+    flex-wrap: wrap;
+    width: 80vw;
+    margin: auto;
+    font-size: 30px;
+  }
 }
+
 .certificate-card {
   display: block;
   overflow: hidden;

@@ -1,6 +1,7 @@
 import { FooterSection } from "../atoms/Footer/index.tsx";
 import HeaderInformation from "../atoms/header.tsx";
 import NavigationComponent from "../atoms/Navigation/index.tsx";
+import FaqImage from "../assets/img/about-bg.jpg";
 const Faq = () => {
   return (
     <>
@@ -8,7 +9,7 @@ const Faq = () => {
       <NavigationComponent />
       <div
         className="breadcrumb-area shadow dark text-center bg-fixed text-light"
-        style={{ backgroundImage: "url(assets/img/about-bg.jpg)" }}
+        style={{ backgroundImage: `url(${FaqImage})` }}
       >
         <div className="container">
           <div className="row">

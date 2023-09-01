@@ -1,6 +1,13 @@
 import { FooterSection } from "../atoms/Footer/index.tsx";
 import HeaderInformation from "../atoms/header.tsx";
 import NavigationComponent from "../atoms/Navigation/index.tsx";
+import image1 from "../assets/img/slide-bg-1.jpeg";
+import image2 from "../assets/img/800x800.png";
+import image3 from "../assets/img/700x800.png";
+import image4 from "../assets/img/800x600.png";
+import image5 from "../assets/img/100x100.png";
+import image6 from "../assets/img/150x80.png";
+
 const Onepage = () => {
   return (
     <>
@@ -170,7 +177,7 @@ const Onepage = () => {
             <div className="item active">
               <div
                 className="slider-thumb bg-fixed"
-                style={{ backgroundImage: "url(assets/img/2440x1578.png)" }}
+                style={{ backgroundImage: `url(${image1})` }}
               />
               <div className="box-table shadow dark">
                 <div className="box-cell">
@@ -208,7 +215,7 @@ const Onepage = () => {
             <div className="item">
               <div
                 className="slider-thumb bg-fixed"
-                style={{ backgroundImage: "url(assets/img/2440x1578.png)" }}
+                style={{ backgroundImage: `url(${image1})` }}
               />
               <div className="box-table shadow dark">
                 <div className="box-cell">
@@ -246,7 +253,7 @@ const Onepage = () => {
             <div className="item">
               <div
                 className="slider-thumb bg-fixed"
-                style={{ backgroundImage: "url(assets/img/2440x1578.png)" }}
+                style={{ backgroundImage: `url(${image1})` }}
               />
               <div className="box-table shadow dark">
                 <div className="box-cell">
@@ -310,7 +317,7 @@ const Onepage = () => {
           <div className="row">
             <div className="about-info">
               <div className="col-md-6 thumb">
-                <img src="assets/img/800x800.png" alt="Thumb" />
+                <img src={image2} alt="Thumb" />
               </div>
               <div className="col-md-6 info">
                 <h5>Introduction</h5>
@@ -388,7 +395,7 @@ const Onepage = () => {
           <div className="row">
             <div
               className="col-md-6 thumb bg-cover"
-              style={{ backgroundImage: "url(assets/img/2440x1578.png)" }}
+              style={{ backgroundImage: `url(${image1})` }}
             />
             <div className="col-md-6 content">
               <div className="site-heading text-left">
@@ -472,12 +479,9 @@ const Onepage = () => {
               <div className="item">
                 <div className="col-md-5">
                   <div className="thumb">
-                    <img src="assets/img/700x800.png" alt="Thumb" />
+                    <img src={image3} alt="Thumb" />
                     <div className="live-view">
-                      <a
-                        href="assets/img/800x800.png"
-                        className="item popup-link"
-                      >
+                      <a href={image2} className="item popup-link">
                         <i className="fa fa-camera" />
                       </a>
                       <a
@@ -560,12 +564,9 @@ const Onepage = () => {
               <div className="item">
                 <div className="col-md-5">
                   <div className="thumb">
-                    <img src="assets/img/700x800.png" alt="Thumb" />
+                    <img src={image3} alt="Thumb" />
                     <div className="live-view">
-                      <a
-                        href="assets/img/800x800.png"
-                        className="item popup-link"
-                      >
+                      <a href={image2} className="item popup-link">
                         <i className="fa fa-camera" />
                       </a>
                       <a
@@ -648,12 +649,9 @@ const Onepage = () => {
               <div className="item">
                 <div className="col-md-5">
                   <div className="thumb">
-                    <img src="assets/img/700x800.png" alt="Thumb" />
+                    <img src={image3} alt="Thumb" />
                     <div className="live-view">
-                      <a
-                        href="assets/img/800x800.png"
-                        className="item popup-link"
-                      >
+                      <a href={image2} className="item popup-link">
                         <i className="fa fa-camera" />
                       </a>
                       <a
@@ -764,7 +762,7 @@ const Onepage = () => {
                 <div className="item">
                   <div className="thumb">
                     <a href="#">
-                      <img src="assets/img/800x600.png" alt="Thumb" />
+                      <img src={image4} alt="Thumb" />
                     </a>
                     <div className="price">Price: Free</div>
                   </div>
@@ -772,7 +770,7 @@ const Onepage = () => {
                     <div className="author-info">
                       <div className="thumb">
                         <a href="#">
-                          <img src="assets/img/100x100.png" alt="Thumb" />
+                          <img src={image5} alt="Thumb" />
                         </a>
                       </div>
                       <div className="others">
@@ -812,7 +810,7 @@ const Onepage = () => {
                 <div className="item">
                   <div className="thumb">
                     <a href="#">
-                      <img src="assets/img/800x600.png" alt="Thumb" />
+                      <img src={image4} alt="Thumb" />
                     </a>
                     <div className="price">Price: $12</div>
                   </div>
@@ -820,7 +818,7 @@ const Onepage = () => {
                     <div className="author-info">
                       <div className="thumb">
                         <a href="#">
-                          <img src="assets/img/100x100.png" alt="Thumb" />
+                          <img src={image5} alt="Thumb" />
                         </a>
                       </div>
                       <div className="others">
@@ -860,7 +858,7 @@ const Onepage = () => {
                 <div className="item">
                   <div className="thumb">
                     <a href="#">
-                      <img src="assets/img/800x600.png" alt="Thumb" />
+                      <img src={image4} alt="Thumb" />
                     </a>
                     <div className="price">Price: Free</div>
                   </div>
@@ -868,7 +866,7 @@ const Onepage = () => {
                     <div className="author-info">
                       <div className="thumb">
                         <a href="#">
-                          <img src="assets/img/100x100.png" alt="Thumb" />
+                          <img src={image5} alt="Thumb" />
                         </a>
                       </div>
                       <div className="others">
@@ -908,7 +906,7 @@ const Onepage = () => {
                 <div className="item">
                   <div className="thumb">
                     <a href="#">
-                      <img src="assets/img/800x600.png" alt="Thumb" />
+                      <img src={image4} alt="Thumb" />
                     </a>
                     <div className="price">Price: $46</div>
                   </div>
@@ -916,7 +914,7 @@ const Onepage = () => {
                     <div className="author-info">
                       <div className="thumb">
                         <a href="#">
-                          <img src="assets/img/100x100.png" alt="Thumb" />
+                          <img src={image5} alt="Thumb" />
                         </a>
                       </div>
                       <div className="others">
@@ -956,7 +954,7 @@ const Onepage = () => {
                 <div className="item">
                   <div className="thumb">
                     <a href="#">
-                      <img src="assets/img/800x600.png" alt="Thumb" />
+                      <img src={image4} alt="Thumb" />
                     </a>
                     <div className="price">Price: $124</div>
                   </div>
@@ -964,7 +962,7 @@ const Onepage = () => {
                     <div className="author-info">
                       <div className="thumb">
                         <a href="#">
-                          <img src="assets/img/100x100.png" alt="Thumb" />
+                          <img src={image5} alt="Thumb" />
                         </a>
                       </div>
                       <div className="others">
@@ -1031,7 +1029,7 @@ const Onepage = () => {
               <div className="col-md-3 col-sm-6 equal-height">
                 <div
                   className="item"
-                  style={{ backgroundImage: "url(assets/img/800x600.png)" }}
+                  style={{ backgroundImage: `url(${image4})` }}
                 >
                   <a href="#">
                     <i className="flaticon-feature" />
@@ -1045,7 +1043,7 @@ const Onepage = () => {
               <div className="col-md-3 col-sm-6 equal-height">
                 <div
                   className="item"
-                  style={{ backgroundImage: "url(assets/img/800x600.png)" }}
+                  style={{ backgroundImage: `url(${image4})` }}
                 >
                   <a href="#">
                     <i className="flaticon-interaction" />
@@ -1059,7 +1057,7 @@ const Onepage = () => {
               <div className="col-md-3 col-sm-6 equal-height">
                 <div
                   className="item"
-                  style={{ backgroundImage: "url(assets/img/800x600.png)" }}
+                  style={{ backgroundImage: `url(${image4})` }}
                 >
                   <a href="#">
                     <i className="flaticon-conveyor" />
@@ -1073,7 +1071,7 @@ const Onepage = () => {
               <div className="col-md-3 col-sm-6 equal-height">
                 <div
                   className="item"
-                  style={{ backgroundImage: "url(assets/img/800x600.png)" }}
+                  style={{ backgroundImage: `url(${image4})` }}
                 >
                   <a href="#">
                     <i className="flaticon-education" />
@@ -1087,7 +1085,7 @@ const Onepage = () => {
               <div className="col-md-3 col-sm-6 equal-height">
                 <div
                   className="item"
-                  style={{ backgroundImage: "url(assets/img/800x600.png)" }}
+                  style={{ backgroundImage: `url(${image4})` }}
                 >
                   <a href="#">
                     <i className="flaticon-potential" />
@@ -1101,7 +1099,7 @@ const Onepage = () => {
               <div className="col-md-3 col-sm-6 equal-height">
                 <div
                   className="item"
-                  style={{ backgroundImage: "url(assets/img/800x600.png)" }}
+                  style={{ backgroundImage: `url(${image4})` }}
                 >
                   <a href="#">
                     <i className="flaticon-print" />
@@ -1115,7 +1113,7 @@ const Onepage = () => {
               <div className="col-md-3 col-sm-6 equal-height">
                 <div
                   className="item"
-                  style={{ backgroundImage: "url(assets/img/800x600.png)" }}
+                  style={{ backgroundImage: `url(${image4})` }}
                 >
                   <a href="#">
                     <i className="flaticon-translate" />
@@ -1129,7 +1127,7 @@ const Onepage = () => {
               <div className="col-md-3 col-sm-6 equal-height">
                 <div
                   className="item"
-                  style={{ backgroundImage: "url(assets/img/800x600.png)" }}
+                  style={{ backgroundImage: `url(${image4})` }}
                 >
                   <a href="#">
                     <i className="flaticon-firewall" />
@@ -1172,7 +1170,7 @@ const Onepage = () => {
                 {/* Single Item */}
                 <div className="advisor-item">
                   <div className="info-box">
-                    <img src="assets/img/800x600.png" alt="Thumb" />
+                    <img src={image4} alt="Thumb" />
                     <div className="info-title">
                       <h4>Professon. Nuri Paul</h4>
                       <span>Chemistry specialist</span>
@@ -1207,7 +1205,8 @@ const Onepage = () => {
                 {/* Single Item */}
                 <div className="advisor-item">
                   <div className="info-box">
-                    <img src="assets/img/800x600.png" alt="Thumb" />
+                    <img src={image4} alt="Thumb" />
+
                     <div className="info-title">
                       <h4>Monayem Pruda</h4>
                       <span>Senior Developer</span>
@@ -1242,7 +1241,8 @@ const Onepage = () => {
                 {/* Single Item */}
                 <div className="advisor-item">
                   <div className="info-box">
-                    <img src="assets/img/800x600.png" alt="Thumb" />
+                    <img src={image4} alt="Thumb" />
+
                     <div className="info-title">
                       <h4>Dr. Bubly Minu</h4>
                       <span>Science specialist</span>
@@ -1277,7 +1277,8 @@ const Onepage = () => {
                 {/* Single Item */}
                 <div className="advisor-item">
                   <div className="info-box">
-                    <img src="assets/img/800x600.png" alt="Thumb" />
+                    <img src={image4} alt="Thumb" />
+
                     <div className="info-title">
                       <h4>Professon. John Doe</h4>
                       <span>Senior Writter</span>
@@ -1312,7 +1313,8 @@ const Onepage = () => {
                 {/* Single Item */}
                 <div className="advisor-item">
                   <div className="info-box">
-                    <img src="assets/img/800x600.png" alt="Thumb" />
+                    <img src={image4} alt="Thumb" />
+
                     <div className="info-title">
                       <h4>Professon. John Doe</h4>
                       <span>Senior Writter</span>
@@ -1354,7 +1356,7 @@ const Onepage = () => {
     ============================================= */}
       <div
         className="fun-factor-area default-padding bottom-less text-center bg-fixed shadow dark-hard"
-        style={{ backgroundImage: "url(assets/img/2440x1578.png)" }}
+        style={{ backgroundImage: `url(${image1})` }}
       >
         <div className="container">
           <div className="row">
@@ -1430,7 +1432,7 @@ const Onepage = () => {
               <div className="item horizontal col-md-12">
                 <div
                   className="col-md-6 thumb bg-cover"
-                  style={{ backgroundImage: "url(assets/img/1500x700.png)" }}
+                  style={{ backgroundImage: `url(${image1})` }}
                 >
                   <div className="date">
                     <h4>
@@ -1473,7 +1475,7 @@ const Onepage = () => {
               {/* Single Item */}
               <div className="item vertical col-md-6">
                 <div className="thumb">
-                  <img src="assets/img/800x600.png" alt="Thumb" />
+                  <img src={image4} alt="Thumb" />
                   <div className="date">
                     <h4>
                       <span>27</span> Feb, 2019
@@ -1515,7 +1517,7 @@ const Onepage = () => {
               {/* Single Item */}
               <div className="item vertical col-md-6">
                 <div className="thumb">
-                  <img src="assets/img/800x600.png" alt="Thumb" />
+                  <img src={image4} alt="Thumb" />
                   <div className="date">
                     <h4>
                       <span>15</span> Mar, 2019
@@ -1558,7 +1560,7 @@ const Onepage = () => {
               <div className="item horizontal col-md-12">
                 <div
                   className="col-md-6 thumb bg-cover"
-                  style={{ backgroundImage: "url(assets/img/1500x700.png)" }}
+                  style={{ backgroundImage: `url(${image1})` }}
                 >
                   <div className="date">
                     <h4>
@@ -1679,7 +1681,7 @@ const Onepage = () => {
                 </form>
               </div>
               <div className="col-md-6 thumb">
-                <img src="assets/img/800x800.png" alt="Thumb" />
+                <img src={image2} alt="Thumb" />
               </div>
             </div>
           </div>
@@ -1710,7 +1712,7 @@ const Onepage = () => {
                 {/* Single Item */}
                 <div className="item">
                   <div className="col-md-5 thumb">
-                    <img src="assets/img/800x800.png" alt="Thumb" />
+                    <img src={image2} alt="Thumb" />
                   </div>
                   <div className="col-md-7 info">
                     <p>
@@ -1726,7 +1728,7 @@ const Onepage = () => {
                 {/* Single Item */}
                 <div className="item">
                   <div className="col-md-5 thumb">
-                    <img src="assets/img/800x800.png" alt="Thumb" />
+                    <img src={image2} alt="Thumb" />
                   </div>
                   <div className="col-md-7 info">
                     <p>
@@ -1742,7 +1744,7 @@ const Onepage = () => {
                 {/* Single Item */}
                 <div className="item">
                   <div className="col-md-5 thumb">
-                    <img src="assets/img/800x800.png" alt="Thumb" />
+                    <img src={image2} alt="Thumb" />
                   </div>
                   <div className="col-md-7 info">
                     <p>
@@ -1758,7 +1760,7 @@ const Onepage = () => {
                 {/* Single Item */}
                 <div className="item">
                   <div className="col-md-5 thumb">
-                    <img src="assets/img/800x800.png" alt="Thumb" />
+                    <img src={image2} alt="Thumb" />
                   </div>
                   <div className="col-md-7 info">
                     <p>
@@ -1802,7 +1804,7 @@ const Onepage = () => {
                 <div className="item">
                   <div className="thumb">
                     <a href="#">
-                      <img src="assets/img/800x600.png" alt="Thumb" />
+                      <img src={image4} alt="Thumb" />
                     </a>
                     <div className="date">
                       <h4>
@@ -1845,7 +1847,7 @@ const Onepage = () => {
                 <div className="item">
                   <div className="thumb">
                     <a href="#">
-                      <img src="assets/img/800x600.png" alt="Thumb" />
+                      <img src={image4} alt="Thumb" />
                     </a>
                     <div className="date">
                       <h4>
@@ -1888,7 +1890,7 @@ const Onepage = () => {
                 <div className="item">
                   <div className="thumb">
                     <a href="#">
-                      <img src="assets/img/800x600.png" alt="Thumb" />
+                      <img src={image4} alt="Thumb" />
                     </a>
                     <div className="date">
                       <h4>
@@ -1948,52 +1950,52 @@ const Onepage = () => {
               <div className="clients-items owl-carousel owl-theme text-center">
                 <div className="single-item">
                   <a href="#">
-                    <img src="assets/img/150x80.png" alt="Clients" />
+                    <img src={image6} alt="Clients" />
                   </a>
                 </div>
                 <div className="single-item">
                   <a href="#">
-                    <img src="assets/img/150x80.png" alt="Clients" />
+                    <img src={image6} alt="Clients" />
                   </a>
                 </div>
                 <div className="single-item">
                   <a href="#">
-                    <img src="assets/img/150x80.png" alt="Clients" />
+                    <img src={image6} alt="Clients" />
                   </a>
                 </div>
                 <div className="single-item">
                   <a href="#">
-                    <img src="assets/img/150x80.png" alt="Clients" />
+                    <img src={image6} alt="Clients" />
                   </a>
                 </div>
                 <div className="single-item">
                   <a href="#">
-                    <img src="assets/img/150x80.png" alt="Clients" />
+                    <img src={image6} alt="Clients" />
                   </a>
                 </div>
                 <div className="single-item">
                   <a href="#">
-                    <img src="assets/img/150x80.png" alt="Clients" />
+                    <img src={image6} alt="Clients" />
                   </a>
                 </div>
                 <div className="single-item">
                   <a href="#">
-                    <img src="assets/img/150x80.png" alt="Clients" />
+                    <img src={image6} alt="Clients" />
                   </a>
                 </div>
                 <div className="single-item">
                   <a href="#">
-                    <img src="assets/img/150x80.png" alt="Clients" />
+                    <img src={image6} alt="Clients" />
                   </a>
                 </div>
                 <div className="single-item">
                   <a href="#">
-                    <img src="assets/img/150x80.png" alt="Clients" />
+                    <img src={image6} alt="Clients" />
                   </a>
                 </div>
                 <div className="single-item">
                   <a href="#">
-                    <img src="assets/img/150x80.png" alt="Clients" />
+                    <img src={image6} alt="Clients" />
                   </a>
                 </div>
               </div>

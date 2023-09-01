@@ -1,6 +1,7 @@
 import { FooterSection } from "../atoms/Footer/index.tsx";
 import HeaderInformation from "../atoms/header.tsx";
 import NavigationComponent from "../atoms/Navigation/index.tsx";
+import image1 from "../assets/img/slide-bg-2.jpeg";
 export const PricingTable = () => {
   return (
     <>
@@ -8,7 +9,7 @@ export const PricingTable = () => {
       <NavigationComponent />
       <div
         className="breadcrumb-area shadow dark text-center bg-fixed text-light"
-        style={{ backgroundImage: "url(assets/img/2440x1578.png)" }}
+        style={{ backgroundImage: `url(${image1})` }}
       >
         <div className="container">
           <div className="row">

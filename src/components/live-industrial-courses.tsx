@@ -1,6 +1,13 @@
 import { FooterSection } from "../atoms/Footer/index.tsx";
 import HeaderInformation from "../atoms/header.tsx";
 import NavigationComponent from "../atoms/Navigation/index.tsx";
+import AboutUsImage from "../assets/img/about-bg.jpg";
+import cybersecurityImage from "../assets/img/cybersecurity.png";
+import artificalIntelliganceImage from "../assets/img/artificialintelligence.png";
+import chatgptImage from "../assets/img/CHATGPT.png";
+import fullStackImage from "../assets/img/fullstackwebdevelopment.png";
+import DataScienceImage from "../assets/img/datascience.png";
+import cloudImage from "../assets/img/cloudcomputing.png";
 const LiveIndustrialCourses = () => {
   return (
     <>
@@ -8,7 +15,7 @@ const LiveIndustrialCourses = () => {
       <NavigationComponent />
       <div
         className="breadcrumb-area shadow dark text-center bg-fixed text-light"
-        style={{ backgroundImage: "url(assets/img/about-bg.jpg)" }}
+        style={{ backgroundImage: `url(${AboutUsImage})` }}
       >
         <div className="container">
           <div className="row">
@@ -39,8 +46,9 @@ const LiveIndustrialCourses = () => {
                   <div className="thumb">
                     <a href="#">
                       <img
-                        src="assets/img/popularcoursesartificialintellegence.png"
+                        src={artificalIntelliganceImage}
                         alt="Thumb"
+                        style={{ height: "300px" }}
                       />
                     </a>
                     <div className="price">
@@ -91,8 +99,9 @@ const LiveIndustrialCourses = () => {
                   <div className="thumb">
                     <a href="#">
                       <img
-                        src="assets/img/popularcoursesCyberSecurity.png"
+                        src={cybersecurityImage}
                         alt="Thumb"
+                        style={{ height: "300px" }}
                       />
                     </a>
                     <div className="price">
@@ -143,8 +152,9 @@ const LiveIndustrialCourses = () => {
                   <div className="thumb">
                     <a href="#">
                       <img
-                        src="assets/img/popularcourseschatgpt.png"
+                        src={chatgptImage}
                         alt="Thumb"
+                        style={{ height: "300px" }}
                       />
                     </a>
                     <div className="price">
@@ -195,8 +205,9 @@ const LiveIndustrialCourses = () => {
                   <div className="thumb">
                     <a href="#">
                       <img
-                        src="assets/img/popularcoursesFullStack.png"
+                        src={fullStackImage}
                         alt="Thumb"
+                        style={{ height: "300px" }}
                       />
                     </a>
                     <div className="price">
@@ -247,8 +258,9 @@ const LiveIndustrialCourses = () => {
                   <div className="thumb">
                     <a href="#">
                       <img
-                        src="assets/img/popularcoursesdatascience.png"
+                        src={DataScienceImage}
                         alt="Thumb"
+                        style={{ height: "300px" }}
                       />
                     </a>
                     <div className="price">
@@ -299,8 +311,9 @@ const LiveIndustrialCourses = () => {
                   <div className="thumb">
                     <a href="#">
                       <img
-                        src="assets/img/popularcoursescloudcomputing.png"
+                        src={cloudImage}
                         alt="Thumb"
+                        style={{ height: "300px" }}
                       />
                     </a>
                     <div className="price">

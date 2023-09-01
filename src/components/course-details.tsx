@@ -1,6 +1,11 @@
 import { FooterSection } from "../atoms/Footer/index.tsx";
 import HeaderInformation from "../atoms/header.tsx";
 import NavigationComponent from "../atoms/Navigation/index.tsx";
+import courseDetailsImage from "../assets/img/courses.jpeg";
+import Image1 from "../assets/img/1500x700.png";
+import Image2 from "../assets/img/100x100.png";
+import Image3 from "../assets/img/800x800.png";
+
 const CourseDetails = () => {
   return (
     <>
@@ -8,7 +13,7 @@ const CourseDetails = () => {
       <NavigationComponent />
       <div
         className="breadcrumb-area shadow dark text-center bg-fixed text-light"
-        style={{ backgroundImage: "url(assets/img/2440x1578.png)" }}
+        style={{ backgroundImage: `url(${courseDetailsImage})` }}
       >
         <div className="container">
           <div className="row">
@@ -48,7 +53,7 @@ const CourseDetails = () => {
                   {/* End Title*/}
                   {/* Thumbnail */}
                   <div className="thumb">
-                    <img src="assets/img/1500x700.png" alt="Thumb" />
+                    <img src={Image1} alt="Thumb" />
                   </div>
                   {/* End Thumbnail */}
                   {/* Course Meta */}
@@ -56,7 +61,7 @@ const CourseDetails = () => {
                     <div className="item author">
                       <div className="thumb">
                         <a href="#">
-                          <img alt="Thumb" src="assets/img/100x100.png" />
+                          <img alt="Thumb" src={Image2} />
                         </a>
                       </div>
                       <div className="desc">
@@ -507,12 +512,12 @@ const CourseDetails = () => {
                       <div className="content">
                         <div className="thumb">
                           <a href="#">
-                            <img src="assets/img/800x800.png" alt="Thumb" />
+                            <img src={Image3} alt="Thumb" />
                           </a>
                         </div>
                         <div className="info">
                           <h4>
-                            <a href="#">Profession paython learing</a>
+                            <a href="#">Profession python learing</a>
                           </h4>
                           <div className="rating">
                             <i className="fas fa-star" />
@@ -533,12 +538,12 @@ const CourseDetails = () => {
                       <div className="content">
                         <div className="thumb">
                           <a href="#">
-                            <img src="assets/img/800x800.png" alt="Thumb" />
+                            <img src={Image3} alt="Thumb" />
                           </a>
                         </div>
                         <div className="info">
                           <h4>
-                            <a href="#">Profession paython learing</a>
+                            <a href="#">Profession python learing</a>
                           </h4>
                           <div className="rating">
                             <i className="fas fa-star" />
@@ -559,12 +564,12 @@ const CourseDetails = () => {
                       <div className="content">
                         <div className="thumb">
                           <a href="#">
-                            <img src="assets/img/800x800.png" alt="Thumb" />
+                            <img src={Image3} alt="Thumb" />
                           </a>
                         </div>
                         <div className="info">
                           <h4>
-                            <a href="#">Profession paython learing</a>
+                            <a href="#">Profession python learing</a>
                           </h4>
                           <div className="rating">
                             <i className="fas fa-star" />

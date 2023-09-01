@@ -1,6 +1,10 @@
 import { FooterSection } from "../atoms/Footer/index.tsx";
 import HeaderInformation from "../atoms/header.tsx";
 import NavigationComponent from "../atoms/Navigation/index.tsx";
+import Image1 from "../assets/img/800x800.png";
+import image2 from "../assets/img/150x80.png";
+import image3 from "../assets/img/slide-bg-2.jpeg";
+
 export const Teachers = () => {
   return (
     <>
@@ -8,7 +12,7 @@ export const Teachers = () => {
       <NavigationComponent />
       <div
         className="breadcrumb-area shadow dark text-center bg-fixed text-light"
-        style={{ backgroundImage: "url(assets/img/2440x1578.png)" }}
+        style={{ backgroundImage: `url(${image3})` }}
       >
         <div className="container">
           <div className="row">
@@ -40,7 +44,7 @@ export const Teachers = () => {
                 {/* Single Item */}
                 <div className="advisor-item">
                   <div className="info-box">
-                    <img src="assets/img/800x800.png" alt="Thumb" />
+                    <img src={image2} alt="Thumb" />
                     <div className="info-title">
                       <h4>Professon. Nuri Paul</h4>
                       <span>Chemistry specialist</span>
@@ -89,7 +93,7 @@ export const Teachers = () => {
                 {/* Single Item */}
                 <div className="advisor-item">
                   <div className="info-box">
-                    <img src="assets/img/800x800.png" alt="Thumb" />
+                    <img src={Image1} alt="Thumb" />
                     <div className="info-title">
                       <h4>John Babu</h4>
                       <span>Interactive Designer</span>
@@ -138,7 +142,8 @@ export const Teachers = () => {
                 {/* Single Item */}
                 <div className="advisor-item">
                   <div className="info-box">
-                    <img src="assets/img/800x800.png" alt="Thumb" />
+                    <img src={Image1} alt="Thumb" />
+
                     <div className="info-title">
                       <h4>Mridul Druva</h4>
                       <span>Creative developer</span>
@@ -187,7 +192,8 @@ export const Teachers = () => {
                 {/* Single Item */}
                 <div className="advisor-item">
                   <div className="info-box">
-                    <img src="assets/img/800x800.png" alt="Thumb" />
+                    <img src={Image1} alt="Thumb" />
+
                     <div className="info-title">
                       <h4>Sufia Nilla</h4>
                       <span>Project Manager</span>
@@ -236,7 +242,8 @@ export const Teachers = () => {
                 {/* Single Item */}
                 <div className="advisor-item">
                   <div className="info-box">
-                    <img src="assets/img/800x800.png" alt="Thumb" />
+                    <img src={Image1} alt="Thumb" />
+
                     <div className="info-title">
                       <h4>Professon. Nuri Paul</h4>
                       <span>Chemistry specialist</span>
@@ -312,7 +319,7 @@ export const Teachers = () => {
                 {/* Single Item */}
                 <div className="item">
                   <div className="col-md-5 thumb">
-                    <img src="assets/img/800x800.png" alt="Thumb" />
+                    <img src={Image1} alt="Thumb" />
                   </div>
                   <div className="col-md-7 info">
                     <p>
@@ -344,7 +351,7 @@ export const Teachers = () => {
                 {/* Single Item */}
                 <div className="item">
                   <div className="col-md-5 thumb">
-                    <img src="assets/img/800x800.png" alt="Thumb" />
+                    <img src={Image1} alt="Thumb" />
                   </div>
                   <div className="col-md-7 info">
                     <p>
@@ -360,7 +367,7 @@ export const Teachers = () => {
                 {/* Single Item */}
                 <div className="item">
                   <div className="col-md-5 thumb">
-                    <img src="assets/img/800x800.png" alt="Thumb" />
+                    <img src={Image1} alt="Thumb" />
                   </div>
                   <div className="col-md-7 info">
                     <p>
@@ -396,52 +403,52 @@ export const Teachers = () => {
               <div className="clients-items owl-carousel owl-theme text-center">
                 <div className="single-item">
                   <a href="#">
-                    <img src="assets/img/150x80.png" alt="Clients" />
+                    <img src={image3} alt="Thumb" />
                   </a>
                 </div>
                 <div className="single-item">
                   <a href="#">
-                    <img src="assets/img/150x80.png" alt="Clients" />
+                    <img src={image3} alt="Thumb" />
                   </a>
                 </div>
                 <div className="single-item">
                   <a href="#">
-                    <img src="assets/img/150x80.png" alt="Clients" />
+                    <img src={image3} alt="Thumb" />
                   </a>
                 </div>
                 <div className="single-item">
                   <a href="#">
-                    <img src="assets/img/150x80.png" alt="Clients" />
+                    <img src={image3} alt="Thumb" />
                   </a>
                 </div>
                 <div className="single-item">
                   <a href="#">
-                    <img src="assets/img/150x80.png" alt="Clients" />
+                    <img src={image3} alt="Thumb" />
                   </a>
                 </div>
                 <div className="single-item">
                   <a href="#">
-                    <img src="assets/img/150x80.png" alt="Clients" />
+                    <img src={image3} alt="Thumb" />
                   </a>
                 </div>
                 <div className="single-item">
                   <a href="#">
-                    <img src="assets/img/150x80.png" alt="Clients" />
+                    <img src={image3} alt="Thumb" />
                   </a>
                 </div>
                 <div className="single-item">
                   <a href="#">
-                    <img src="assets/img/150x80.png" alt="Clients" />
+                    <img src={image3} alt="Thumb" />
                   </a>
                 </div>
                 <div className="single-item">
                   <a href="#">
-                    <img src="assets/img/150x80.png" alt="Clients" />
+                    <img src={image3} alt="Thumb" />
                   </a>
                 </div>
                 <div className="single-item">
                   <a href="#">
-                    <img src="assets/img/150x80.png" alt="Clients" />
+                    <img src={image3} alt="Thumb" />
                   </a>
                 </div>
               </div>
