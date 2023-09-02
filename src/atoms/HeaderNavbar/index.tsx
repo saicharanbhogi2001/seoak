@@ -3,13 +3,7 @@ import logo from "../../assets/img/logo.png";
 import { ChevronDown } from "react-feather";
 import { styled } from "styled-components";
 import { Card } from "@mui/material";
-import { useEffect, useState } from "react";
-import {
-  Accordion,
-  AccordionBody,
-  AccordionHeader,
-  AccordionItem,
-} from "react-headless-accordion";
+import { useState } from "react";
 const Navbarcontainer = styled.div`
   position: sticky;
   gap: 4px;
@@ -127,10 +121,10 @@ const navbarTiles = [
 export const Header = () => {
   const [mobileMenu, setMobileMenu] = useState(false);
   const [courseAccordian, setCourseAccordian] = useState(false);
-  const [livecourse, setLiveCourse] = useState(false);
-  const handleRoute = (course: any) => {
+  // const [livecourse, setLiveCourse] = useState(false);
+  const handleRoute = (course: string) => {
     // navigate(`/${course}`);
-    setLiveCourse((p) => !p);
+    // setLiveCourse((p) => !p);
     setCourseAccordian((p) => !p);
     console.log(course);
   };

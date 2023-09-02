@@ -1,6 +1,7 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import styled from "styled-components";
-import { Card, Grid } from "@mui/material";
-import Dialog from "@mui/material";
+import { Grid } from "@mui/material";
+// import Dialog from "@mui/material";
 import PromiseCard from "../../atoms/PromiseCard";
 const PromiseCardContainer = styled.div`
   width: 100vw;
@@ -52,9 +53,9 @@ const PromiseCardContainer = styled.div`
     justify-content: center;
   }
 `;
-const PopupCard = styled(Card)`
-  padding: 50px 25px 50px 25px;
-`;
+// const PopupCard = styled(Card)`
+//   padding: 50px 25px 50px 25px;
+// `;
 export const PromiseCardsSection = () => {
   return (
     <PromiseCardContainer>

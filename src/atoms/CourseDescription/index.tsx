@@ -32,83 +32,82 @@ export const CourseDescriptionContainer = styled.div`
     gap: 15px;
   }
 `;
-const learningOutcomes = [
-  { title: "Over 48 lectures and 72 hours of content!" },
-  { title: "Theoretical and practical training included real-time projects." },
-  {
-    title:
-      "Best suitable for beginners to advanced level users and who learn faster when demonstrated.",
-  },
-  {
-    title:
-      "Course content is Designed by considering current trending technologies and the job market.",
-  },
-  { title: " Practical assignments at the end of every session." },
-  {
-    title:
-      " Practical real-time experience with live projects for every end of the topic.",
-  },
-  { title: "Unlimited resources, with overall six courses LMS." },
-];
-const certification = [
-  {
-    title: `This certificate validates the student's ability to apply
-theoretical concepts to real-world projects and demonstrates their
-competence in specific areas of expertise.`,
-  },
-  {
-    title: `Upcoming collaborations with Nascom, NSDC, and Skillindia, which
-    help students to get placed in their dream companies.`,
-  },
-  {
-    title: `A internship certificate from a reputable company like SEOAK
-    carries weight and credibility within the industry.`,
-  },
-  {
-    title: `It signifies that the student has received practical training and
-    exposure to industry-relevant tools, technologies, and practices,
-    making them more attractive to potential employers.`,
-  },
-  {
-    title: `Including an internship certificate on a resume or CV adds weight
-    and value to the student's profile.`,
-  },
-  {
-    title: `Completing an internship in our company provides students with
-    opportunities to network with professionals in the field.`,
-  },
-  {
-    title: `Students can connect with mentors, industry experts, and fellow
-    interns, expanding their professional network and gaining valuable
-    contacts for future career development.`,
-  },
-  {
-    title: ` Receiving an internship certificate from our company is an
-    accomplishment that can boost a student's confidence.`,
-  },
-  {
-    title: `
-  A internship certificate from our company enhances a student's
-  employability. It demonstrates to potential employers that they
-  have gained practical experience and have been exposed to the
-  latest industry trends and technologies.
-  `,
-  },
-  {
-    title: ` Our certificates encourage lifelong learning and continuous
-  professional development.
-  `,
-  },
-];
+// const learningOutcomes = [
+//   { title: "Over 48 lectures and 72 hours of content!" },
+//   { title: "Theoretical and practical training included real-time projects." },
+//   {
+//     title:
+//       "Best suitable for beginners to advanced level users and who learn faster when demonstrated.",
+//   },
+//   {
+//     title:
+//       "Course content is Designed by considering current trending technologies and the job market.",
+//   },
+//   { title: " Practical assignments at the end of every session." },
+//   {
+//     title:
+//       " Practical real-time experience with live projects for every end of the topic.",
+//   },
+//   { title: "Unlimited resources, with overall six courses LMS." },
+// ];
+// const certification = [
+//   {
+//     title: `This certificate validates the student's ability to apply
+// theoretical concepts to real-world projects and demonstrates their
+// competence in specific areas of expertise.`,
+//   },
+//   {
+//     title: `Upcoming collaborations with Nascom, NSDC, and Skillindia, which
+//     help students to get placed in their dream companies.`,
+//   },
+//   {
+//     title: `A internship certificate from a reputable company like SEOAK
+//     carries weight and credibility within the industry.`,
+//   },
+//   {
+//     title: `It signifies that the student has received practical training and
+//     exposure to industry-relevant tools, technologies, and practices,
+//     making them more attractive to potential employers.`,
+//   },
+//   {
+//     title: `Including an internship certificate on a resume or CV adds weight
+//     and value to the student's profile.`,
+//   },
+//   {
+//     title: `Completing an internship in our company provides students with
+//     opportunities to network with professionals in the field.`,
+//   },
+//   {
+//     title: `Students can connect with mentors, industry experts, and fellow
+//     interns, expanding their professional network and gaining valuable
+//     contacts for future career development.`,
+//   },
+//   {
+//     title: ` Receiving an internship certificate from our company is an
+//     accomplishment that can boost a student's confidence.`,
+//   },
+//   {
+//     title: `
+//   A internship certificate from our company enhances a student's
+//   employability. It demonstrates to potential employers that they
+//   have gained practical experience and have been exposed to the
+//   latest industry trends and technologies.
+//   `,
+//   },
+//   {
+//     title: ` Our certificates encourage lifelong learning and continuous
+//   professional development.
+//   `,
+//   },
+// ];
 interface CourseDescriptionProps {
-  title?: string;
   courseDescriptionText?: string;
-  paraElements: any;
-  outComes: any;
+  paraElements: JSX.Element[];
+  outComes: string[]; // Assuming outComes is an array of strings
 }
+
 export const CourseDescription = ({
-  title = "",
-  courseDescriptionText = "",
+  courseDescriptionText,
   paraElements,
   outComes,
 }: CourseDescriptionProps) => {

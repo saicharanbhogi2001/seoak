@@ -4,16 +4,16 @@ import HeaderInformation from "../atoms/header.tsx";
 //@ts-ignore
 import { useSpring, animated } from "react-spring";
 import NavigationComponent from "../atoms/Navigation/index.tsx";
-import Carousel from "../atoms";
+// import Carousel from "../atoms";
 import Capgeminie150 from "../assets/img/Capgeminie150,80.png";
 import Dell from "../assets/img/Dell150,80.png";
 import hp from "../assets/img/hp150,80.png";
 import ibm from "../assets/img/ibm150,80.png";
 import google from "../assets/img/google150,80.png";
-import infosys from "../assets/img/infosys150,80.png";
+// import infosys from "../assets/img/infosys150,80.png";
 import landingpageimg from "../assets/img/landingpage.png";
-import logo from "../assets/img/logo.png";
-import logolight from "../assets/img/logo-light.png";
+// import logo from "../assets/img/logo.png";
+// import logolight from "../assets/img/logo-light.png";
 import trainingcertificate from "../assets/img/Trainingcompletioncertificate.jpg";
 import courseCompletion from "../assets/img/Coursecompletioncertificate.jpg";
 import ActivePerformer from "../assets/img/Active Performer.jpg";
@@ -22,7 +22,7 @@ import { StudentReview } from "../atoms/ImageCarosal/StudentReview";
 import nsdc from "../assets/img/nsdc800,600.png";
 import DraggableCardSlider from "../atoms/imageSlider";
 import { FooterSection } from "../atoms/Footer/index.tsx";
-import CoursesCarousel from "../atoms/ImageCarosal/StudentReview/CoursesCoursel/index.tsx";
+// import CoursesCarousel from "../atoms/ImageCarosal/StudentReview/CoursesCoursel/index.tsx";
 interface NumberProps {
   n: number;
 }
