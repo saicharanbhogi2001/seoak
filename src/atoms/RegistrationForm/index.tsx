@@ -1,11 +1,6 @@
 import { styled } from "styled-components";
 import "../../index.css";
-interface RegistrationFormProps {
-  firstName?: string;
-  lastName?: string;
-  email?: string;
-  phone?: string;
-}
+
 const RegistrationFormContainer = styled.div`
   .drop-down {
     width: 100%;
@@ -38,12 +33,7 @@ const options = [
   { course: "Python" },
   { course: "DSA (Data Structures & Algorithm)" },
 ];
-export const RegistrationForm = ({
-  firstName = "",
-  lastName = "",
-  email = "",
-  phone = "",
-}: RegistrationFormProps) => {
+export const RegistrationForm = () => {
   return (
     <>
       <RegistrationFormContainer>

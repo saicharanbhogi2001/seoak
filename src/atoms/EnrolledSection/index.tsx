@@ -1,14 +1,14 @@
-import PromiseCard from "../PromiseCard";
+// import PromiseCard from "../PromiseCard";
 import { EnrolledContainer } from "./style";
 import { useSpring, animated } from "react-spring";
-import { RegistrationForm } from "../RegistrationForm";
-import { FooterSection } from "../Footer";
-import { Header } from "../HeaderNavbar";
-import { CourseDescription } from "../CourseDescription";
-import { Curriculam } from "../Curriculam";
-import { CertifiedCourseSection } from "../CertifiedCourses";
-import { PopularCourses } from "../PopularCourses";
-import { CourseIntroduction } from "../CourseInroduction";
+// import { RegistrationForm } from "../RegistrationForm";
+// import { FooterSection } from "../Footer";
+// import NavigationComponent, { Header } from "../HeaderNavbar";
+// import { CourseDescription } from "../CourseDescription";
+// import { Curriculam } from "../Curriculam";
+// import { CertifiedCourseSection } from "../CertifiedCourses";
+// import { PopularCourses } from "../PopularCourses";
+// import { CourseIntroduction } from "../CourseInroduction";
 import { Grid } from "@mui/material";
 
 interface NumberProps {
@@ -24,9 +24,9 @@ function NumberIncrementor({ n }: NumberProps) {
   return <animated.div>{number.to((n) => n.toFixed(0))}</animated.div>;
 }
 
-const title = "COURSE DESCRIPTION";
-const description =
-  "Data Science is an interdisciplinary field that combines statistics, mathematics, programming, and domain expertise to extract valuable insights and knowledge from data. It involves analyzing and interpreting large volumes of data to make informed business decisions, solve complex problems, and drive innovation. Data Science has applications in various industries, including finance, healthcare, marketing, and technology. The Data Science Fundamentals course provides students with a comprehensive understanding of the core concepts and techniques used in data science.";
+// const title = "COURSE DESCRIPTION";
+// const description =
+//   "Data Science is an interdisciplinary field that combines statistics, mathematics, programming, and domain expertise to extract valuable insights and knowledge from data. It involves analyzing and interpreting large volumes of data to make informed business decisions, solve complex problems, and drive innovation. Data Science has applications in various industries, including finance, healthcare, marketing, and technology. The Data Science Fundamentals course provides students with a comprehensive understanding of the core concepts and techniques used in data science.";
 
 const enrolledsection = [
   {
@@ -54,6 +54,7 @@ export const EnrolledCountSection = () => {
   return (
     <>
       {/* <Header /> */}
+      {/* <NavigationComponent /> */}
       <EnrolledContainer>
         <Grid container rowSpacing={1} columnSpacing={2}>
           {enrolledsection.map((item) => (

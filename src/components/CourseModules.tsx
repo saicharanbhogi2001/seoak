@@ -25,8 +25,9 @@ export const CourseModule = ({
   outComes,
   ciurriculum,
 }: CourseProps) => {
+  const [handleFaqState, setHandleFaqState] = useState(1);
   const [togglestate, setToggleState] = useState(1);
-  const title = "COURSE DESCRIPTION";
+  // const = "COURSE DESCRIPTION";
   return (
     <>
       <HeaderInformation />
@@ -139,7 +140,6 @@ export const CourseModule = ({
                       }
                     >
                       <CourseDescription
-                        title={title}
                         courseDescriptionText={courseDescriptionText}
                         paraElements={paraElements}
                         outComes={outComes}
@@ -645,7 +645,10 @@ export const CourseModule = ({
                 <div className="acd-items acd-arrow">
                   <div className="panel-group symb" id="accordion">
                     <div className="panel panel-default">
-                      <div className="panel-heading">
+                      <div
+                        className="panel-heading"
+                        onClick={() => setHandleFaqState(1)}
+                      >
                         <h4 className="panel-title">
                           <a
                             data-toggle="collapse"
@@ -656,7 +659,13 @@ export const CourseModule = ({
                           </a>
                         </h4>
                       </div>
-                      <div id="ac1" className="panel-collapse collapse in">
+                      <div
+                        className={
+                          handleFaqState === 1
+                            ? "panel-collapse collapse in"
+                            : "panel-collapse collapse"
+                        }
+                      >
                         <div className="panel-body">
                           <p>
                             Medium of instruction and program delivery is 100%
@@ -666,7 +675,10 @@ export const CourseModule = ({
                         </div>
                       </div>
                     </div>
-                    <div className="panel panel-default">
+                    <div
+                      className="panel panel-default"
+                      onClick={() => setHandleFaqState(2)}
+                    >
                       <div className="panel-heading">
                         <h4 className="panel-title">
                           <a
@@ -678,7 +690,14 @@ export const CourseModule = ({
                           </a>
                         </h4>
                       </div>
-                      <div id="ac2" className="panel-collapse collapse">
+                      <div
+                        id="ac2"
+                        className={
+                          handleFaqState === 2
+                            ? "panel-collapse collapse in"
+                            : "panel-collapse collapse"
+                        }
+                      >
                         <div className="panel-body">
                           <p>
                             Upon successful completion of this course, you will
@@ -688,7 +707,10 @@ export const CourseModule = ({
                         </div>
                       </div>
                     </div>
-                    <div className="panel panel-default">
+                    <div
+                      className="panel panel-default"
+                      onClick={() => setHandleFaqState(3)}
+                    >
                       <div className="panel-heading">
                         <h4 className="panel-title">
                           <a
@@ -700,7 +722,14 @@ export const CourseModule = ({
                           </a>
                         </h4>
                       </div>
-                      <div id="ac3" className="panel-collapse collapse">
+                      <div
+                        id="ac3"
+                        className={
+                          handleFaqState === 3
+                            ? "panel-collapse collapse in"
+                            : "panel-collapse collapse"
+                        }
+                      >
                         <div className="panel-body">
                           <p>
                             You have various options to contact us, You can
@@ -709,7 +738,10 @@ export const CourseModule = ({
                         </div>
                       </div>
                     </div>
-                    <div className="panel panel-default">
+                    <div
+                      className="panel panel-default"
+                      onClick={() => setHandleFaqState(4)}
+                    >
                       <div className="panel-heading">
                         <h4 className="panel-title">
                           <a
@@ -721,7 +753,14 @@ export const CourseModule = ({
                           </a>
                         </h4>
                       </div>
-                      <div id="ac4" className="panel-collapse collapse">
+                      <div
+                        id="ac4"
+                        className={
+                          handleFaqState === 4
+                            ? "panel-collapse collapse in"
+                            : "panel-collapse collapse"
+                        }
+                      >
                         <div className="panel-body">
                           <p>
                             You can check our{" "}
