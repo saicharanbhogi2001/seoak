@@ -2,6 +2,7 @@ import { FooterSection } from "../atoms/Footer/index.tsx";
 import HeaderInformation from "../atoms/header.tsx";
 import NavigationComponent from "../atoms/Navigation/index.tsx";
 import image1 from "../assets/img/slide-bg-2.jpeg";
+import { Link } from "react-router-dom";
 export const PricingTable = () => {
   return (
     <>
@@ -17,12 +18,12 @@ export const PricingTable = () => {
               <h1>Pricing Table</h1>
               <ul className="breadcrumb">
                 <li>
-                  <a href="#">
+                  <Link to="#">
                     <i className="fas fa-home" /> Home
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#">Page</a>
+                  <Link to="#">Page</Link>
                 </li>
                 <li className="active">Pricing</li>
               </ul>
@@ -61,9 +62,12 @@ export const PricingTable = () => {
                     <li>No Tutorial</li>
                     <li>Limited Registered User</li>
                     <li className="footer">
-                      <a className="btn circle btn-dark border btn-sm" href="#">
+                      <Link
+                        className="btn circle btn-dark border btn-sm"
+                        to="#"
+                      >
                         Buy This Plan
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -91,12 +95,12 @@ export const PricingTable = () => {
                     </li>
                     <li>Unlimited Registered User</li>
                     <li className="footer">
-                      <a
+                      <Link
                         className="btn circle btn-theme effect btn-sm"
-                        href="#"
+                        to="#"
                       >
                         Buy This Plan
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -120,9 +124,12 @@ export const PricingTable = () => {
                     <li>Premium Tutorials</li>
                     <li>Unlimited Registered User</li>
                     <li className="footer">
-                      <a className="btn circle btn-dark border btn-sm" href="#">
+                      <Link
+                        className="btn circle btn-dark border btn-sm"
+                        to="#"
+                      >
                         Buy This Plan
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>

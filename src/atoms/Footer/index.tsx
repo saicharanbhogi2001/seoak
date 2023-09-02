@@ -1,6 +1,6 @@
 import "../../index.css";
 import icon from "../../assets/img/logo-light.png";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const topcourses = [
   { course: "Full Stack", route: "/full-stack-develepment" },
@@ -76,9 +76,9 @@ export const FooterSection = () => {
                 <ul>
                   {topcourses.map((course) => (
                     <li key={course.course}>
-                      <a onClick={() => handleRoute(course.route)}>
+                      <Link onClick={() => handleRoute(course.route)} to={""}>
                         {course.course}
-                      </a>
+                      </Link>
                     </li>
                   ))}
                 </ul>
@@ -90,9 +90,9 @@ export const FooterSection = () => {
                 <ul>
                   {navlinks.map((link) => (
                     <li key={link.navbar}>
-                      <a onClick={() => handleRoute(link.navbar)}>
+                      <Link onClick={() => handleRoute(link.navbar)} to={""}>
                         {link.navbar}
-                      </a>
+                      </Link>
                     </li>
                   ))}
                 </ul>
@@ -107,7 +107,7 @@ export const FooterSection = () => {
                     <p>
                       Email{" "}
                       <span>
-                        <a href="mailto:">support@seoak.in</a>
+                        <Link to="mailto:">support@seoak.in</Link>
                       </span>
                     </p>
                   </li>
@@ -121,21 +121,21 @@ export const FooterSection = () => {
                 <h4 style={{ margin: "16px 0" }}>SOCIAL MEDIA</h4>
                 <div className="social-media-links">
                   <li style={{ gap: 10, display: "flex" }}>
-                    <a href="">
+                    <Link to="">
                       <i className="fab fa-facebook-f" />
-                    </a>
-                    <a href="">
+                    </Link>
+                    <Link to="">
                       <i className="fab fa-instagram" />
-                    </a>
-                    <a href="">
+                    </Link>
+                    <Link to="">
                       <i className="fab fa-twitter" />
-                    </a>
-                    <a href="">
+                    </Link>
+                    <Link to="">
                       <i className="fab fa-youtube" />
-                    </a>
-                    <a href="">
+                    </Link>
+                    <Link to="">
                       <i className="fab fa-linkedin" />
-                    </a>
+                    </Link>
                   </li>
                 </div>
               </div>
@@ -149,17 +149,21 @@ export const FooterSection = () => {
             <div className="col-md-12">
               <div className="col-md-6">
                 <p>
-                  © Copyright 2023. All Rights Reserved by <a href="#">SEOAK</a>{" "}
-                  Developed By <a href="#">RAAB</a>
+                  © Copyright 2023. All Rights Reserved by{" "}
+                  <Link to="#">SEOAK</Link> Developed By{" "}
+                  <Link to="#">RAAB</Link>
                 </p>
               </div>
               <div className="col-md-6 text-right link">
                 <ul>
                   {terms.map((link) => (
                     <li key={link.title}>
-                      <a onClick={() => handleTermsandConditions(link.route)}>
+                      <Link
+                        onClick={() => handleTermsandConditions(link.route)}
+                        to={""}
+                      >
                         {link.title}
-                      </a>
+                      </Link>
                     </li>
                   ))}
                 </ul>

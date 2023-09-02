@@ -17,6 +17,7 @@ interface CourseProps {
 }
 import HeaderInformation from "../atoms/header.tsx";
 import NavigationComponent from "../atoms/Navigation/index.tsx";
+import { Link } from "react-router-dom";
 export const CourseModule = ({
   coursetitle,
   imgtitle,
@@ -71,7 +72,7 @@ export const CourseModule = ({
                   <div className="course-meta">
                     <div className="item category">
                       <h4>Category</h4>
-                      <a href="#">Programming</a>
+                      <Link to="#">Programming</Link>
                     </div>
                     <div className="item rating">
                       <h4>Rating</h4>
@@ -87,12 +88,12 @@ export const CourseModule = ({
                       <span>5000₹</span>
                     </div>
                     <div className="align-right">
-                      <a
+                      <Link
                         className="btn btn-dark effect btn-sm"
-                        href="https://wa.me/+917483758735"
+                        to="https://wa.me/+917483758735"
                       >
                         <i className="fas fa-chart-bar" /> Enroll
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -100,34 +101,34 @@ export const CourseModule = ({
                   {/* Tab Nav */}
                   <ul className="nav nav-pills">
                     <li className={togglestate === 1 ? "active" : ""}>
-                      <a
+                      <Link
                         data-toggle="tab"
-                        href="#tab1"
+                        to="#tab1"
                         aria-expanded="true"
                         onClick={() => setToggleState(1)}
                       >
                         Overview
-                      </a>
+                      </Link>
                     </li>
                     <li className={togglestate === 2 ? "active" : ""}>
-                      <a
+                      <Link
                         data-toggle="tab"
-                        href="#tab2"
+                        to="#tab2"
                         aria-expanded="false"
                         onClick={() => setToggleState(2)}
                       >
                         Curriculum
-                      </a>
+                      </Link>
                     </li>
                     <li className={togglestate === 3 ? "active" : ""}>
-                      <a
+                      <Link
                         data-toggle="tab"
-                        href="#tab4"
+                        to="#tab4"
                         aria-expanded="false"
                         onClick={() => setToggleState(3)}
                       >
                         Reviews
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                   <div className="tab-content tab-content-info">
@@ -162,13 +163,13 @@ export const CourseModule = ({
                             <div className="panel panel-default">
                               <div className="panel-heading">
                                 <h4 className="panel-title">
-                                  <a
+                                  <Link
                                     data-toggle="collapse"
                                     data-parent="#accordion"
-                                    href="#ac1"
+                                    to="#ac1"
                                   >
                                     {coursetitle}
-                                  </a>
+                                  </Link>
                                 </h4>
                               </div>
                               <div id="ac1" className="panel-collapse ">
@@ -184,7 +185,7 @@ export const CourseModule = ({
                                       </div>
                                       <div className="item info">
                                         <span>Duration: 1 hour</span>
-                                        <a href="#">Preview</a>
+                                        <Link to="#">Preview</Link>
                                       </div>
                                     </li>
                                   </ul>
@@ -293,90 +294,90 @@ export const CourseModule = ({
             <div className="top-cat-items text-light inc-bg-color">
               <div className="col-md-3 col-sm-6 equal-height">
                 <div className="item mariner">
-                  <a href="#one-on-one" className="popup-with-form">
+                  <Link to="#one-on-one" className="popup-with-form">
                     <i className="flaticon-feature" />
                     <div className="info">
                       <h4>One On One Interaction</h4>
                       <span />
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className="col-md-3 col-sm-6 equal-height">
                 <div className="item java">
-                  <a href="#real-time" className="popup-with-form">
+                  <Link to="#real-time" className="popup-with-form">
                     <i className="flaticon-interaction" />
                     <div className="info">
                       <h4>Real Time Projects</h4>
                       <span />
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className="col-md-3 col-sm-6 equal-height">
                 <div className="item malachite">
-                  <a href="#lms-access" className="popup-with-form">
+                  <Link to="#lms-access" className="popup-with-form">
                     <i className="flaticon-conveyor" />
                     <div className="info">
                       <h4>LMS Access For All Courses</h4>
                       <span />
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className="col-md-3 col-sm-6 equal-height">
                 <div className="item emerald">
-                  <a href="#live-projects" className="popup-with-form">
+                  <Link to="#live-projects" className="popup-with-form">
                     <i className="flaticon-potential" />
                     <div className="info">
                       <h4>Live Projects</h4>
                       <span />
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className="col-md-3 col-sm-6 equal-height">
                 <div className="item casablanca">
-                  <a href="#scholarships" className="popup-with-form">
+                  <Link to="#scholarships" className="popup-with-form">
                     <i className="flaticon-education" />
                     <div className="info">
                       <h4>Scholarships</h4>
                       <span />
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className="col-md-3 col-sm-6 equal-height">
                 <div className="item brilliantrose">
-                  <a href="#updated-curriculam" className="popup-with-form">
+                  <Link to="#updated-curriculam" className="popup-with-form">
                     <i className="flaticon-print" />
                     <div className="info">
                       <h4>Updated Curriculum </h4>
                       <span />
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className="col-md-3 col-sm-6 equal-height">
                 <div className="item cinnabar">
-                  <a href="#certified-mentors" className="popup-with-form">
+                  <Link to="#certified-mentors" className="popup-with-form">
                     <i className="flaticon-translate" />
                     <div className="info">
                       <h4>Certified Mentors</h4>
                       <span />
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className="col-md-3 col-sm-6 equal-height">
                 <div className="item plum">
-                  <a href="#paid-internships" className="popup-with-form">
+                  <Link to="#paid-internships" className="popup-with-form">
                     <i className="flaticon-firewall" />
                     <div className="info">
                       <h4>Paid Internships</h4>
                       <span />
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -460,29 +461,29 @@ export const CourseModule = ({
                 <div className="trending-courses-items">
                   <div className="item">
                     <h4>
-                      <a href="/cpp-language">C++ Programming</a>
+                      <Link to="/cpp-language">C++ Programming</Link>
                     </h4>
                   </div>
                   <div className="item">
                     <h4>
-                      <a href="/data-science">Data Science</a>
+                      <Link to="/data-science">Data Science</Link>
                     </h4>
                   </div>
                   <div className="item">
                     <h4>
-                      <a href="/cloud-computing">Cloud Computing</a>
+                      <Link to="/cloud-computing">Cloud Computing</Link>
                     </h4>
                   </div>
                   <div className="item">
                     <h4>
-                      <a href="/full-stack-development">
+                      <Link to="/full-stack-development">
                         full Stack Development
-                      </a>
+                      </Link>
                     </h4>
                   </div>
-                  <a href="/industrial-live-training" className="more">
+                  <Link to="/industrial-live-training" className="more">
                     All Courses <i className="fas fa-angle-double-right" />
-                  </a>
+                  </Link>
                 </div>
               </div>
               {/* End Latest Posts */}
@@ -596,29 +597,29 @@ export const CourseModule = ({
             <div className="col-md-8 clients">
               <div className="clients-items owl-carousel owl-theme text-center">
                 <div className="single-item">
-                  <a href="#">
+                  <Link to="#">
                     <img src="assets/img/Dell150,80.png" alt="Clients" />
-                  </a>
+                  </Link>
                 </div>
                 <div className="single-item">
-                  <a href="#">
+                  <Link to="#">
                     <img src="assets/img/Ibm150,80.png" alt="Clients" />
-                  </a>
+                  </Link>
                 </div>
                 <div className="single-item">
-                  <a href="#">
+                  <Link to="#">
                     <img src="assets/img/microsoft150,80.png" alt="Clients" />
-                  </a>
+                  </Link>
                 </div>
                 <div className="single-item">
-                  <a href="#">
+                  <Link to="#">
                     <img src="assets/img/Capgeminie150,80.png" alt="Clients" />
-                  </a>
+                  </Link>
                 </div>
                 <div className="single-item">
-                  <a href="#">
+                  <Link to="#">
                     <img src="assets/img/google150,80.png" alt="Clients" />
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -650,13 +651,13 @@ export const CourseModule = ({
                         onClick={() => setHandleFaqState(1)}
                       >
                         <h4 className="panel-title">
-                          <a
+                          <Link
                             data-toggle="collapse"
                             data-parent="#accordion"
-                            href="#ac1"
+                            to="#ac1"
                           >
                             What is the medium of instruction?
-                          </a>
+                          </Link>
                         </h4>
                       </div>
                       <div
@@ -681,13 +682,13 @@ export const CourseModule = ({
                     >
                       <div className="panel-heading">
                         <h4 className="panel-title">
-                          <a
+                          <Link
                             data-toggle="collapse"
                             data-parent="#accordion"
-                            href="#ac2"
+                            to="#ac2"
                           >
                             Do I get a certificate at the end the course?
-                          </a>
+                          </Link>
                         </h4>
                       </div>
                       <div
@@ -713,13 +714,13 @@ export const CourseModule = ({
                     >
                       <div className="panel-heading">
                         <h4 className="panel-title">
-                          <a
+                          <Link
                             data-toggle="collapse"
                             data-parent="#accordion"
-                            href="#ac3"
+                            to="#ac3"
                           >
                             What if i have a question or any doubts?
-                          </a>
+                          </Link>
                         </h4>
                       </div>
                       <div
@@ -744,13 +745,13 @@ export const CourseModule = ({
                     >
                       <div className="panel-heading">
                         <h4 className="panel-title">
-                          <a
+                          <Link
                             data-toggle="collapse"
                             data-parent="#accordion"
-                            href="#ac4"
+                            to="#ac4"
                           >
                             What is the refund policy?
-                          </a>
+                          </Link>
                         </h4>
                       </div>
                       <div
@@ -764,7 +765,7 @@ export const CourseModule = ({
                         <div className="panel-body">
                           <p>
                             You can check our{" "}
-                            <a href="/refund-policy">refund policy</a> here.
+                            <Link to="/refund-policy">refund policy</Link> here.
                           </p>
                         </div>
                       </div>

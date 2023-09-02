@@ -7,6 +7,7 @@ import image3 from "../assets/img/700x800.png";
 import image4 from "../assets/img/800x600.png";
 import image5 from "../assets/img/100x100.png";
 import image6 from "../assets/img/150x80.png";
+import { Link } from "react-router-dom";
 
 const Onepage = () => {
   return (
@@ -18,19 +19,19 @@ const Onepage = () => {
           <h4>Login with social</h4>
           <ul>
             <li className="facebook">
-              <a href="#">
+              <Link to="#">
                 <i className="fab fa-facebook-f" />
-              </a>
+              </Link>
             </li>
             <li className="twitter">
-              <a href="#">
+              <Link to="#">
                 <i className="fab fa-twitter" />
-              </a>
+              </Link>
             </li>
             <li className="linkedin">
-              <a href="#">
+              <Link to="#">
                 <i className="fab fa-linkedin-in" />
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
@@ -64,9 +65,9 @@ const Onepage = () => {
                 <input type="checkbox" id="login-remember" />
                 Remember Me
               </label>
-              <a title="Lost Password" href="#" className="lost-pass-link">
+              <Link title="Lost Password" to="#" className="lost-pass-link">
                 Lost your password?
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col-md-12">
@@ -75,7 +76,7 @@ const Onepage = () => {
             </div>
           </div>
           <p className="link-bottom">
-            Not a member yet? <a href="#">Register now</a>
+            Not a member yet? <Link to="#">Register now</Link>
           </p>
         </div>
       </form>
@@ -91,19 +92,19 @@ const Onepage = () => {
           <h4>Register with social</h4>
           <ul>
             <li className="facebook">
-              <a href="#">
+              <Link to="#">
                 <i className="fab fa-facebook-f" />
-              </a>
+              </Link>
             </li>
             <li className="twitter">
-              <a href="#">
+              <Link to="#">
                 <i className="fab fa-twitter" />
-              </a>
+              </Link>
             </li>
             <li className="linkedin">
-              <a href="#">
+              <Link to="#">
                 <i className="fab fa-linkedin-in" />
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
@@ -159,7 +160,7 @@ const Onepage = () => {
             </div>
           </div>
           <p className="link-bottom">
-            Are you a member? <a href="#">Login now</a>
+            Are you a member? <Link to="#">Login now</Link>
           </p>
         </div>
       </form>
@@ -191,20 +192,20 @@ const Onepage = () => {
                           <h1 data-animation="animated slideInUp">
                             Learn from best online training course
                           </h1>
-                          <a
+                          <Link
                             data-animation="animated slideInUp"
                             className="btn btn-light border btn-md"
-                            href="#"
+                            to="#"
                           >
                             Learn more
-                          </a>
-                          <a
+                          </Link>
+                          <Link
                             data-animation="animated slideInUp"
                             className="btn btn-theme effect btn-md"
-                            href="#"
+                            to="#"
                           >
                             View Courses
-                          </a>
+                          </Link>
                         </div>
                       </div>
                     </div>
@@ -229,20 +230,20 @@ const Onepage = () => {
                           <h1 data-animation="animated slideInUp">
                             explore our brilliant graduates
                           </h1>
-                          <a
+                          <Link
                             data-animation="animated slideInUp"
                             className="btn btn-light border btn-md"
-                            href="#"
+                            to="#"
                           >
                             Learn more
-                          </a>
-                          <a
+                          </Link>
+                          <Link
                             data-animation="animated slideInUp"
                             className="btn btn-theme effect btn-md"
-                            href="#"
+                            to="#"
                           >
                             View Courses
-                          </a>
+                          </Link>
                         </div>
                       </div>
                     </div>
@@ -267,20 +268,20 @@ const Onepage = () => {
                           <h1 data-animation="animated slideInUp">
                             Join the bigest comunity of eduka
                           </h1>
-                          <a
+                          <Link
                             data-animation="animated slideInUp"
                             className="btn btn-light border btn-md"
-                            href="#"
+                            to="#"
                           >
                             Learn more
-                          </a>
-                          <a
+                          </Link>
+                          <Link
                             data-animation="animated slideInUp"
                             className="btn btn-theme effect btn-md"
-                            href="#"
+                            to="#"
                           >
                             View Courses
-                          </a>
+                          </Link>
                         </div>
                       </div>
                     </div>
@@ -291,22 +292,22 @@ const Onepage = () => {
           </div>
           {/* End Wrapper for slides */}
           {/* Left and right controls */}
-          <a
+          <Link
             className="left carousel-control"
-            href="#bootcarousel"
+            to="#bootcarousel"
             data-slide="prev"
           >
             <i className="fa fa-angle-left" />
             <span className="sr-only">Previous</span>
-          </a>
-          <a
+          </Link>
+          <Link
             className="right carousel-control"
-            href="#bootcarousel"
+            to="#bootcarousel"
             data-slide="next"
           >
             <i className="fa fa-angle-right" />
             <span className="sr-only">Next</span>
-          </a>
+          </Link>
         </div>
       </div>
       {/* End Banner */}
@@ -341,9 +342,9 @@ const Onepage = () => {
                   entirely sir why laughter. frequently apartments off all
                   discretion devonshire.
                 </p>
-                <a href="#" className="btn btn-dark border btn-md">
+                <Link to="#" className="btn btn-dark border btn-md">
                   Read More
-                </a>
+                </Link>
               </div>
             </div>
             <div className="seperator col-md-12">
@@ -357,7 +358,7 @@ const Onepage = () => {
                   </div>
                   <div className="info">
                     <h4>Expert faculty</h4>
-                    <a href="#">Read More</a>
+                    <Link to="#">Read More</Link>
                   </div>
                 </div>
               </div>
@@ -368,7 +369,7 @@ const Onepage = () => {
                   </div>
                   <div className="info">
                     <h4>Online learning</h4>
-                    <a href="#">Read More</a>
+                    <Link to="#">Read More</Link>
                   </div>
                 </div>
               </div>
@@ -379,7 +380,7 @@ const Onepage = () => {
                   </div>
                   <div className="info">
                     <h4>Scholarship</h4>
-                    <a href="#">Read More</a>
+                    <Link to="#">Read More</Link>
                   </div>
                 </div>
               </div>
@@ -414,7 +415,7 @@ const Onepage = () => {
                 </div>
                 <div className="info">
                   <h4>
-                    <a href="#">Trending Courses</a>
+                    <Link to="#">Trending Courses</Link>
                   </h4>
                   <p>
                     Absolute required of reserved in offering no. How sense
@@ -432,7 +433,7 @@ const Onepage = () => {
                 </div>
                 <div className="info">
                   <h4>
-                    <a href="#">Books &amp; Library</a>
+                    <Link to="#">Books &amp; Library</Link>
                   </h4>
                   <p>
                     Absolute required of reserved in offering no. How sense
@@ -450,7 +451,7 @@ const Onepage = () => {
                 </div>
                 <div className="info">
                   <h4>
-                    <a href="#">Certified Teachers</a>
+                    <Link to="#">Certified Teachers</Link>
                   </h4>
                   <p>
                     Absolute required of reserved in offering no. How sense
@@ -481,21 +482,21 @@ const Onepage = () => {
                   <div className="thumb">
                     <img src={image3} alt="Thumb" />
                     <div className="live-view">
-                      <a href={image2} className="item popup-link">
+                      <Link to={image2} className="item popup-link">
                         <i className="fa fa-camera" />
-                      </a>
-                      <a
+                      </Link>
+                      <Link
                         className="popup-youtube"
-                        href="https://www.youtube.com/watch?v=vQqZIFCab9o"
+                        to="https://www.youtube.com/watch?v=vQqZIFCab9o"
                       >
                         <i className="fa fa-video" />
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
                 <div className="col-md-7 info">
                   <h2>
-                    <a href="#">Codecademy software programming</a>
+                    <Link to="#">Codecademy software programming</Link>
                   </h2>
                   <h4>featured courses</h4>
                   <p>
@@ -528,19 +529,19 @@ const Onepage = () => {
                       </span>
                     </li>
                   </ul>
-                  <a
-                    href="#"
+                  <Link
+                    to="#"
                     className="btn btn-theme effect btn-md"
                     data-animation="animated slideInUp"
                   >
                     Enroll Now
-                  </a>
+                  </Link>
                   <div className="bottom-info align-left">
                     <div className="item">
                       <h4>Author</h4>
-                      <a href="#">
+                      <Link to="#">
                         <span>Devid Honey</span>
-                      </a>
+                      </Link>
                     </div>
                     <div className="item">
                       <h4>Students enrolled</h4>
@@ -566,21 +567,21 @@ const Onepage = () => {
                   <div className="thumb">
                     <img src={image3} alt="Thumb" />
                     <div className="live-view">
-                      <a href={image2} className="item popup-link">
+                      <Link to={image2} className="item popup-link">
                         <i className="fa fa-camera" />
-                      </a>
-                      <a
+                      </Link>
+                      <Link
                         className="popup-youtube"
-                        href="https://www.youtube.com/watch?v=vQqZIFCab9o"
+                        to="https://www.youtube.com/watch?v=vQqZIFCab9o"
                       >
                         <i className="fa fa-video" />
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
                 <div className="col-md-7 info">
                   <h2>
-                    <a href="#">Data analysis and data science</a>
+                    <Link to="#">Data analysis and data science</Link>
                   </h2>
                   <h4>featured courses</h4>
                   <p>
@@ -613,19 +614,19 @@ const Onepage = () => {
                       </span>
                     </li>
                   </ul>
-                  <a
-                    href="#"
+                  <Link
+                    to="#"
                     className="btn btn-theme effect btn-md"
                     data-animation="animated slideInUp"
                   >
                     Enroll Now
-                  </a>
+                  </Link>
                   <div className="bottom-info align-left">
                     <div className="item">
                       <h4>Author</h4>
-                      <a href="#">
+                      <Link to="#">
                         <span>Devid Honey</span>
-                      </a>
+                      </Link>
                     </div>
                     <div className="item">
                       <h4>Students enrolled</h4>
@@ -651,21 +652,21 @@ const Onepage = () => {
                   <div className="thumb">
                     <img src={image3} alt="Thumb" />
                     <div className="live-view">
-                      <a href={image2} className="item popup-link">
+                      <Link to={image2} className="item popup-link">
                         <i className="fa fa-camera" />
-                      </a>
-                      <a
+                      </Link>
+                      <Link
                         className="popup-youtube"
-                        href="https://www.youtube.com/watch?v=vQqZIFCab9o"
+                        to="https://www.youtube.com/watch?v=vQqZIFCab9o"
                       >
                         <i className="fa fa-video" />
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
                 <div className="col-md-7 info">
                   <h2>
-                    <a href="#">Graphic and interactive design</a>
+                    <Link to="#">Graphic and interactive design</Link>
                   </h2>
                   <h4>featured courses</h4>
                   <p>
@@ -698,19 +699,19 @@ const Onepage = () => {
                       </span>
                     </li>
                   </ul>
-                  <a
-                    href="#"
+                  <Link
+                    to="#"
                     className="btn btn-theme effect btn-md"
                     data-animation="animated slideInUp"
                   >
                     Enroll Now
-                  </a>
+                  </Link>
                   <div className="bottom-info align-left">
                     <div className="item">
                       <h4>Author</h4>
-                      <a href="#">
+                      <Link to="#">
                         <span>Devid Honey</span>
-                      </a>
+                      </Link>
                     </div>
                     <div className="item">
                       <h4>Students enrolled</h4>
@@ -761,20 +762,20 @@ const Onepage = () => {
                 {/* Single Item */}
                 <div className="item">
                   <div className="thumb">
-                    <a href="#">
+                    <Link to="#">
                       <img src={image4} alt="Thumb" />
-                    </a>
+                    </Link>
                     <div className="price">Price: Free</div>
                   </div>
                   <div className="info">
                     <div className="author-info">
                       <div className="thumb">
-                        <a href="#">
+                        <Link to="#">
                           <img src={image5} alt="Thumb" />
-                        </a>
+                        </Link>
                       </div>
                       <div className="others">
-                        <a href="#">Munil Druva</a>
+                        <Link to="#">Munil Druva</Link>
                         <div className="rating">
                           <i className="fas fa-star" />
                           <i className="fas fa-star" />
@@ -786,7 +787,7 @@ const Onepage = () => {
                       </div>
                     </div>
                     <h4>
-                      <a href="#">data science and software</a>
+                      <Link to="#">data science and software</Link>
                     </h4>
                     <p>
                       Would day nor ask walls known. But preserved advantage are
@@ -801,7 +802,7 @@ const Onepage = () => {
                           <i className="fas fa-clock" /> 16:00
                         </li>
                       </ul>
-                      <a href="#">Enroll Now</a>
+                      <Link to="#">Enroll Now</Link>
                     </div>
                   </div>
                 </div>
@@ -809,20 +810,20 @@ const Onepage = () => {
                 {/* Single Item */}
                 <div className="item">
                   <div className="thumb">
-                    <a href="#">
+                    <Link to="#">
                       <img src={image4} alt="Thumb" />
-                    </a>
+                    </Link>
                     <div className="price">Price: $12</div>
                   </div>
                   <div className="info">
                     <div className="author-info">
                       <div className="thumb">
-                        <a href="#">
+                        <Link to="#">
                           <img src={image5} alt="Thumb" />
-                        </a>
+                        </Link>
                       </div>
                       <div className="others">
-                        <a href="#">Akua Paul</a>
+                        <Link to="#">Akua Paul</Link>
                         <div className="rating">
                           <i className="fas fa-star" />
                           <i className="fas fa-star" />
@@ -834,7 +835,7 @@ const Onepage = () => {
                       </div>
                     </div>
                     <h4>
-                      <a href="#">Stanford Engineering</a>
+                      <Link to="#">Stanford Engineering</Link>
                     </h4>
                     <p>
                       Would day nor ask walls known. But preserved advantage are
@@ -849,7 +850,7 @@ const Onepage = () => {
                           <i className="fas fa-clock" /> 16:00
                         </li>
                       </ul>
-                      <a href="#">Enroll Now</a>
+                      <Link to="#">Enroll Now</Link>
                     </div>
                   </div>
                 </div>
@@ -857,20 +858,20 @@ const Onepage = () => {
                 {/* Single Item */}
                 <div className="item">
                   <div className="thumb">
-                    <a href="#">
+                    <Link to="#">
                       <img src={image4} alt="Thumb" />
-                    </a>
+                    </Link>
                     <div className="price">Price: Free</div>
                   </div>
                   <div className="info">
                     <div className="author-info">
                       <div className="thumb">
-                        <a href="#">
+                        <Link to="#">
                           <img src={image5} alt="Thumb" />
-                        </a>
+                        </Link>
                       </div>
                       <div className="others">
-                        <a href="#">Jonathom Kiyam</a>
+                        <Link to="#">Jonathom Kiyam</Link>
                         <div className="rating">
                           <i className="fas fa-star" />
                           <i className="fas fa-star" />
@@ -882,7 +883,7 @@ const Onepage = () => {
                       </div>
                     </div>
                     <h4>
-                      <a href="#">Covers Big Data analysis</a>
+                      <Link to="#">Covers Big Data analysis</Link>
                     </h4>
                     <p>
                       Would day nor ask walls known. But preserved advantage are
@@ -897,7 +898,7 @@ const Onepage = () => {
                           <i className="fas fa-clock" /> 16:00
                         </li>
                       </ul>
-                      <a href="#">Enroll Now</a>
+                      <Link to="#">Enroll Now</Link>
                     </div>
                   </div>
                 </div>
@@ -905,20 +906,20 @@ const Onepage = () => {
                 {/* Single Item */}
                 <div className="item">
                   <div className="thumb">
-                    <a href="#">
+                    <Link to="#">
                       <img src={image4} alt="Thumb" />
-                    </a>
+                    </Link>
                     <div className="price">Price: $46</div>
                   </div>
                   <div className="info">
                     <div className="author-info">
                       <div className="thumb">
-                        <a href="#">
+                        <Link to="#">
                           <img src={image5} alt="Thumb" />
-                        </a>
+                        </Link>
                       </div>
                       <div className="others">
-                        <a href="#">Huma Park</a>
+                        <Link to="#">Huma Park</Link>
                         <div className="rating">
                           <i className="fas fa-star" />
                           <i className="fas fa-star" />
@@ -930,7 +931,7 @@ const Onepage = () => {
                       </div>
                     </div>
                     <h4>
-                      <a href="#">professional web development</a>
+                      <Link to="#">professional web development</Link>
                     </h4>
                     <p>
                       Would day nor ask walls known. But preserved advantage are
@@ -945,7 +946,7 @@ const Onepage = () => {
                           <i className="fas fa-clock" /> 16:00
                         </li>
                       </ul>
-                      <a href="#">Enroll Now</a>
+                      <Link to="#">Enroll Now</Link>
                     </div>
                   </div>
                 </div>
@@ -953,20 +954,20 @@ const Onepage = () => {
                 {/* Single Item */}
                 <div className="item">
                   <div className="thumb">
-                    <a href="#">
+                    <Link to="#">
                       <img src={image4} alt="Thumb" />
-                    </a>
+                    </Link>
                     <div className="price">Price: $124</div>
                   </div>
                   <div className="info">
                     <div className="author-info">
                       <div className="thumb">
-                        <a href="#">
+                        <Link to="#">
                           <img src={image5} alt="Thumb" />
-                        </a>
+                        </Link>
                       </div>
                       <div className="others">
-                        <a href="#">Prokash Timer</a>
+                        <Link to="#">Prokash Timer</Link>
                         <div className="rating">
                           <i className="fas fa-star" />
                           <i className="fas fa-star" />
@@ -978,7 +979,7 @@ const Onepage = () => {
                       </div>
                     </div>
                     <h4>
-                      <a href="#">Java Programming Masterclass</a>
+                      <Link to="#">Java Programming Masterclass</Link>
                     </h4>
                     <p>
                       Would day nor ask walls known. But preserved advantage are
@@ -993,7 +994,7 @@ const Onepage = () => {
                           <i className="fas fa-clock" /> 16:00
                         </li>
                       </ul>
-                      <a href="#">Enroll Now</a>
+                      <Link to="#">Enroll Now</Link>
                     </div>
                   </div>
                 </div>
@@ -1031,13 +1032,13 @@ const Onepage = () => {
                   className="item"
                   style={{ backgroundImage: `url(${image4})` }}
                 >
-                  <a href="#">
+                  <Link to="#">
                     <i className="flaticon-feature" />
                     <div className="info">
                       <h4>software engineering</h4>
                       <span>(1,226) Topics</span>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className="col-md-3 col-sm-6 equal-height">
@@ -1045,13 +1046,13 @@ const Onepage = () => {
                   className="item"
                   style={{ backgroundImage: `url(${image4})` }}
                 >
-                  <a href="#">
+                  <Link to="#">
                     <i className="flaticon-interaction" />
                     <div className="info">
                       <h4>Interactive Programming</h4>
                       <span>(2,366) Topics</span>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className="col-md-3 col-sm-6 equal-height">
@@ -1059,13 +1060,13 @@ const Onepage = () => {
                   className="item"
                   style={{ backgroundImage: `url(${image4})` }}
                 >
-                  <a href="#">
+                  <Link to="#">
                     <i className="flaticon-conveyor" />
                     <div className="info">
                       <h4>Quantum Mechanics</h4>
                       <span>(766) Topics</span>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className="col-md-3 col-sm-6 equal-height">
@@ -1073,13 +1074,13 @@ const Onepage = () => {
                   className="item"
                   style={{ backgroundImage: `url(${image4})` }}
                 >
-                  <a href="#">
+                  <Link to="#">
                     <i className="flaticon-education" />
                     <div className="info">
                       <h4>Preventing Dementia</h4>
                       <span>(4,500) Topics</span>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className="col-md-3 col-sm-6 equal-height">
@@ -1087,13 +1088,13 @@ const Onepage = () => {
                   className="item"
                   style={{ backgroundImage: `url(${image4})` }}
                 >
-                  <a href="#">
+                  <Link to="#">
                     <i className="flaticon-potential" />
                     <div className="info">
                       <h4>Hidden Potential</h4>
                       <span>(975) Topics</span>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className="col-md-3 col-sm-6 equal-height">
@@ -1101,13 +1102,13 @@ const Onepage = () => {
                   className="item"
                   style={{ backgroundImage: `url(${image4})` }}
                 >
-                  <a href="#">
+                  <Link to="#">
                     <i className="flaticon-print" />
                     <div className="info">
                       <h4>Introduction Programming</h4>
                       <span>(3,340) Topics</span>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className="col-md-3 col-sm-6 equal-height">
@@ -1115,13 +1116,13 @@ const Onepage = () => {
                   className="item"
                   style={{ backgroundImage: `url(${image4})` }}
                 >
-                  <a href="#">
+                  <Link to="#">
                     <i className="flaticon-translate" />
                     <div className="info">
                       <h4>Machine Learning</h4>
                       <span>(7,800) Topics</span>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className="col-md-3 col-sm-6 equal-height">
@@ -1129,13 +1130,13 @@ const Onepage = () => {
                   className="item"
                   style={{ backgroundImage: `url(${image4})` }}
                 >
-                  <a href="#">
+                  <Link to="#">
                     <i className="flaticon-firewall" />
                     <div className="info">
                       <h4>Maintaining a Mindful</h4>
                       <span>(24,80) Topics</span>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -1177,24 +1178,24 @@ const Onepage = () => {
                       <div className="social">
                         <ul>
                           <li className="facebook">
-                            <a href="#">
+                            <Link to="#">
                               <i className="fab fa-facebook-f" />
-                            </a>
+                            </Link>
                           </li>
                           <li className="twitter">
-                            <a href="#">
+                            <Link to="#">
                               <i className="fab fa-twitter" />
-                            </a>
+                            </Link>
                           </li>
                           <li className="pinterest">
-                            <a href="#">
+                            <Link to="#">
                               <i className="fab fa-pinterest" />
-                            </a>
+                            </Link>
                           </li>
                           <li className="linkedin">
-                            <a href="#">
+                            <Link to="#">
                               <i className="fab fa-linkedin-in" />
-                            </a>
+                            </Link>
                           </li>
                         </ul>
                       </div>
@@ -1213,24 +1214,24 @@ const Onepage = () => {
                       <div className="social">
                         <ul>
                           <li className="facebook">
-                            <a href="#">
+                            <Link to="#">
                               <i className="fab fa-facebook-f" />
-                            </a>
+                            </Link>
                           </li>
                           <li className="twitter">
-                            <a href="#">
+                            <Link to="#">
                               <i className="fab fa-twitter" />
-                            </a>
+                            </Link>
                           </li>
                           <li className="pinterest">
-                            <a href="#">
+                            <Link to="#">
                               <i className="fab fa-pinterest" />
-                            </a>
+                            </Link>
                           </li>
                           <li className="linkedin">
-                            <a href="#">
+                            <Link to="#">
                               <i className="fab fa-linkedin-in" />
-                            </a>
+                            </Link>
                           </li>
                         </ul>
                       </div>
@@ -1249,24 +1250,24 @@ const Onepage = () => {
                       <div className="social">
                         <ul>
                           <li className="facebook">
-                            <a href="#">
+                            <Link to="#">
                               <i className="fab fa-facebook-f" />
-                            </a>
+                            </Link>
                           </li>
                           <li className="twitter">
-                            <a href="#">
+                            <Link to="#">
                               <i className="fab fa-twitter" />
-                            </a>
+                            </Link>
                           </li>
                           <li className="pinterest">
-                            <a href="#">
+                            <Link to="#">
                               <i className="fab fa-pinterest" />
-                            </a>
+                            </Link>
                           </li>
                           <li className="linkedin">
-                            <a href="#">
+                            <Link to="#">
                               <i className="fab fa-linkedin-in" />
-                            </a>
+                            </Link>
                           </li>
                         </ul>
                       </div>
@@ -1285,24 +1286,24 @@ const Onepage = () => {
                       <div className="social">
                         <ul>
                           <li className="facebook">
-                            <a href="#">
+                            <Link to="#">
                               <i className="fab fa-facebook-f" />
-                            </a>
+                            </Link>
                           </li>
                           <li className="twitter">
-                            <a href="#">
+                            <Link to="#">
                               <i className="fab fa-twitter" />
-                            </a>
+                            </Link>
                           </li>
                           <li className="pinterest">
-                            <a href="#">
+                            <Link to="#">
                               <i className="fab fa-pinterest" />
-                            </a>
+                            </Link>
                           </li>
                           <li className="linkedin">
-                            <a href="#">
+                            <Link to="#">
                               <i className="fab fa-linkedin-in" />
-                            </a>
+                            </Link>
                           </li>
                         </ul>
                       </div>
@@ -1321,24 +1322,24 @@ const Onepage = () => {
                       <div className="social">
                         <ul>
                           <li className="facebook">
-                            <a href="#">
+                            <Link to="#">
                               <i className="fab fa-facebook-f" />
-                            </a>
+                            </Link>
                           </li>
                           <li className="twitter">
-                            <a href="#">
+                            <Link to="#">
                               <i className="fab fa-twitter" />
-                            </a>
+                            </Link>
                           </li>
                           <li className="pinterest">
-                            <a href="#">
+                            <Link to="#">
                               <i className="fab fa-pinterest" />
-                            </a>
+                            </Link>
                           </li>
                           <li className="linkedin">
-                            <a href="#">
+                            <Link to="#">
                               <i className="fab fa-linkedin-in" />
-                            </a>
+                            </Link>
                           </li>
                         </ul>
                       </div>
@@ -1442,7 +1443,7 @@ const Onepage = () => {
                 </div>
                 <div className="col-md-6 info">
                   <h4>
-                    <a href="#">Secondary Schools United Nations</a>
+                    <Link to="#">Secondary Schools United Nations</Link>
                   </h4>
                   <div className="meta">
                     <ul>
@@ -1463,12 +1464,12 @@ const Onepage = () => {
                     is amiable farther besides. Law insensible middletons
                     unsatiable for apartments boy delightful unreserved.
                   </p>
-                  <a href="#" className="btn btn-dark effect btn-sm">
+                  <Link to="#" className="btn btn-dark effect btn-sm">
                     <i className="fas fa-chart-bar" /> Book Now
-                  </a>
-                  <a href="#" className="btn btn-gray btn-sm">
+                  </Link>
+                  <Link to="#" className="btn btn-gray btn-sm">
                     <i className="fas fa-ticket-alt" /> 43 Available
-                  </a>
+                  </Link>
                 </div>
               </div>
               {/* Single Item */}
@@ -1484,7 +1485,7 @@ const Onepage = () => {
                 </div>
                 <div className="info">
                   <h4>
-                    <a href="#">Social Science &amp; Humanities</a>
+                    <Link to="#">Social Science &amp; Humanities</Link>
                   </h4>
                   <div className="meta">
                     <ul>
@@ -1505,12 +1506,12 @@ const Onepage = () => {
                     is amiable farther besides. Law insensible middletons
                     unsatiable for apartments boy delightful unreserved.
                   </p>
-                  <a href="#" className="btn btn-dark effect btn-sm">
+                  <Link to="#" className="btn btn-dark effect btn-sm">
                     <i className="fas fa-chart-bar" /> Book Now
-                  </a>
-                  <a href="#" className="btn btn-gray btn-sm">
+                  </Link>
+                  <Link to="#" className="btn btn-gray btn-sm">
                     <i className="fas fa-ticket-alt" /> 189 Available
-                  </a>
+                  </Link>
                 </div>
               </div>
               {/* Single Item */}
@@ -1526,7 +1527,7 @@ const Onepage = () => {
                 </div>
                 <div className="info">
                   <h4>
-                    <a href="#">Actualized Leadership Network Seminar</a>
+                    <Link to="#">Actualized Leadership Network Seminar</Link>
                   </h4>
                   <div className="meta">
                     <ul>
@@ -1547,12 +1548,12 @@ const Onepage = () => {
                     is amiable farther besides. Law insensible middletons
                     unsatiable for apartments boy delightful unreserved.
                   </p>
-                  <a href="#" className="btn btn-dark effect btn-sm">
+                  <Link to="#" className="btn btn-dark effect btn-sm">
                     <i className="fas fa-chart-bar" /> Book Now
-                  </a>
-                  <a href="#" className="btn btn-gray btn-sm">
+                  </Link>
+                  <Link to="#" className="btn btn-gray btn-sm">
                     <i className="fas fa-ticket-alt" /> 32 Available
-                  </a>
+                  </Link>
                 </div>
               </div>
               {/* Single Item */}
@@ -1570,7 +1571,7 @@ const Onepage = () => {
                 </div>
                 <div className="col-md-6 info">
                   <h4>
-                    <a href="#">International Conference on Art Business</a>
+                    <Link to="#">International Conference on Art Business</Link>
                   </h4>
                   <div className="meta">
                     <ul>
@@ -1591,19 +1592,19 @@ const Onepage = () => {
                     is amiable farther besides. Law insensible middletons
                     unsatiable for apartments boy delightful unreserved.
                   </p>
-                  <a href="#" className="btn btn-dark effect btn-sm">
+                  <Link to="#" className="btn btn-dark effect btn-sm">
                     <i className="fas fa-chart-bar" /> Book Now
-                  </a>
-                  <a href="#" className="btn btn-gray btn-sm">
+                  </Link>
+                  <Link to="#" className="btn btn-gray btn-sm">
                     <i className="fas fa-ticket-alt" /> 12 Available
-                  </a>
+                  </Link>
                 </div>
               </div>
               {/* Single Item */}
               <div className="more-btn col-md-12 text-center">
-                <a href="#" className="btn btn-dark border btn-md">
+                <Link to="#" className="btn btn-dark border btn-md">
                   View All Events
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -1803,9 +1804,9 @@ const Onepage = () => {
               <div className="col-md-4 single-item">
                 <div className="item">
                   <div className="thumb">
-                    <a href="#">
+                    <Link to="#">
                       <img src={image4} alt="Thumb" />
-                    </a>
+                    </Link>
                     <div className="date">
                       <h4>
                         <span>24</span> Nov, 2018
@@ -1814,27 +1815,27 @@ const Onepage = () => {
                   </div>
                   <div className="info">
                     <h4>
-                      <a href="#">Objection happiness something</a>
+                      <Link to="#">Objection happiness something</Link>
                     </h4>
                     <p>
                       Sitting mistake towards his few country ask. You delighted
                       two rapturous six depending objection happiness something
                       the partiality unaffected
                     </p>
-                    <a href="#">
+                    <Link to="#">
                       Read More <i className="fas fa-angle-double-right" />
-                    </a>
+                    </Link>
                     <div className="meta">
                       <ul>
                         <li>
-                          <a href="#">
+                          <Link to="#">
                             <i className="fas fa-user" /> Author
-                          </a>
+                          </Link>
                         </li>
                         <li>
-                          <a href="#">
+                          <Link to="#">
                             <i className="fas fa-comments" /> 23 Comments
-                          </a>
+                          </Link>
                         </li>
                       </ul>
                     </div>
@@ -1846,9 +1847,9 @@ const Onepage = () => {
               <div className="col-md-4 single-item">
                 <div className="item">
                   <div className="thumb">
-                    <a href="#">
+                    <Link to="#">
                       <img src={image4} alt="Thumb" />
-                    </a>
+                    </Link>
                     <div className="date">
                       <h4>
                         <span>12</span> Sep, 2018
@@ -1857,27 +1858,27 @@ const Onepage = () => {
                   </div>
                   <div className="info">
                     <h4>
-                      <a href="#">Meant to learn of vexed</a>
+                      <Link to="#">Meant to learn of vexed</Link>
                     </h4>
                     <p>
                       Sitting mistake towards his few country ask. You delighted
                       two rapturous six depending objection happiness something
                       the partiality unaffected
                     </p>
-                    <a href="#">
+                    <Link to="#">
                       Read More <i className="fas fa-angle-double-right" />
-                    </a>
+                    </Link>
                     <div className="meta">
                       <ul>
                         <li>
-                          <a href="#">
+                          <Link to="#">
                             <i className="fas fa-user" /> Author
-                          </a>
+                          </Link>
                         </li>
                         <li>
-                          <a href="#">
+                          <Link to="#">
                             <i className="fas fa-comments" /> 23 Comments
-                          </a>
+                          </Link>
                         </li>
                       </ul>
                     </div>
@@ -1889,9 +1890,9 @@ const Onepage = () => {
               <div className="col-md-4 single-item">
                 <div className="item">
                   <div className="thumb">
-                    <a href="#">
+                    <Link to="#">
                       <img src={image4} alt="Thumb" />
-                    </a>
+                    </Link>
                     <div className="date">
                       <h4>
                         <span>29</span> Dec, 2018
@@ -1900,27 +1901,27 @@ const Onepage = () => {
                   </div>
                   <div className="info">
                     <h4>
-                      <a href="#">Delightful up dissimilar</a>
+                      <Link to="#">Delightful up dissimilar</Link>
                     </h4>
                     <p>
                       Sitting mistake towards his few country ask. You delighted
                       two rapturous six depending objection happiness something
                       the partiality unaffected
                     </p>
-                    <a href="#">
+                    <Link to="#">
                       Read More <i className="fas fa-angle-double-right" />
-                    </a>
+                    </Link>
                     <div className="meta">
                       <ul>
                         <li>
-                          <a href="#">
+                          <Link to="#">
                             <i className="fas fa-user" /> Author
-                          </a>
+                          </Link>
                         </li>
                         <li>
-                          <a href="#">
+                          <Link to="#">
                             <i className="fas fa-comments" /> 23 Comments
-                          </a>
+                          </Link>
                         </li>
                       </ul>
                     </div>
@@ -1949,54 +1950,54 @@ const Onepage = () => {
             <div className="col-md-8 clients">
               <div className="clients-items owl-carousel owl-theme text-center">
                 <div className="single-item">
-                  <a href="#">
+                  <Link to="#">
                     <img src={image6} alt="Clients" />
-                  </a>
+                  </Link>
                 </div>
                 <div className="single-item">
-                  <a href="#">
+                  <Link to="#">
                     <img src={image6} alt="Clients" />
-                  </a>
+                  </Link>
                 </div>
                 <div className="single-item">
-                  <a href="#">
+                  <Link to="#">
                     <img src={image6} alt="Clients" />
-                  </a>
+                  </Link>
                 </div>
                 <div className="single-item">
-                  <a href="#">
+                  <Link to="#">
                     <img src={image6} alt="Clients" />
-                  </a>
+                  </Link>
                 </div>
                 <div className="single-item">
-                  <a href="#">
+                  <Link to="#">
                     <img src={image6} alt="Clients" />
-                  </a>
+                  </Link>
                 </div>
                 <div className="single-item">
-                  <a href="#">
+                  <Link to="#">
                     <img src={image6} alt="Clients" />
-                  </a>
+                  </Link>
                 </div>
                 <div className="single-item">
-                  <a href="#">
+                  <Link to="#">
                     <img src={image6} alt="Clients" />
-                  </a>
+                  </Link>
                 </div>
                 <div className="single-item">
-                  <a href="#">
+                  <Link to="#">
                     <img src={image6} alt="Clients" />
-                  </a>
+                  </Link>
                 </div>
                 <div className="single-item">
-                  <a href="#">
+                  <Link to="#">
                     <img src={image6} alt="Clients" />
-                  </a>
+                  </Link>
                 </div>
                 <div className="single-item">
-                  <a href="#">
+                  <Link to="#">
                     <img src={image6} alt="Clients" />
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

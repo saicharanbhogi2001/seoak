@@ -2,6 +2,7 @@ import { FooterSection } from "../atoms/Footer/index.tsx";
 import HeaderInformation from "../atoms/header.tsx";
 import NavigationComponent from "../atoms/Navigation/index.tsx";
 import FaqImage from "../assets/img/about-bg.jpg";
+import { Link } from "react-router-dom";
 const Faq = () => {
   return (
     <>
@@ -17,9 +18,9 @@ const Faq = () => {
               <h1>Faq</h1>
               <ul className="breadcrumb">
                 <li>
-                  <a href="#">
+                  <Link to="#">
                     <i className="fas fa-home" /> Home
-                  </a>
+                  </Link>
                 </li>
                 <li className="active">Faq</li>
               </ul>
@@ -40,13 +41,13 @@ const Faq = () => {
                   <div className="panel panel-default">
                     <div className="panel-heading">
                       <h4 className="panel-title">
-                        <a
+                        <Link
                           data-toggle="collapse"
                           data-parent="#accordion"
-                          href="#ac1"
+                          to="#ac1"
                         >
                           What is the medium of instruction?
-                        </a>
+                        </Link>
                       </h4>
                     </div>
                     <div id="ac1" className="panel-collapse collapse in">
@@ -62,13 +63,13 @@ const Faq = () => {
                   <div className="panel panel-default">
                     <div className="panel-heading">
                       <h4 className="panel-title">
-                        <a
+                        <Link
                           data-toggle="collapse"
                           data-parent="#accordion"
-                          href="#ac2"
+                          to="#ac2"
                         >
                           Do I get a certificate at the end the course?
-                        </a>
+                        </Link>
                       </h4>
                     </div>
                     <div id="ac2" className="panel-collapse collapse">
@@ -84,13 +85,13 @@ const Faq = () => {
                   <div className="panel panel-default">
                     <div className="panel-heading">
                       <h4 className="panel-title">
-                        <a
+                        <Link
                           data-toggle="collapse"
                           data-parent="#accordion"
-                          href="#ac3"
+                          to="#ac3"
                         >
                           What if i have a question or any doubts?
-                        </a>
+                        </Link>
                       </h4>
                     </div>
                     <div id="ac3" className="panel-collapse collapse">
@@ -105,20 +106,20 @@ const Faq = () => {
                   <div className="panel panel-default">
                     <div className="panel-heading">
                       <h4 className="panel-title">
-                        <a
+                        <Link
                           data-toggle="collapse"
                           data-parent="#accordion"
-                          href="#ac4"
+                          to="#ac4"
                         >
                           What is the refund policy?
-                        </a>
+                        </Link>
                       </h4>
                     </div>
                     <div id="ac4" className="panel-collapse collapse">
                       <div className="panel-body">
                         <p>
                           You can check our{" "}
-                          <a href="/refund-policy">refund policy</a> here.
+                          <Link to="/refund-policy">refund policy</Link> here.
                         </p>
                       </div>
                     </div>

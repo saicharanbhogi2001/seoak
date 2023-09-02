@@ -3,6 +3,7 @@ import HeaderInformation from "../atoms/header.tsx";
 import NavigationComponent from "../atoms/Navigation/index.tsx";
 import image1 from "../assets/img/slide-bg-2.jpeg";
 import image2 from "../assets/img/800x600.png";
+import { Link } from "react-router-dom";
 
 export const TeachersDetails = () => {
   return (
@@ -19,12 +20,12 @@ export const TeachersDetails = () => {
               <h1>Advisor Details</h1>
               <ul className="breadcrumb">
                 <li>
-                  <a href="#">
+                  <Link to="#">
                     <i className="fas fa-home" /> Home
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#">Page</a>
+                  <Link to="#">Page</Link>
                 </li>
                 <li className="active">Advisor</li>
               </ul>
@@ -45,24 +46,24 @@ export const TeachersDetails = () => {
                 <span>Senior Programmer</span>
                 <ul>
                   <li>
-                    <a href="#">
+                    <Link to="#">
                       <i className="fab fa-facebook-f" />
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#">
+                    <Link to="#">
                       <i className="fab fa-twitter" />
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#">
+                    <Link to="#">
                       <i className="fab fa-skype" />
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#">
+                    <Link to="#">
                       <i className="fab fa-dribbble" />
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -73,19 +74,19 @@ export const TeachersDetails = () => {
                 {/* Tab Nav */}
                 <ul className="nav nav-pills">
                   <li className="active">
-                    <a data-toggle="tab" href="#tab1" aria-expanded="true">
+                    <Link data-toggle="tab" to="#tab1" aria-expanded="true">
                       Dashboard
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a data-toggle="tab" href="#tab2" aria-expanded="false">
+                    <Link data-toggle="tab" to="#tab2" aria-expanded="false">
                       Courses
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a data-toggle="tab" href="#tab3" aria-expanded="false">
+                    <Link data-toggle="tab" to="#tab3" aria-expanded="false">
                       Quick Contact
-                    </a>
+                    </Link>
                   </li>
                 </ul>
                 {/* End Tab Nav */}
@@ -150,7 +151,7 @@ export const TeachersDetails = () => {
                             <tr>
                               <td>01.</td>
                               <td>
-                                <a href="#">Basic Web Development</a>
+                                <Link to="#">Basic Web Development</Link>
                               </td>
                               <td>Pending</td>
                               <td>$23.00</td>
@@ -159,7 +160,7 @@ export const TeachersDetails = () => {
                             <tr>
                               <td>02.</td>
                               <td>
-                                <a href="#">Software Engineering</a>
+                                <Link to="#">Software Engineering</Link>
                               </td>
                               <td>Published</td>
                               <td>$55.00</td>
@@ -168,7 +169,7 @@ export const TeachersDetails = () => {
                             <tr>
                               <td>03.</td>
                               <td>
-                                <a href="#">Introduction of machine</a>
+                                <Link to="#">Introduction of machine</Link>
                               </td>
                               <td>Pending</td>
                               <td>$44.00</td>
@@ -177,7 +178,7 @@ export const TeachersDetails = () => {
                             <tr>
                               <td>04.</td>
                               <td>
-                                <a href="#">Hidden potential</a>
+                                <Link to="#">Hidden potential</Link>
                               </td>
                               <td>Published</td>
                               <td>$54.00</td>
@@ -186,7 +187,7 @@ export const TeachersDetails = () => {
                             <tr>
                               <td>05.</td>
                               <td>
-                                <a href="#">Introduction of PHP</a>
+                                <Link to="#">Introduction of PHP</Link>
                               </td>
                               <td>Published</td>
                               <td>$32.00</td>

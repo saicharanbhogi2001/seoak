@@ -2,6 +2,7 @@ import { FooterSection } from "../atoms/Footer/index.tsx";
 import HeaderInformation from "../atoms/header.tsx";
 import NavigationComponent from "../atoms/Navigation/index.tsx";
 import image1 from "../assets/img/slide-bg-2.jpeg";
+import { Link } from "react-router-dom";
 
 export const TermsandCondition = () => {
   return (
@@ -18,9 +19,9 @@ export const TermsandCondition = () => {
               <h1>Terms &amp; Conditions</h1>
               <ul className="breadcrumb">
                 <li>
-                  <a href="#">
+                  <Link to="#">
                     <i className="fas fa-home" /> Home
-                  </a>
+                  </Link>
                 </li>
                 <li className="active">Terms &amp; Conditions</li>
               </ul>
@@ -52,19 +53,19 @@ export const TermsandCondition = () => {
           </p>
           <ul style={{ listStyleType: "disc", marginLeft: 32 }}>
             <li>
-              <a href="/privacy-policy">Privacy Policy</a>
+              <Link to="/privacy-policy">Privacy Policy</Link>
             </li>
             <li>
-              <a href="/privacy-policy">Intellectual Property Policy</a>
+              <Link to="/privacy-policy">Intellectual Property Policy</Link>
             </li>
             <li>
-              <a href="/privacy-policy">Placement Terms</a>
+              <Link to="/privacy-policy">Placement Terms</Link>
             </li>
             <li>
-              <a href="/refund-policy">Refund Policy</a>
+              <Link to="/refund-policy">Refund Policy</Link>
             </li>
             <li>
-              <a href="/refund-policy">Credits Policy</a>
+              <Link to="/refund-policy">Credits Policy</Link>
             </li>
           </ul>
           <p>

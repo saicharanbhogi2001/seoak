@@ -5,6 +5,7 @@ import courseDetailsImage from "../assets/img/courses.jpeg";
 import Image1 from "../assets/img/1500x700.png";
 import Image2 from "../assets/img/100x100.png";
 import Image3 from "../assets/img/800x800.png";
+import { Link } from "react-router-dom";
 
 const CourseDetails = () => {
   return (
@@ -21,12 +22,12 @@ const CourseDetails = () => {
               <h1>Course Details</h1>
               <ul className="breadcrumb">
                 <li>
-                  <a href="#">
+                  <Link to="#">
                     <i className="fas fa-home" /> Home
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#">Course</a>
+                  <Link to="#">Course</Link>
                 </li>
                 <li className="active">Single</li>
               </ul>
@@ -60,18 +61,18 @@ const CourseDetails = () => {
                   <div className="course-meta">
                     <div className="item author">
                       <div className="thumb">
-                        <a href="#">
+                        <Link to="#">
                           <img alt="Thumb" src={Image2} />
-                        </a>
+                        </Link>
                       </div>
                       <div className="desc">
                         <h4>Author</h4>
-                        <a href="#">Munil Druva</a>
+                        <Link to="#">Munil Druva</Link>
                       </div>
                     </div>
                     <div className="item category">
                       <h4>Category</h4>
-                      <a href="#">Science</a>
+                      <Link to="#">Science</Link>
                     </div>
                     <div className="item rating">
                       <h4>Rating</h4>
@@ -87,9 +88,9 @@ const CourseDetails = () => {
                       <span>$29.00</span>
                     </div>
                     <div className="align-right">
-                      <a className="btn btn-dark effect btn-sm" href="#">
+                      <Link className="btn btn-dark effect btn-sm" to="#">
                         <i className="fas fa-chart-bar" /> Enroll
-                      </a>
+                      </Link>
                     </div>
                   </div>
                   {/* End Course Meta */}
@@ -100,24 +101,24 @@ const CourseDetails = () => {
                   {/* Tab Nav */}
                   <ul className="nav nav-pills">
                     <li className="active">
-                      <a data-toggle="tab" href="#tab1" aria-expanded="true">
+                      <Link data-toggle="tab" to="#tab1" aria-expanded="true">
                         Overview
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a data-toggle="tab" href="#tab2" aria-expanded="false">
+                      <Link data-toggle="tab" to="#tab2" aria-expanded="false">
                         Curriculum
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a data-toggle="tab" href="#tab3" aria-expanded="false">
+                      <Link data-toggle="tab" to="#tab3" aria-expanded="false">
                         Advisor
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a data-toggle="tab" href="#tab4" aria-expanded="false">
+                      <Link data-toggle="tab" to="#tab4" aria-expanded="false">
                         Reviews
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                   {/* End Tab Nav */}
@@ -211,13 +212,13 @@ const CourseDetails = () => {
                             <div className="panel panel-default">
                               <div className="panel-heading">
                                 <h4 className="panel-title">
-                                  <a
+                                  <Link
                                     data-toggle="collapse"
                                     data-parent="#accordion"
-                                    href="#ac1"
+                                    to="#ac1"
                                   >
                                     Java Programming
-                                  </a>
+                                  </Link>
                                 </h4>
                               </div>
                               <div
@@ -236,7 +237,7 @@ const CourseDetails = () => {
                                       </div>
                                       <div className="item info">
                                         <span>Duration: 1 hours 30 min</span>
-                                        <a href="#">Preview</a>
+                                        <Link to="#">Preview</Link>
                                       </div>
                                     </li>
                                     <li>
@@ -249,7 +250,7 @@ const CourseDetails = () => {
                                       </div>
                                       <div className="item info">
                                         <span>Duration: 3 hours 15 min</span>
-                                        <a href="#">Preview</a>
+                                        <Link to="#">Preview</Link>
                                       </div>
                                     </li>
                                   </ul>
@@ -265,13 +266,13 @@ const CourseDetails = () => {
                             <div className="panel panel-default">
                               <div className="panel-heading">
                                 <h4 className="panel-title">
-                                  <a
+                                  <Link
                                     data-toggle="collapse"
                                     data-parent="#accordion"
-                                    href="#ac2"
+                                    to="#ac2"
                                   >
                                     PHP Programmig
-                                  </a>
+                                  </Link>
                                 </h4>
                               </div>
                               <div id="ac2" className="panel-collapse collapse">
@@ -287,7 +288,7 @@ const CourseDetails = () => {
                                       </div>
                                       <div className="item info">
                                         <span>Duration: 1 hours 30 min</span>
-                                        <a href="#">Preview</a>
+                                        <Link to="#">Preview</Link>
                                       </div>
                                     </li>
                                     <li>
@@ -300,7 +301,7 @@ const CourseDetails = () => {
                                       </div>
                                       <div className="item info">
                                         <span>Duration: 2 hours 12 min</span>
-                                        <a href="#">Preview</a>
+                                        <Link to="#">Preview</Link>
                                       </div>
                                     </li>
                                   </ul>
@@ -333,24 +334,24 @@ const CourseDetails = () => {
                               </p>
                               <ul>
                                 <li>
-                                  <a href="#">
+                                  <Link to="#">
                                     <i className="fab fa-facebook-f" />
-                                  </a>
+                                  </Link>
                                 </li>
                                 <li>
-                                  <a href="#">
+                                  <Link to="#">
                                     <i className="fab fa-twitter" />
-                                  </a>
+                                  </Link>
                                 </li>
                                 <li>
-                                  <a href="#">
+                                  <Link to="#">
                                     <i className="fab fa-dribbble" />
-                                  </a>
+                                  </Link>
                                 </li>
                                 <li>
-                                  <a href="#">
+                                  <Link to="#">
                                     <i className="fab fa-youtube" />
-                                  </a>
+                                  </Link>
                                 </li>
                               </ul>
                             </div>
@@ -372,24 +373,24 @@ const CourseDetails = () => {
                               </p>
                               <ul>
                                 <li>
-                                  <a href="#">
+                                  <Link to="#">
                                     <i className="fab fa-facebook-f" />
-                                  </a>
+                                  </Link>
                                 </li>
                                 <li>
-                                  <a href="#">
+                                  <Link to="#">
                                     <i className="fab fa-twitter" />
-                                  </a>
+                                  </Link>
                                 </li>
                                 <li>
-                                  <a href="#">
+                                  <Link to="#">
                                     <i className="fab fa-dribbble" />
-                                  </a>
+                                  </Link>
                                 </li>
                                 <li>
-                                  <a href="#">
+                                  <Link to="#">
                                     <i className="fab fa-youtube" />
-                                  </a>
+                                  </Link>
                                 </li>
                               </ul>
                             </div>
@@ -475,29 +476,29 @@ const CourseDetails = () => {
                     <div className="sidebar-info">
                       <ul>
                         <li>
-                          <a href="#">
+                          <Link to="#">
                             Java Programming <span>23</span>
-                          </a>
+                          </Link>
                         </li>
                         <li>
-                          <a href="#">
+                          <Link to="#">
                             Social Science <span>0</span>
-                          </a>
+                          </Link>
                         </li>
                         <li>
-                          <a href="#">
+                          <Link to="#">
                             Business Management <span>12</span>
-                          </a>
+                          </Link>
                         </li>
                         <li>
-                          <a href="#">
+                          <Link to="#">
                             Online Learning <span>17</span>
-                          </a>
+                          </Link>
                         </li>
                         <li>
-                          <a href="#">
+                          <Link to="#">
                             Course Management <span>0</span>
-                          </a>
+                          </Link>
                         </li>
                       </ul>
                     </div>
@@ -511,13 +512,13 @@ const CourseDetails = () => {
                     <div className="item">
                       <div className="content">
                         <div className="thumb">
-                          <a href="#">
+                          <Link to="#">
                             <img src={Image3} alt="Thumb" />
-                          </a>
+                          </Link>
                         </div>
                         <div className="info">
                           <h4>
-                            <a href="#">Profession python learing</a>
+                            <Link to="#">Profession python learing</Link>
                           </h4>
                           <div className="rating">
                             <i className="fas fa-star" />
@@ -529,7 +530,7 @@ const CourseDetails = () => {
                           </div>
                           <div className="meta">
                             <i className="fas fa-user" /> By{" "}
-                            <a href="#">Drup Paul</a>
+                            <Link to="#">Drup Paul</Link>
                           </div>
                         </div>
                       </div>
@@ -537,13 +538,13 @@ const CourseDetails = () => {
                     <div className="item">
                       <div className="content">
                         <div className="thumb">
-                          <a href="#">
+                          <Link to="#">
                             <img src={Image3} alt="Thumb" />
-                          </a>
+                          </Link>
                         </div>
                         <div className="info">
                           <h4>
-                            <a href="#">Profession python learing</a>
+                            <Link to="#">Profession python learing</Link>
                           </h4>
                           <div className="rating">
                             <i className="fas fa-star" />
@@ -555,7 +556,7 @@ const CourseDetails = () => {
                           </div>
                           <div className="meta">
                             <i className="fas fa-user" /> By{" "}
-                            <a href="#">Drup Paul</a>
+                            <Link to="#">Drup Paul</Link>
                           </div>
                         </div>
                       </div>
@@ -563,13 +564,13 @@ const CourseDetails = () => {
                     <div className="item">
                       <div className="content">
                         <div className="thumb">
-                          <a href="#">
+                          <Link to="#">
                             <img src={Image3} alt="Thumb" />
-                          </a>
+                          </Link>
                         </div>
                         <div className="info">
                           <h4>
-                            <a href="#">Profession python learing</a>
+                            <Link to="#">Profession python learing</Link>
                           </h4>
                           <div className="rating">
                             <i className="fas fa-star" />
@@ -581,7 +582,7 @@ const CourseDetails = () => {
                           </div>
                           <div className="meta">
                             <i className="fas fa-user" /> By{" "}
-                            <a href="#">Drup Paul</a>
+                            <Link to="#">Drup Paul</Link>
                           </div>
                         </div>
                       </div>

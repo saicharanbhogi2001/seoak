@@ -1,5 +1,6 @@
 import { styled } from "styled-components";
 import DataScience from "../../assets/img/datascience.png";
+import { Link } from "react-router-dom";
 const CourseIntroductionCOntainer = styled.div`
   padding: 25px;
   display: flex;
@@ -52,7 +53,7 @@ export const CourseIntroduction = () => {
         <div className="rating-section">
           <div className="item category">
             <h4 className="header">Category</h4>
-            <a href="#">Programming</a>
+            <Link to="#">Programming</Link>
           </div>
           <div className="dashed-line"></div>
           <div className="item rating">
@@ -99,12 +100,12 @@ export const CourseIntroduction = () => {
         </div>
         <div>
           <div className="align-right">
-            <a
+            <Link
               className="btn btn-dark effect btn-sm"
-              href="https://wa.me/+917483758735"
+              to="https://wa.me/+917483758735"
             >
               <i className="fas fa-chart-bar" /> Enroll
-            </a>
+            </Link>
           </div>
         </div>
       </div>

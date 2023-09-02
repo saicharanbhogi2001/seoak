@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { FooterSection } from "../atoms/Footer/index.tsx";
 import HeaderInformation from "../atoms/header.tsx";
 import NavigationComponent from "../atoms/Navigation/index.tsx";
@@ -15,19 +16,19 @@ export const Register = () => {
                   <h4>Register with social</h4>
                   <ul>
                     <li className="facebook">
-                      <a href="#">
+                      <Link to="#">
                         <i className="fab fa-facebook-f" />
-                      </a>
+                      </Link>
                     </li>
                     <li className="twitter">
-                      <a href="#">
+                      <Link to="#">
                         <i className="fab fa-twitter" />
-                      </a>
+                      </Link>
                     </li>
                     <li className="linkedin">
-                      <a href="#">
+                      <Link to="#">
                         <i className="fab fa-linkedin-in" />
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -83,7 +84,7 @@ export const Register = () => {
                     </div>
                   </div>
                   <p className="link-bottom">
-                    Are you a member? <a href="#">Login now</a>
+                    Are you a member? <Link to="#">Login now</Link>
                   </p>
                 </div>
               </form>

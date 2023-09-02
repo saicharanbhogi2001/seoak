@@ -4,6 +4,7 @@ import { ChevronDown } from "react-feather";
 import { styled } from "styled-components";
 import { Card } from "@mui/material";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 const Navbarcontainer = styled.div`
   position: sticky;
   gap: 4px;
@@ -161,9 +162,9 @@ export const Header = () => {
                 onClick={() => setMobileMenu((p) => !p)}
               />
             </button>
-            <a className="navbar-brand" href="/">
+            <Link className="navbar-brand" to="/">
               <img src={logo} className="logo" alt="Logo" />
-            </a>
+            </Link>
           </div>
           <div className="collapse navbar-collapse" id="navbar-menu">
             <ul className="nav navbar-nav navbar-right">
@@ -171,18 +172,21 @@ export const Header = () => {
                 {navbarTiles.map((item) => (
                   <div key={item.tile} className="navbar-container">
                     <Navbarcontainer>
-                      <a onClick={() => handleRoute(item.tile)}>{item.tile}</a>
+                      <Link onClick={() => handleRoute(item.tile)} to={""}>
+                        {item.tile}
+                      </Link>
                     </Navbarcontainer>
                     {item.courses && (
                       <div className="dropdown-show">
                         {item.courses.map((iter) => (
                           <li key={iter.coursetitle}>
-                            <a
+                            <Link
                               onClick={() => handleRoute(iter.coursetitle)}
                               className="dropdown-option"
+                              to={""}
                             >
                               {iter.coursetitle}
-                            </a>
+                            </Link>
                           </li>
                         ))}
                       </div>
@@ -199,20 +203,21 @@ export const Header = () => {
                   {navbarTiles.map((item) => (
                     <div key={item.tile} className="">
                       <div>
-                        <a onClick={() => handleRoute(item.tile)}>
+                        <Link onClick={() => handleRoute(item.tile)} to={""}>
                           {item.tile}
-                        </a>
+                        </Link>
                       </div>
                       {item.courses && courseAccordian && (
                         <div className="dropdown-show">
                           {item.courses.map((iter) => (
                             <li key={iter.coursetitle}>
-                              <a
+                              <Link
                                 onClick={() => handleRoute(iter.coursetitle)}
                                 className="dropdown-option"
+                                to={""}
                               >
                                 {iter.coursetitle}
-                              </a>
+                              </Link>
                             </li>
                           ))}
                         </div>

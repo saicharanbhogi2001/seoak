@@ -2,6 +2,7 @@ import { FooterSection } from "../atoms/Footer/index.tsx";
 import HeaderInformation from "../atoms/header.tsx";
 import NavigationComponent from "../atoms/Navigation/index.tsx";
 import coruses from "../assets/img/courses.jpeg";
+import { Link } from "react-router-dom";
 const Courses = () => {
   return (
     <>
@@ -17,12 +18,12 @@ const Courses = () => {
               <h1>Courses</h1>
               <ul className="breadcrumb">
                 <li>
-                  <a href="#">
+                  <Link to="#">
                     <i className="fas fa-home" /> Home
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#">Page</a>
+                  <Link to="#">Page</Link>
                 </li>
                 <li className="active">Course</li>
               </ul>
@@ -41,20 +42,20 @@ const Courses = () => {
                 {/* Single Item */}
                 <div className="item">
                   <div className="thumb">
-                    <a href="#">
+                    <Link to="#">
                       <img src="assets/img/800x600.png" alt="Thumb" />
-                    </a>
+                    </Link>
                     <div className="price">Price: Free</div>
                   </div>
                   <div className="info">
                     <div className="author-info">
                       <div className="thumb">
-                        <a href="#">
+                        <Link to="#">
                           <img src="assets/img/100x100.png" alt="Thumb" />
-                        </a>
+                        </Link>
                       </div>
                       <div className="others">
-                        <a href="#">Munil Druva</a>
+                        <Link to="#">Munil Druva</Link>
                         <div className="rating">
                           <i className="fas fa-star" />
                           <i className="fas fa-star" />
@@ -66,7 +67,7 @@ const Courses = () => {
                       </div>
                     </div>
                     <h4>
-                      <a href="#">data science and software</a>
+                      <Link to="#">data science and software</Link>
                     </h4>
                     <p>
                       Would day nor ask walls known. But preserved advantage are
@@ -81,7 +82,7 @@ const Courses = () => {
                           <i className="fas fa-clock" /> 16:00
                         </li>
                       </ul>
-                      <a href="#">Enroll Now</a>
+                      <Link to="#">Enroll Now</Link>
                     </div>
                   </div>
                 </div>
@@ -89,20 +90,20 @@ const Courses = () => {
                 {/* Single Item */}
                 <div className="item">
                   <div className="thumb">
-                    <a href="#">
+                    <Link to="#">
                       <img src="assets/img/800x600.png" alt="Thumb" />
-                    </a>
+                    </Link>
                     <div className="price">Price: $12</div>
                   </div>
                   <div className="info">
                     <div className="author-info">
                       <div className="thumb">
-                        <a href="#">
+                        <Link to="#">
                           <img src="assets/img/100x100.png" alt="Thumb" />
-                        </a>
+                        </Link>
                       </div>
                       <div className="others">
-                        <a href="#">Akua Paul</a>
+                        <Link to="#">Akua Paul</Link>
                         <div className="rating">
                           <i className="fas fa-star" />
                           <i className="fas fa-star" />
@@ -114,7 +115,7 @@ const Courses = () => {
                       </div>
                     </div>
                     <h4>
-                      <a href="#">Stanford Engineering</a>
+                      <Link to="#">Stanford Engineering</Link>
                     </h4>
                     <p>
                       Would day nor ask walls known. But preserved advantage are
@@ -129,7 +130,7 @@ const Courses = () => {
                           <i className="fas fa-clock" /> 16:00
                         </li>
                       </ul>
-                      <a href="#">Enroll Now</a>
+                      <Link to="#">Enroll Now</Link>
                     </div>
                   </div>
                 </div>
@@ -137,20 +138,20 @@ const Courses = () => {
                 {/* Single Item */}
                 <div className="item">
                   <div className="thumb">
-                    <a href="#">
+                    <Link to="#">
                       <img src="assets/img/800x600.png" alt="Thumb" />
-                    </a>
+                    </Link>
                     <div className="price">Price: Free</div>
                   </div>
                   <div className="info">
                     <div className="author-info">
                       <div className="thumb">
-                        <a href="#">
+                        <Link to="#">
                           <img src="assets/img/100x100.png" alt="Thumb" />
-                        </a>
+                        </Link>
                       </div>
                       <div className="others">
-                        <a href="#">Jonathom Kiyam</a>
+                        <Link to="#">Jonathom Kiyam</Link>
                         <div className="rating">
                           <i className="fas fa-star" />
                           <i className="fas fa-star" />
@@ -162,7 +163,7 @@ const Courses = () => {
                       </div>
                     </div>
                     <h4>
-                      <a href="#">Covers Big Data analysis</a>
+                      <Link to="#">Covers Big Data analysis</Link>
                     </h4>
                     <p>
                       Would day nor ask walls known. But preserved advantage are
@@ -177,7 +178,7 @@ const Courses = () => {
                           <i className="fas fa-clock" /> 16:00
                         </li>
                       </ul>
-                      <a href="#">Enroll Now</a>
+                      <Link to="#">Enroll Now</Link>
                     </div>
                   </div>
                 </div>
@@ -185,20 +186,20 @@ const Courses = () => {
                 {/* Single Item */}
                 <div className="item">
                   <div className="thumb">
-                    <a href="#">
+                    <Link to="#">
                       <img src="assets/img/800x600.png" alt="Thumb" />
-                    </a>
+                    </Link>
                     <div className="price">Price: $46</div>
                   </div>
                   <div className="info">
                     <div className="author-info">
                       <div className="thumb">
-                        <a href="#">
+                        <Link to="#">
                           <img src="assets/img/100x100.png" alt="Thumb" />
-                        </a>
+                        </Link>
                       </div>
                       <div className="others">
-                        <a href="#">Huma Park</a>
+                        <Link to="#">Huma Park</Link>
                         <div className="rating">
                           <i className="fas fa-star" />
                           <i className="fas fa-star" />
@@ -210,7 +211,7 @@ const Courses = () => {
                       </div>
                     </div>
                     <h4>
-                      <a href="#">professional web development</a>
+                      <Link to="#">professional web development</Link>
                     </h4>
                     <p>
                       Would day nor ask walls known. But preserved advantage are
@@ -225,7 +226,7 @@ const Courses = () => {
                           <i className="fas fa-clock" /> 16:00
                         </li>
                       </ul>
-                      <a href="#">Enroll Now</a>
+                      <Link to="#">Enroll Now</Link>
                     </div>
                   </div>
                 </div>
@@ -233,20 +234,20 @@ const Courses = () => {
                 {/* Single Item */}
                 <div className="item">
                   <div className="thumb">
-                    <a href="#">
+                    <Link to="#">
                       <img src="assets/img/800x600.png" alt="Thumb" />
-                    </a>
+                    </Link>
                     <div className="price">Price: $124</div>
                   </div>
                   <div className="info">
                     <div className="author-info">
                       <div className="thumb">
-                        <a href="#">
+                        <Link to="#">
                           <img src="assets/img/100x100.png" alt="Thumb" />
-                        </a>
+                        </Link>
                       </div>
                       <div className="others">
-                        <a href="#">Prokash Timer</a>
+                        <Link to="#">Prokash Timer</Link>
                         <div className="rating">
                           <i className="fas fa-star" />
                           <i className="fas fa-star" />
@@ -258,7 +259,7 @@ const Courses = () => {
                       </div>
                     </div>
                     <h4>
-                      <a href="#">Java Programming Masterclass</a>
+                      <Link to="#">Java Programming Masterclass</Link>
                     </h4>
                     <p>
                       Would day nor ask walls known. But preserved advantage are
@@ -273,7 +274,7 @@ const Courses = () => {
                           <i className="fas fa-clock" /> 16:00
                         </li>
                       </ul>
-                      <a href="#">Enroll Now</a>
+                      <Link to="#">Enroll Now</Link>
                     </div>
                   </div>
                 </div>

@@ -22,6 +22,7 @@ import { StudentReview } from "../atoms/ImageCarosal/StudentReview";
 import nsdc from "../assets/img/nsdc800,600.png";
 // import DraggableCardSlider from "../atoms/imageSlider";
 import { FooterSection } from "../atoms/Footer/index.tsx";
+import { Link } from "react-router-dom";
 // import CoursesCarousel from "../atoms/ImageCarosal/StudentReview/CoursesCoursel/index.tsx";
 interface NumberProps {
   n: number;
@@ -46,19 +47,19 @@ const HostPage = () => {
           <h4>Login with social</h4>
           <ul>
             <li className="facebook">
-              <a href="#">
+              <Link to="#">
                 <i className="fab fa-facebook-f" />
-              </a>
+              </Link>
             </li>
             <li className="twitter">
-              <a href="#">
+              <Link to="#">
                 <i className="fab fa-twitter" />
-              </a>
+              </Link>
             </li>
             <li className="linkedin">
-              <a href="#">
+              <Link to="#">
                 <i className="fab fa-linkedin-in" />
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
@@ -92,9 +93,9 @@ const HostPage = () => {
                 <input type="checkbox" id="login-remember" />
                 Remember Me
               </label>
-              <a title="Lost Password" href="#" className="lost-pass-link">
+              <Link title="Lost Password" to="#" className="lost-pass-link">
                 Lost your password?
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col-md-12">
@@ -103,7 +104,7 @@ const HostPage = () => {
             </div>
           </div>
           <p className="link-bottom">
-            Not a member yet? <a href="#">Register now</a>
+            Not a member yet? <Link to="#">Register now</Link>
           </p>
         </div>
       </form>
@@ -119,19 +120,19 @@ const HostPage = () => {
           <h4>Register with social</h4>
           <ul>
             <li className="facebook">
-              <a href="#">
+              <Link to="#">
                 <i className="fab fa-facebook-f" />
-              </a>
+              </Link>
             </li>
             <li className="twitter">
-              <a href="#">
+              <Link to="#">
                 <i className="fab fa-twitter" />
-              </a>
+              </Link>
             </li>
             <li className="linkedin">
-              <a href="#">
+              <Link to="#">
                 <i className="fab fa-linkedin-in" />
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
@@ -187,7 +188,7 @@ const HostPage = () => {
             </div>
           </div>
           <p className="link-bottom">
-            Are you a member? <a href="#">Login now</a>
+            Are you a member? <Link to="#">Login now</Link>
           </p>
         </div>
       </form>
@@ -216,20 +217,20 @@ const HostPage = () => {
                           <h1 data-animation="animated slideInUp">
                             Learn from best online training course
                           </h1>
-                          <a
+                          <Link
                             data-animation="animated slideInUp"
                             className="btn btn-light border btn-md"
-                            href="/about-us"
+                            to="/about-us"
                           >
                             Learn more
-                          </a>
-                          <a
+                          </Link>
+                          <Link
                             data-animation="animated slideInUp"
                             className="btn btn-theme effect btn-md"
-                            href="/live-industrial-courses"
+                            to="/live-industrial-courses"
                           >
                             View Courses
-                          </a>
+                          </Link>
                         </div>
                       </div>
                     </div>
@@ -254,20 +255,20 @@ const HostPage = () => {
                           <h1 data-animation="animated slideInUp">
                             explore our brilliant graduates
                           </h1>
-                          <a
+                          <Link
                             data-animation="animated slideInUp"
                             className="btn btn-light border btn-md"
-                            href="/about-us"
+                            to="/about-us"
                           >
                             Learn more
-                          </a>
-                          <a
+                          </Link>
+                          <Link
                             data-animation="animated slideInUp"
                             className="btn btn-theme effect btn-md"
-                            href="/live-industrial-courses"
+                            to="/live-industrial-courses"
                           >
                             View Courses
-                          </a>
+                          </Link>
                         </div>
                       </div>
                     </div>
@@ -292,20 +293,20 @@ const HostPage = () => {
                           <h1 data-animation="animated slideInUp">
                             Join the biggest comunity of eduka
                           </h1>
-                          <a
+                          <Link
                             data-animation="animated slideInUp"
                             className="btn btn-light border btn-md"
-                            href="/about-us"
+                            to="/about-us"
                           >
                             Learn more
-                          </a>
-                          <a
+                          </Link>
+                          <Link
                             data-animation="animated slideInUp"
                             className="btn btn-theme effect btn-md"
-                            href="/live-industrial-courses"
+                            to="/live-industrial-courses"
                           >
                             View Courses
-                          </a>
+                          </Link>
                         </div>
                       </div>
                     </div>
@@ -316,22 +317,22 @@ const HostPage = () => {
           </div>
           {/* End Wrapper for slides */}
           {/* Left and right controls */}
-          <a
+          <Link
             className="left carousel-control"
-            href="#bootcarousel"
+            to="#bootcarousel"
             data-slide="prev"
           >
             <i className="fa fa-angle-left" />
             <span className="sr-only">Previous</span>
-          </a>
-          <a
+          </Link>
+          <Link
             className="right carousel-control"
-            href="#bootcarousel"
+            to="#bootcarousel"
             data-slide="next"
           >
             <i className="fa fa-angle-right" />
             <span className="sr-only">Next</span>
-          </a>
+          </Link>
         </div>
       </div>
       {/* End Banner */}
@@ -375,90 +376,90 @@ const HostPage = () => {
             <div className="top-cat-items text-light inc-bg-color">
               <div className="col-md-3 col-sm-6 equal-height">
                 <div className="item mariner">
-                  <a href="#one-on-one" className="popup-with-form">
+                  <Link to="#one-on-one" className="popup-with-form">
                     <i className="flaticon-feature" />
                     <div className="info">
                       <h4>One On One Interaction</h4>
                       <span />
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className="col-md-3 col-sm-6 equal-height">
                 <div className="item java">
-                  <a href="#real-time" className="popup-with-form">
+                  <Link to="#real-time" className="popup-with-form">
                     <i className="flaticon-interaction" />
                     <div className="info">
                       <h4>Real Time Projects</h4>
                       <span />
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className="col-md-3 col-sm-6 equal-height">
                 <div className="item malachite">
-                  <a href="#lms-access" className="popup-with-form">
+                  <Link to="#lms-access" className="popup-with-form">
                     <i className="flaticon-conveyor" />
                     <div className="info">
                       <h4>LMS Access For All Courses</h4>
                       <span />
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className="col-md-3 col-sm-6 equal-height">
                 <div className="item emerald">
-                  <a href="#live-projects" className="popup-with-form">
+                  <Link to="#live-projects" className="popup-with-form">
                     <i className="flaticon-potential" />
                     <div className="info">
                       <h4>Live Projects</h4>
                       <span />
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className="col-md-3 col-sm-6 equal-height">
                 <div className="item casablanca">
-                  <a href="#scholarships" className="popup-with-form">
+                  <Link to="#scholarships" className="popup-with-form">
                     <i className="flaticon-education" />
                     <div className="info">
                       <h4>Scholarships</h4>
                       <span />
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className="col-md-3 col-sm-6 equal-height">
                 <div className="item brilliantrose">
-                  <a href="#updated-curriculam" className="popup-with-form">
+                  <Link to="#updated-curriculam" className="popup-with-form">
                     <i className="flaticon-print" />
                     <div className="info">
                       <h4>Updated Curriculum </h4>
                       <span />
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className="col-md-3 col-sm-6 equal-height">
                 <div className="item cinnabar">
-                  <a href="#certified-mentors" className="popup-with-form">
+                  <Link to="#certified-mentors" className="popup-with-form">
                     <i className="flaticon-translate" />
                     <div className="info">
                       <h4>Certified Mentors</h4>
                       <span />
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className="col-md-3 col-sm-6 equal-height">
                 <div className="item plum">
-                  <a href="#paid-internships" className="popup-with-form">
+                  <Link to="#paid-internships" className="popup-with-form">
                     <i className="flaticon-firewall" />
                     <div className="info">
                       <h4>Paid Internships</h4>
                       <span />
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -495,9 +496,9 @@ const HostPage = () => {
                   strategic alliances with leading organizations in the
                   industry.{" "}
                 </p>
-                <a href="/about-us" className="btn btn-dark border btn-md">
+                <Link to="/about-us" className="btn btn-dark border btn-md">
                   Know More
-                </a>
+                </Link>
               </div>
             </div>
             <div className="seperator col-md-12">
@@ -511,7 +512,7 @@ const HostPage = () => {
                   </div>
                   <div className="info">
                     <h4>Expert faculty</h4>
-                    <a href="#" />
+                    <Link to="#" />
                   </div>
                 </div>
               </div>
@@ -522,7 +523,7 @@ const HostPage = () => {
                   </div>
                   <div className="info">
                     <h4>Online learning</h4>
-                    <a href="#" />
+                    <Link to="#" />
                   </div>
                 </div>
               </div>
@@ -533,7 +534,7 @@ const HostPage = () => {
                   </div>
                   <div className="info">
                     <h4>Scholarships</h4>
-                    <a href="#" />
+                    <Link to="#" />
                   </div>
                 </div>
               </div>
@@ -571,9 +572,9 @@ const HostPage = () => {
                   <div className="row">
                     <div className="video-info">
                       <div className="overlay-video">
-                        {/* <a className="popup-youtube video-play-button" href="#">
+                        {/* <Link className="popup-youtube video-play-button" to="#">
                       <i className="fa fa-play"></i>
-                  </a> */}
+                  </Link> */}
                       </div>
                     </div>
                   </div>
@@ -595,7 +596,7 @@ const HostPage = () => {
                 </div>
                 <div className="info">
                   <h4>
-                    <a href="#">Vision</a>
+                    <Link to="#">Vision</Link>
                   </h4>
                   <p>
                     To become the largest online learning ecosystem for
@@ -612,7 +613,7 @@ const HostPage = () => {
                 </div>
                 <div className="info">
                   <h4>
-                    <a href="#">Mission</a>
+                    <Link to="#">Mission</Link>
                   </h4>
                   <p>
                     By deploying our world className team of industry experts,
@@ -629,7 +630,7 @@ const HostPage = () => {
                 </div>
                 <div className="info">
                   <h4>
-                    <a href="#">Goals</a>
+                    <Link to="#">Goals</Link>
                   </h4>
                   <p>
                     To create an alternate platform for students who wish to
@@ -662,12 +663,12 @@ const HostPage = () => {
               <div className="popular-courses-items popular-courses-carousel owl-carousel owl-theme">
                 <div className="item">
                   <div className="thumb">
-                    <a href="#">
+                    <Link to="#">
                       <img
                         src="assets/img/popularcoursesartificialintellegence.png"
                         alt="Thumb"
                       />
-                    </a>
+                    </Link>
                     <div className="price">
                       <b>Price: 10,000₹</b>
                     </div>
@@ -675,12 +676,12 @@ const HostPage = () => {
                   <div className="info">
                     <div className="author-info">
                       <div className="thumb">
-                        <a href="#">
+                        <Link to="#">
                           <img src="assets/img/100x100.png" alt="Thumb" />
-                        </a>
+                        </Link>
                       </div>
                       <div className="others">
-                        <a href="#">Munil Druva</a>
+                        <Link to="#">Munil Druva</Link>
                         <div className="rating">
                           <i className="fas fa-star"></i>
                           <i className="fas fa-star"></i>
@@ -692,7 +693,7 @@ const HostPage = () => {
                       </div>
                     </div>
                     <h4>
-                      <a href="#">Artificial Intelligence</a>
+                      <Link to="#">Artificial Intelligence</Link>
                     </h4>
                     <p>
                       Would day nor ask walls known. But preserved advantage are
@@ -707,19 +708,19 @@ const HostPage = () => {
                           <i className="fas fa-clock"></i> 72:00hrs
                         </li>
                       </ul>
-                      <a href="live-advanced-ai.html">Know Now</a>
+                      <Link to="live-advanced-ai.html">Know Now</Link>
                     </div>
                   </div>
                 </div>
 
                 <div className="item">
                   <div className="thumb">
-                    <a href="#">
+                    <Link to="#">
                       <img
                         src="assets/img/popularcoursescloudcomputing.png"
                         alt="Thumb"
                       />
-                    </a>
+                    </Link>
                     <div className="price">
                       <b>Price: 10,000₹</b>
                     </div>
@@ -727,12 +728,12 @@ const HostPage = () => {
                   <div className="info">
                     <div className="author-info">
                       <div className="thumb">
-                        <a href="#">
+                        <Link to="#">
                           <img src="assets/img/100x100.png" alt="Thumb" />
-                        </a>
+                        </Link>
                       </div>
                       <div className="others">
-                        <a href="#">Munil Druva</a>
+                        <Link to="#">Munil Druva</Link>
                         <div className="rating">
                           <i className="fas fa-star"></i>
                           <i className="fas fa-star"></i>
@@ -744,7 +745,7 @@ const HostPage = () => {
                       </div>
                     </div>
                     <h4>
-                      <a href="#">Cloud Computing</a>
+                      <Link to="#">Cloud Computing</Link>
                     </h4>
                     <p>
                       Would day nor ask walls known. But preserved advantage are
@@ -759,18 +760,18 @@ const HostPage = () => {
                           <i className="fas fa-clock"></i> 72:00hrs
                         </li>
                       </ul>
-                      <a href="cloud-computing.html">Know Now</a>
+                      <Link to="cloud-computing.html">Know Now</Link>
                     </div>
                   </div>
                 </div>
                 <div className="item">
                   <div className="thumb">
-                    <a href="#">
+                    <Link to="#">
                       <img
                         src="assets/img/popularcoursesdatascience.png"
                         alt="Thumb"
                       />
-                    </a>
+                    </Link>
                     <div className="price">
                       <b>Price: 10,000₹</b>
                     </div>
@@ -778,12 +779,12 @@ const HostPage = () => {
                   <div className="info">
                     <div className="author-info">
                       <div className="thumb">
-                        <a href="#">
+                        <Link to="#">
                           <img src="assets/img/100x100.png" alt="Thumb" />
-                        </a>
+                        </Link>
                       </div>
                       <div className="others">
-                        <a href="#">Jonathom Kiyam</a>
+                        <Link to="#">Jonathom Kiyam</Link>
                         <div className="rating">
                           <i className="fas fa-star"></i>
                           <i className="fas fa-star"></i>
@@ -795,7 +796,7 @@ const HostPage = () => {
                       </div>
                     </div>
                     <h4>
-                      <a href="#">Data Science</a>
+                      <Link to="#">Data Science</Link>
                     </h4>
                     <p>
                       Would day nor ask walls known. But preserved advantage are
@@ -810,18 +811,18 @@ const HostPage = () => {
                           <i className="fas fa-clock"></i> 72:00hrs
                         </li>
                       </ul>
-                      <a href="live-data-science.html">Know More</a>
+                      <Link to="live-data-science.html">Know More</Link>
                     </div>
                   </div>
                 </div>
                 <div className="item">
                   <div className="thumb">
-                    <a href="#">
+                    <Link to="#">
                       <img
                         src="assets/img/popularcoursesFullStack.png"
                         alt="Thumb"
                       />
-                    </a>
+                    </Link>
                     <div className="price">
                       <b>Price: 10,000₹</b>
                     </div>
@@ -829,12 +830,12 @@ const HostPage = () => {
                   <div className="info">
                     <div className="author-info">
                       <div className="thumb">
-                        <a href="#">
+                        <Link to="#">
                           <img src="assets/img/100x100.png" alt="Thumb" />
-                        </a>
+                        </Link>
                       </div>
                       <div className="others">
-                        <a href="#">Jonathom Kiyam</a>
+                        <Link to="#">Jonathom Kiyam</Link>
                         <div className="rating">
                           <i className="fas fa-star"></i>
                           <i className="fas fa-star"></i>
@@ -846,7 +847,7 @@ const HostPage = () => {
                       </div>
                     </div>
                     <h4>
-                      <a href="#">Full Stack Web Development</a>
+                      <Link to="#">Full Stack Web Development</Link>
                     </h4>
                     <p>
                       Would day nor ask walls known. But preserved advantage are
@@ -861,18 +862,18 @@ const HostPage = () => {
                           <i className="fas fa-clock"></i> 72:00hrs
                         </li>
                       </ul>
-                      <a href="live-full-stack-development.html">Know More</a>
+                      <Link to="live-full-stack-development.html">Know More</Link>
                     </div>
                   </div>
                 </div>
                 <div className="item">
                   <div className="thumb">
-                    <a href="#">
+                    <Link to="#">
                       <img
                         src="assets/img/popularcourseschatgpt.png"
                         alt="Thumb"
                       />
-                    </a>
+                    </Link>
                     <div className="price">
                       <b>Price: 10,000₹</b>
                     </div>
@@ -880,12 +881,12 @@ const HostPage = () => {
                   <div className="info">
                     <div className="author-info">
                       <div className="thumb">
-                        <a href="#">
+                        <Link to="#">
                           <img src="assets/img/100x100.png" alt="Thumb" />
-                        </a>
+                        </Link>
                       </div>
                       <div className="others">
-                        <a href="#">Jonathom Kiyam</a>
+                        <Link to="#">Jonathom Kiyam</Link>
                         <div className="rating">
                           <i className="fas fa-star"></i>
                           <i className="fas fa-star"></i>
@@ -897,7 +898,7 @@ const HostPage = () => {
                       </div>
                     </div>
                     <h4>
-                      <a href="#">Chat GPT</a>
+                      <Link to="#">Chat GPT</Link>
                     </h4>
                     <p>
                       Would day nor ask walls known. But preserved advantage are
@@ -912,18 +913,18 @@ const HostPage = () => {
                           <i className="fas fa-clock"></i> 72:00hrs
                         </li>
                       </ul>
-                      <a href="live-chat-gpt.html">Know More</a>
+                      <Link to="live-chat-gpt.html">Know More</Link>
                     </div>
                   </div>
                 </div>
                 <div className="item">
                   <div className="thumb">
-                    <a href="#">
+                    <Link to="#">
                       <img
                         src="assets/img/popularcoursesCyberSecurity.png"
                         alt="Thumb"
                       />
-                    </a>
+                    </Link>
                     <div className="price">
                       <b>Price: 10,000₹</b>
                     </div>
@@ -931,12 +932,12 @@ const HostPage = () => {
                   <div className="info">
                     <div className="author-info">
                       <div className="thumb">
-                        <a href="#">
+                        <Link to="#">
                           <img src="assets/img/100x100.png" alt="Thumb" />
-                        </a>
+                        </Link>
                       </div>
                       <div className="others">
-                        <a href="#">Jonathom Kiyam</a>
+                        <Link to="#">Jonathom Kiyam</Link>
                         <div className="rating">
                           <i className="fas fa-star"></i>
                           <i className="fas fa-star"></i>
@@ -948,7 +949,7 @@ const HostPage = () => {
                       </div>
                     </div>
                     <h4>
-                      <a href="#">Cyber Security</a>
+                      <Link to="#">Cyber Security</Link>
                     </h4>
                     <p>
                       Would day nor ask walls known. But preserved advantage are
@@ -963,7 +964,7 @@ const HostPage = () => {
                           <i className="fas fa-clock"></i> 72:00hrs
                         </li>
                       </ul>
-                      <a href="live-chat-gpt.html">Know More</a>
+                      <Link to="live-chat-gpt.html">Know More</Link>
                     </div>
                   </div>
                 </div>
@@ -975,12 +976,12 @@ const HostPage = () => {
               <div className="popular-courses-items popular-courses-carousel owl-carousel owl-theme">
                 <div className="item">
                   <div className="thumb">
-                    <a href="#">
+                    <Link to="#">
                       <img
                         src="assets/img/popularcoursesartificialintellegence.png"
                         alt="Thumb"
                       />
-                    </a>
+                    </Link>
                     <div className="price">
                       <b>Price: 10,000₹</b>
                     </div>
@@ -988,12 +989,12 @@ const HostPage = () => {
                   <div className="info">
                     <div className="author-info">
                       <div className="thumb">
-                        <a href="#">
+                        <Link to="#">
                           <img src="assets/img/100x100.png" alt="Thumb" />
-                        </a>
+                        </Link>
                       </div>
                       <div className="others">
-                        <a href="#">Munil Druva</a>
+                        <Link to="#">Munil Druva</Link>
                         <div className="rating">
                           <i className="fas fa-star"></i>
                           <i className="fas fa-star"></i>
@@ -1005,7 +1006,7 @@ const HostPage = () => {
                       </div>
                     </div>
                     <h4>
-                      <a href="#">Artificial Intelligence</a>
+                      <Link to="#">Artificial Intelligence</Link>
                     </h4>
                     <p>
                       Would day nor ask walls known. But preserved advantage are
@@ -1020,18 +1021,18 @@ const HostPage = () => {
                           <i className="fas fa-clock"></i> 72:00hrs
                         </li>
                       </ul>
-                      <a href="live-advanced-ai.html">Know Now</a>
+                      <Link to="live-advanced-ai.html">Know Now</Link>
                     </div>
                   </div>
                 </div>
                 <div className="item">
                   <div className="thumb">
-                    <a href="#">
+                    <Link to="#">
                       <img
                         src="assets/img/popularcoursesartificialintellegence.png"
                         alt="Thumb"
                       />
-                    </a>
+                    </Link>
                     <div className="price">
                       <b>Price: 10,000₹</b>
                     </div>
@@ -1039,12 +1040,12 @@ const HostPage = () => {
                   <div className="info">
                     <div className="author-info">
                       <div className="thumb">
-                        <a href="#">
+                        <Link to="#">
                           <img src="assets/img/100x100.png" alt="Thumb" />
-                        </a>
+                        </Link>
                       </div>
                       <div className="others">
-                        <a href="#">Munil Druva</a>
+                        <Link to="#">Munil Druva</Link>
                         <div className="rating">
                           <i className="fas fa-star"></i>
                           <i className="fas fa-star"></i>
@@ -1056,7 +1057,7 @@ const HostPage = () => {
                       </div>
                     </div>
                     <h4>
-                      <a href="#">Artificial Intelligence</a>
+                      <Link to="#">Artificial Intelligence</Link>
                     </h4>
                     <p>
                       Would day nor ask walls known. But preserved advantage are
@@ -1071,18 +1072,18 @@ const HostPage = () => {
                           <i className="fas fa-clock"></i> 72:00hrs
                         </li>
                       </ul>
-                      <a href="live-advanced-ai.html">Know Now</a>
+                      <Link to="live-advanced-ai.html">Know Now</Link>
                     </div>
                   </div>
                 </div>
                 <div className="item">
                   <div className="thumb">
-                    <a href="#">
+                    <Link to="#">
                       <img
                         src="assets/img/popularcoursesartificialintellegence.png"
                         alt="Thumb"
                       />
-                    </a>
+                    </Link>
                     <div className="price">
                       <b>Price: 10,000₹</b>
                     </div>
@@ -1090,12 +1091,12 @@ const HostPage = () => {
                   <div className="info">
                     <div className="author-info">
                       <div className="thumb">
-                        <a href="#">
+                        <Link to="#">
                           <img src="assets/img/100x100.png" alt="Thumb" />
-                        </a>
+                        </Link>
                       </div>
                       <div className="others">
-                        <a href="#">Munil Druva</a>
+                        <Link to="#">Munil Druva</Link>
                         <div className="rating">
                           <i className="fas fa-star"></i>
                           <i className="fas fa-star"></i>
@@ -1107,7 +1108,7 @@ const HostPage = () => {
                       </div>
                     </div>
                     <h4>
-                      <a href="#">Artificial Intelligence</a>
+                      <Link to="#">Artificial Intelligence</Link>
                     </h4>
                     <p>
                       Would day nor ask walls known. But preserved advantage are
@@ -1122,7 +1123,7 @@ const HostPage = () => {
                           <i className="fas fa-clock"></i> 72:00hrs
                         </li>
                       </ul>
-                      <a href="live-advanced-ai.html">Know Now</a>
+                      <Link to="live-advanced-ai.html">Know Now</Link>
                     </div>
                   </div>
                 </div>
@@ -1476,9 +1477,9 @@ const HostPage = () => {
                       </div>
                     </div>
                     <div className="col-md-12">
-                      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeM_1nUTx2DaBUxSR5xXgoTjKfE71wt0trYPAHYSf8t5QWB8g/viewform">
+                      <Link to="https://docs.google.com/forms/d/e/1FAIpQLSeM_1nUTx2DaBUxSR5xXgoTjKfE71wt0trYPAHYSf8t5QWB8g/viewform">
                         <button type="button">Register Now</button>
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </form>

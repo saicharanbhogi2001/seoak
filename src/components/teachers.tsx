@@ -4,6 +4,7 @@ import NavigationComponent from "../atoms/Navigation/index.tsx";
 import Image1 from "../assets/img/800x800.png";
 import image2 from "../assets/img/150x80.png";
 import image3 from "../assets/img/slide-bg-2.jpeg";
+import { Link } from "react-router-dom";
 
 export const Teachers = () => {
   return (
@@ -20,12 +21,12 @@ export const Teachers = () => {
               <h1>Advisor</h1>
               <ul className="breadcrumb">
                 <li>
-                  <a href="#">
+                  <Link to="#">
                     <i className="fas fa-home" /> Home
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#">Page</a>
+                  <Link to="#">Page</Link>
                 </li>
                 <li className="active">Advisor</li>
               </ul>
@@ -58,28 +59,28 @@ export const Teachers = () => {
                               Great explorer of the truth, the master-builder of
                               human happiness.
                             </p>
-                            <a href="#">Read More</a>
+                            <Link to="#">Read More</Link>
                             <div className="social">
                               <ul>
                                 <li>
-                                  <a href="#">
+                                  <Link to="#">
                                     <i className="fab fa-facebook-f" />
-                                  </a>
+                                  </Link>
                                 </li>
                                 <li>
-                                  <a href="#">
+                                  <Link to="#">
                                     <i className="fab fa-twitter" />
-                                  </a>
+                                  </Link>
                                 </li>
                                 <li>
-                                  <a href="#">
+                                  <Link to="#">
                                     <i className="fab fa-pinterest" />
-                                  </a>
+                                  </Link>
                                 </li>
                                 <li>
-                                  <a href="#">
+                                  <Link to="#">
                                     <i className="fab fa-instagram" />
-                                  </a>
+                                  </Link>
                                 </li>
                               </ul>
                             </div>
@@ -107,28 +108,28 @@ export const Teachers = () => {
                               Great explorer of the truth, the master-builder of
                               human happiness.
                             </p>
-                            <a href="#">Read More</a>
+                            <Link to="#">Read More</Link>
                             <div className="social">
                               <ul>
                                 <li>
-                                  <a href="#">
+                                  <Link to="#">
                                     <i className="fab fa-facebook-f" />
-                                  </a>
+                                  </Link>
                                 </li>
                                 <li>
-                                  <a href="#">
+                                  <Link to="#">
                                     <i className="fab fa-twitter" />
-                                  </a>
+                                  </Link>
                                 </li>
                                 <li>
-                                  <a href="#">
+                                  <Link to="#">
                                     <i className="fab fa-pinterest" />
-                                  </a>
+                                  </Link>
                                 </li>
                                 <li>
-                                  <a href="#">
+                                  <Link to="#">
                                     <i className="fab fa-instagram" />
-                                  </a>
+                                  </Link>
                                 </li>
                               </ul>
                             </div>
@@ -157,28 +158,28 @@ export const Teachers = () => {
                               Great explorer of the truth, the master-builder of
                               human happiness.
                             </p>
-                            <a href="#">Read More</a>
+                            <Link to="#">Read More</Link>
                             <div className="social">
                               <ul>
                                 <li>
-                                  <a href="#">
+                                  <Link to="#">
                                     <i className="fab fa-facebook-f" />
-                                  </a>
+                                  </Link>
                                 </li>
                                 <li>
-                                  <a href="#">
+                                  <Link to="#">
                                     <i className="fab fa-twitter" />
-                                  </a>
+                                  </Link>
                                 </li>
                                 <li>
-                                  <a href="#">
+                                  <Link to="#">
                                     <i className="fab fa-pinterest" />
-                                  </a>
+                                  </Link>
                                 </li>
                                 <li>
-                                  <a href="#">
+                                  <Link to="#">
                                     <i className="fab fa-instagram" />
-                                  </a>
+                                  </Link>
                                 </li>
                               </ul>
                             </div>
@@ -207,28 +208,28 @@ export const Teachers = () => {
                               Great explorer of the truth, the master-builder of
                               human happiness.
                             </p>
-                            <a href="#">Read More</a>
+                            <Link to="#">Read More</Link>
                             <div className="social">
                               <ul>
                                 <li>
-                                  <a href="#">
+                                  <Link to="#">
                                     <i className="fab fa-facebook-f" />
-                                  </a>
+                                  </Link>
                                 </li>
                                 <li>
-                                  <a href="#">
+                                  <Link to="#">
                                     <i className="fab fa-twitter" />
-                                  </a>
+                                  </Link>
                                 </li>
                                 <li>
-                                  <a href="#">
+                                  <Link to="#">
                                     <i className="fab fa-pinterest" />
-                                  </a>
+                                  </Link>
                                 </li>
                                 <li>
-                                  <a href="#">
+                                  <Link to="#">
                                     <i className="fab fa-instagram" />
-                                  </a>
+                                  </Link>
                                 </li>
                               </ul>
                             </div>
@@ -257,28 +258,28 @@ export const Teachers = () => {
                               Great explorer of the truth, the master-builder of
                               human happiness.
                             </p>
-                            <a href="#">Read More</a>
+                            <Link to="#">Read More</Link>
                             <div className="social">
                               <ul>
                                 <li>
-                                  <a href="#">
+                                  <Link to="#">
                                     <i className="fab fa-facebook-f" />
-                                  </a>
+                                  </Link>
                                 </li>
                                 <li>
-                                  <a href="#">
+                                  <Link to="#">
                                     <i className="fab fa-twitter" />
-                                  </a>
+                                  </Link>
                                 </li>
                                 <li>
-                                  <a href="#">
+                                  <Link to="#">
                                     <i className="fab fa-pinterest" />
-                                  </a>
+                                  </Link>
                                 </li>
                                 <li>
-                                  <a href="#">
+                                  <Link to="#">
                                     <i className="fab fa-instagram" />
-                                  </a>
+                                  </Link>
                                 </li>
                               </ul>
                             </div>
@@ -402,54 +403,54 @@ export const Teachers = () => {
             <div className="col-md-8 clients">
               <div className="clients-items owl-carousel owl-theme text-center">
                 <div className="single-item">
-                  <a href="#">
+                  <Link to="#">
                     <img src={image3} alt="Thumb" />
-                  </a>
+                  </Link>
                 </div>
                 <div className="single-item">
-                  <a href="#">
+                  <Link to="#">
                     <img src={image3} alt="Thumb" />
-                  </a>
+                  </Link>
                 </div>
                 <div className="single-item">
-                  <a href="#">
+                  <Link to="#">
                     <img src={image3} alt="Thumb" />
-                  </a>
+                  </Link>
                 </div>
                 <div className="single-item">
-                  <a href="#">
+                  <Link to="#">
                     <img src={image3} alt="Thumb" />
-                  </a>
+                  </Link>
                 </div>
                 <div className="single-item">
-                  <a href="#">
+                  <Link to="#">
                     <img src={image3} alt="Thumb" />
-                  </a>
+                  </Link>
                 </div>
                 <div className="single-item">
-                  <a href="#">
+                  <Link to="#">
                     <img src={image3} alt="Thumb" />
-                  </a>
+                  </Link>
                 </div>
                 <div className="single-item">
-                  <a href="#">
+                  <Link to="#">
                     <img src={image3} alt="Thumb" />
-                  </a>
+                  </Link>
                 </div>
                 <div className="single-item">
-                  <a href="#">
+                  <Link to="#">
                     <img src={image3} alt="Thumb" />
-                  </a>
+                  </Link>
                 </div>
                 <div className="single-item">
-                  <a href="#">
+                  <Link to="#">
                     <img src={image3} alt="Thumb" />
-                  </a>
+                  </Link>
                 </div>
                 <div className="single-item">
-                  <a href="#">
+                  <Link to="#">
                     <img src={image3} alt="Thumb" />
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

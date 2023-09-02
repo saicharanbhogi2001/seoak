@@ -4,6 +4,7 @@ import NavigationComponent from "../atoms/Navigation/index.tsx";
 import image1 from "../assets/img/800x800.png";
 import imagefooter from "../assets/img/contactform800,800.png";
 import AboutUsImage from "../assets/img/about-bg.jpg";
+import { Link } from "react-router-dom";
 
 const AboutUs = () => {
   return (
@@ -20,9 +21,9 @@ const AboutUs = () => {
               <h1>About SEOAK</h1>
               <ul className="breadcrumb">
                 <li>
-                  <a href="/">
+                  <Link to="/">
                     <i className="fas fa-home" /> Home
-                  </a>
+                  </Link>
                 </li>
                 <li className="active">About Us</li>
               </ul>
@@ -73,7 +74,7 @@ const AboutUs = () => {
                   </div>
                   <div className="info">
                     <h4>Expert faculty</h4>
-                    <a href="#" />
+                    <Link to="#" />
                   </div>
                 </div>
               </div>
@@ -84,7 +85,7 @@ const AboutUs = () => {
                   </div>
                   <div className="info">
                     <h4>Online learning</h4>
-                    <a href="#" />
+                    <Link to="#" />
                   </div>
                 </div>
               </div>
@@ -95,7 +96,7 @@ const AboutUs = () => {
                   </div>
                   <div className="info">
                     <h4>Scholarships</h4>
-                    <a href="#" />
+                    <Link to="#" />
                   </div>
                 </div>
               </div>
@@ -131,9 +132,12 @@ const AboutUs = () => {
                   <div className="row">
                     <div className="video-info">
                       <div className="overlay-video">
-                        <a className="popup-youtube video-play-button" href="#">
+                        <Link
+                          className="popup-youtube video-play-button"
+                          to="#"
+                        >
                           <i className="fa fa-play" />
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -155,7 +159,7 @@ const AboutUs = () => {
                 </div>
                 <div className="info">
                   <h4>
-                    <a href="#">Vision</a>
+                    <Link to="#">Vision</Link>
                   </h4>
                   <p>
                     To become the largest online learning ecosystem for
@@ -172,7 +176,7 @@ const AboutUs = () => {
                 </div>
                 <div className="info">
                   <h4>
-                    <a href="#">Mission</a>
+                    <Link to="#">Mission</Link>
                   </h4>
                   <p>
                     By deploying our world class team of industry experts, we
@@ -189,7 +193,7 @@ const AboutUs = () => {
                 </div>
                 <div className="info">
                   <h4>
-                    <a href="#">Goals</a>
+                    <Link to="#">Goals</Link>
                   </h4>
                   <p>
                     To create an alternate platform for students who wish to
@@ -278,9 +282,9 @@ const AboutUs = () => {
           <div className="row">
             <div className="video-info">
               <div className="overlay-video">
-                <a className="popup-youtube video-play-button" href="#">
+                <Link className="popup-youtube video-play-button" to="#">
                   <i className="fa fa-play" />
-                </a>
+                </Link>
               </div>
             </div>
           </div>

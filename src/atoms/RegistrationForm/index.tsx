@@ -1,5 +1,6 @@
 import { styled } from "styled-components";
 import "../../index.css";
+import { Link } from "react-router-dom";
 
 const RegistrationFormContainer = styled.div`
   .drop-down {
@@ -96,13 +97,13 @@ export const RegistrationForm = () => {
                           </div>
                         </div>
                         <div className="col-md-12">
-                          <a
-                            href="https://docs.google.com/forms/d/e/1FAIpQLSeM_1nUTx2DaBUxSR5xXgoTjKfE71wt0trYPAHYSf8t5QWB8g/viewform"
+                          <Link
+                            to="https://docs.google.com/forms/d/e/1FAIpQLSeM_1nUTx2DaBUxSR5xXgoTjKfE71wt0trYPAHYSf8t5QWB8g/viewform"
                             target="_blank"
                             rel="noopener noreferrer"
                           >
                             <button type="button">Register Now</button>
-                          </a>
+                          </Link>
                         </div>
                       </div>
                     </form>

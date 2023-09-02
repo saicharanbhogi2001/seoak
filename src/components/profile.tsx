@@ -3,6 +3,7 @@ import HeaderInformation from "../atoms/header.tsx";
 import NavigationComponent from "../atoms/Navigation/index.tsx";
 import image1 from "../assets/img/slide-bg-2.jpeg";
 import image2 from "../assets/img/800x800.png";
+import { Link } from "react-router-dom";
 
 export const Profile = () => {
   return (
@@ -19,12 +20,12 @@ export const Profile = () => {
               <h1>Profile</h1>
               <ul className="breadcrumb">
                 <li>
-                  <a href="#">
+                  <Link to="#">
                     <i className="fas fa-home" /> Home
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#">Page</a>
+                  <Link to="#">Page</Link>
                 </li>
                 <li className="active">Profile</li>
               </ul>
@@ -47,19 +48,19 @@ export const Profile = () => {
                 {/* Tab Nav */}
                 <ul className="nav nav-pills">
                   <li className="active">
-                    <a data-toggle="tab" href="#tab1" aria-expanded="true">
+                    <Link data-toggle="tab" to="#tab1" aria-expanded="true">
                       Dashboard
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a data-toggle="tab" href="#tab2" aria-expanded="false">
+                    <Link data-toggle="tab" to="#tab2" aria-expanded="false">
                       Orders
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a data-toggle="tab" href="#tab3" aria-expanded="false">
+                    <Link data-toggle="tab" to="#tab3" aria-expanded="false">
                       Edit Profile
-                    </a>
+                    </Link>
                   </li>
                 </ul>
                 {/* End Tab Nav */}
@@ -118,56 +119,56 @@ export const Profile = () => {
                             <tr>
                               <td>01.</td>
                               <td>
-                                <a href="#">Basic Web Development</a>
+                                <Link to="#">Basic Web Development</Link>
                               </td>
                               <td>12 Nov, 2018</td>
                               <td>$23.00</td>
                               <td>
-                                <a href="#">Preview</a>
+                                <Link to="#">Preview</Link>
                               </td>
                             </tr>
                             <tr>
                               <td>02.</td>
                               <td>
-                                <a href="#">Software Engineering</a>
+                                <Link to="#">Software Engineering</Link>
                               </td>
                               <td>14 Jan, 2019</td>
                               <td>$55.00</td>
                               <td>
-                                <a href="#">Preview</a>
+                                <Link to="#">Preview</Link>
                               </td>
                             </tr>
                             <tr>
                               <td>03.</td>
                               <td>
-                                <a href="#">Introduction of machine</a>
+                                <Link to="#">Introduction of machine</Link>
                               </td>
                               <td>18 Mar, 2019</td>
                               <td>$44.00</td>
                               <td>
-                                <a href="#">Preview</a>
+                                <Link to="#">Preview</Link>
                               </td>
                             </tr>
                             <tr>
                               <td>04.</td>
                               <td>
-                                <a href="#">Hidden potential</a>
+                                <Link to="#">Hidden potential</Link>
                               </td>
                               <td>20 Feb, 2018</td>
                               <td>$54.00</td>
                               <td>
-                                <a href="#">Preview</a>
+                                <Link to="#">Preview</Link>
                               </td>
                             </tr>
                             <tr>
                               <td>05.</td>
                               <td>
-                                <a href="#">Introduction of PHP</a>
+                                <Link to="#">Introduction of PHP</Link>
                               </td>
                               <td>27 Mar, 2019</td>
                               <td>$32.00</td>
                               <td>
-                                <a href="#">Preview</a>
+                                <Link to="#">Preview</Link>
                               </td>
                             </tr>
                           </tbody>
