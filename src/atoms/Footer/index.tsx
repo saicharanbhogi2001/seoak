@@ -13,7 +13,7 @@ const topcourses = [
 const navlinks = [
   { navbar: "Home" },
   { navbar: "About Us" },
-  { navbar: "Certified Courses" },
+  { navbar: "SEOAK BASICS" },
   { navbar: "Our Gallery" },
   { navbar: "Contact Us" },
   { navbar: "Faq's" },
@@ -74,13 +74,26 @@ export const FooterSection = () => {
               <div className="f-item link">
                 <h4>Top Courses</h4>
                 <ul>
-                  {topcourses.map((course) => (
-                    <li key={course.course}>
-                      <Link onClick={() => handleRoute(course.route)} to={""}>
-                        {course.course}
-                      </Link>
-                    </li>
-                  ))}
+                  <li>
+                    <Link to="/full-stack-development">
+                      Full Stack Web Development
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/data-science">Data Science</Link>
+                  </li>
+                  <li>
+                    <Link to="/cloud-computing">Cloud Computing</Link>
+                  </li>
+                  <li>
+                    <Link to="/cyber-security">Cyber Security</Link>
+                  </li>
+                  <li>
+                    <Link to="/advanced-ai">Advanced AI</Link>
+                  </li>
+                  <li>
+                    <Link to="/chat-gpt">Chat GPT</Link>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -88,13 +101,21 @@ export const FooterSection = () => {
               <div className="f-item link">
                 <h4>Use Full Links</h4>
                 <ul>
-                  {navlinks.map((link) => (
-                    <li key={link.navbar}>
-                      <Link onClick={() => handleRoute(link.navbar)} to={""}>
-                        {link.navbar}
-                      </Link>
-                    </li>
-                  ))}
+                  <li>
+                    <Link to="/">Home</Link>
+                  </li>
+                  <li>
+                    <Link to={"/about-us"}>About Us</Link>
+                  </li>
+                  <li>
+                    <Link to="/certified-courses">SEOAK BASICS</Link>
+                  </li>
+                  <li>
+                    <Link to="/contact">contact</Link>
+                  </li>
+                  <li>
+                    <Link to="/home">Faq's</Link>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -137,6 +158,7 @@ export const FooterSection = () => {
                       <i className="fab fa-linkedin" />
                     </Link>
                   </li>
+                  =-97654321+igvc
                 </div>
               </div>
             </div>
@@ -149,9 +171,9 @@ export const FooterSection = () => {
             <div className="col-md-12">
               <div className="col-md-6">
                 <p>
-                  © Copyright 2023. All Rights Reserved by{" "}
-                  <Link to="#">SEOAK</Link> Developed By{" "}
-                  <Link to="#">RAAB</Link>
+                  © Copyright 2023. All Rights Reserved by
+                  <Link to="#">SEOAK INNOVATIONS PRIVATE LIMITED </Link>{" "}
+                  Developed By <Link to="#">RAAB</Link>
                 </p>
               </div>
               <div className="col-md-6 text-right link">
