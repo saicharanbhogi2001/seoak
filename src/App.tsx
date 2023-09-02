@@ -1,5 +1,5 @@
 import ErrorPage from "./components/404";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import {  HashRouter as Router, Route, Routes } from "react-router-dom";
 import { CoursePage } from "./components/Module";
 import LoginPage from "./components/login";
 import AboutUs from "./components/about-us";
@@ -24,7 +24,7 @@ import CertifiedCourses from "./components/certified-courses";
 
 function App() {
   return (
-    <BrowserRouter>
+    <Router>
       {/* <ThemeProvider theme={}> */}
       <Routes>
         <Route path="/" element={<HostPage />} />
@@ -73,7 +73,7 @@ function App() {
         <Route path="/CoursePage" element={<CoursePage />} />
       </Routes>
       {/* </ThemeProvider> */}
-    </BrowserRouter>
+    </Router>
   );
 }
 export default App;

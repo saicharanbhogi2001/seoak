@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./style.css";
 import SeoakLogo from "../../assets/img/logo.png";
+import { Link } from "react-router-dom";
 
 const NavigationComponent = () => {
   const [showCertifiedCourses, setshowCertifiedCourses] =
@@ -53,14 +54,10 @@ const NavigationComponent = () => {
               data-out="#"
             >
               <li className="#">
-                <a href="/" className="dropdown-toggle active">
-                  Home
-                </a>
+                <Link to={"/"} >Home</Link>
               </li>
               <li className="dropdown megamenu-fw">
-                <a href="/about-us" className="active">
-                  About Us
-                </a>
+              <Link to={"/about-us"} >About Us</Link>
               </li>
               <li className="dropdown">
                 <a
