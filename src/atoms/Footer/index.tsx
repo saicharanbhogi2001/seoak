@@ -1,23 +1,7 @@
 import "../../index.css";
 import icon from "../../assets/img/logo-light.png";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
-const topcourses = [
-  { course: "Full Stack", route: "/full-stack-develepment" },
-  { course: "Data Science", route: "/data-science" },
-  { course: "Cloud Computing", route: "/cloud-computing" },
-  { course: "Cyber Security", route: "/cyber-security" },
-  { course: "Advanced AI", route: "/advanced-ai" },
-  { course: "Chat Gpt", route: "/chat-gpt" },
-];
-const navlinks = [
-  { navbar: "Home" },
-  { navbar: "About Us" },
-  { navbar: "SEOAK BASICS" },
-  { navbar: "Our Gallery" },
-  { navbar: "Contact Us" },
-  { navbar: "Faq's" },
-];
 const terms = [
   { title: "Terms & Conditions", route: "/terms-and-conditions" },
   { title: "Privacy Policy", route: "/privacy-policy" },
@@ -25,13 +9,6 @@ const terms = [
 ];
 
 export const FooterSection = () => {
-  const navigate = useNavigate();
-  const handleRoute = (route: string) => {
-    navigate(route);
-  };
-  const handleTermsandConditions = (route: string) => {
-    navigate(route);
-  };
   return (
     <footer className="bg-dark default-padding-top text-light">
       <div className="container">
@@ -180,12 +157,7 @@ export const FooterSection = () => {
                 <ul>
                   {terms.map((link) => (
                     <li key={link.title}>
-                      <Link
-                        onClick={() => handleTermsandConditions(link.route)}
-                        to={""}
-                      >
-                        {link.title}
-                      </Link>
+                      <Link to={link.route}>{link.title}</Link>
                     </li>
                   ))}
                 </ul>
