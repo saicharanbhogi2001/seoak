@@ -102,11 +102,15 @@ competence in specific areas of expertise.`,
 ];
 interface CourseDescriptionProps {
   title?: string;
-  children?: string;
+  courseDescriptionText?: string;
+  paraElements: any;
+  outComes: any;
 }
 export const CourseDescription = ({
   title = "",
-  children = "",
+  courseDescriptionText = "",
+  paraElements,
+  outComes,
 }: CourseDescriptionProps) => {
   return (
     <CourseDescriptionContainer>
@@ -116,43 +120,12 @@ export const CourseDescription = ({
         <div id="tab1" className="tab-pane fade active in">
           <div className="info title">
             <h4>Course Description</h4>
-            <p>
-              Advanced AI refers to the advanced techniques and applications of
-              artificial intelligence (AI) that go beyond the fundamentals. It
-              involves utilizing complex algorithms, deep learning
-              architectures, and cutting-edge technologies to solve challenging
-              problems and achieve high levels of performance in AI systems.
-              Advanced AI techniques include deep learning, natural language
-              processing, computer vision, reinforcement learning, and
-              generative models. It finds applications in various fields, such
-              as healthcare, finance, robotics, and autonomous systems.
-            </p>
-            <p>
-              The Advanced AI Concepts and Techniques course provides students
-              with a comprehensive understanding of advanced AI methodologies
-              and their applications. Through hands-on projects and case
-              studies, students will gain practical experience in applying
-              advanced AI techniques to real-world problems.
-            </p>
+            <p>{courseDescriptionText}</p>
             <h4>Certification</h4>
-            {certification.map((certificatepara) => (
-              <p>{certificatepara.title}</p>
-            ))}
+            {paraElements}
             <br />
             <h4>Learning Outcomes</h4>
-            <ul className="unorderd-list">
-              {learningOutcomes.map((outcome: any) => (
-                <li className="list-styles">
-                  <i
-                    style={{
-                      color: "#ffb606",
-                    }}
-                    className="fas fa-check-double"
-                  />
-                  {outcome.title}
-                </li>
-              ))}
-            </ul>
+            <ul className="unorderd-list">{outComes}</ul>
           </div>
         </div>
       </div>
