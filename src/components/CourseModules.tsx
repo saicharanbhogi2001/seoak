@@ -1,191 +1,37 @@
-import { Header } from "../atoms/HeaderNavbar";
-import { CourseDescription } from "../atoms/CourseDescription";
-import { RegistrationForm } from "../atoms/RegistrationForm";
+/* eslint-disable @typescript-eslint/no-explicit-any */
+import { CourseDescription } from "../atoms/CourseDescription/index.tsx";
+import { RegistrationForm } from "../atoms/RegistrationForm/index.tsx";
 import landingimage from "../assets/img/courses.jpg";
-import PythonImage from "../assets/img/pythonprogramming.png";
 import { useState } from "react";
-import { CertifiedCourseSection } from "../atoms/CertifiedCourses";
-import { PopularCourses } from "../atoms/PopularCourses";
-import { EnrolledCountSection } from "../atoms/EnrolledSection";
-import { FooterSection } from "../atoms/Footer";
+import { CertifiedCourseSection } from "../atoms/CertifiedCourses/index.tsx";
+import { PopularCourses } from "../atoms/PopularCourses/index.tsx";
+import { EnrolledCountSection } from "../atoms/EnrolledSection/index.tsx";
+import { FooterSection } from "../atoms/Footer/index.tsx";
 interface CourseProps {
   coursetitle: string;
-  imgtitle: any;
-  courseDescriptionpara?: string;
+  imgtitle: string;
+  courseDescriptionText?: any;
+  paraElements?: any;
+  outComes?: any;
+  ciurriculum: string;
 }
 import HeaderInformation from "../atoms/header.tsx";
-export const Python = ({
+import NavigationComponent from "../atoms/Navigation/index.tsx";
+export const CourseModule = ({
   coursetitle,
   imgtitle,
-  courseDescriptionpara,
+  courseDescriptionText,
+  paraElements,
+  outComes,
+  ciurriculum,
 }: CourseProps) => {
   const [handleFaqState, setHandleFaqState] = useState(1);
   const [togglestate, setToggleState] = useState(1);
   const title = "COURSE DESCRIPTION";
-  const description =
-    "Data Science is an interdisciplinary field that combines statistics, mathematics, programming, and domain expertise to extract valuable insights and knowledge from data. It involves analyzing and interpreting large volumes of data to make informed business decisions, solve complex problems, and drive innovation. Data Science has applications in various industries, including finance, healthcare, marketing, and technology. The Data Science Fundamentals course provides students with a comprehensive understanding of the core concepts and techniques used in data science.";
   return (
     <>
       <HeaderInformation />
-      <header id="home">
-        {/* Start Navigation */}
-        <nav className="navbar navbar-default navbar-sticky bootsnav">
-          {/* Start Top Search */}
-          <div className="container">
-            <div className="row">
-              <div className="top-search">
-                <div className="input-group">
-                  <form action="#">
-                    <input
-                      type="text"
-                      name="text"
-                      className="form-control"
-                      placeholder="Search"
-                    />
-                    <button type="submit">
-                      <i className="fas fa-search" />
-                    </button>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
-          {/* End Top Search */}
-          <div className="container">
-            {/* Start Atribute Navigation */}
-            {/* <div class="attr-nav">
-                <ul>
-                    <li class="search"><a href="#"><i class="fa fa-search"></i></a></li>
-                </ul>
-            </div>         */}
-            {/* End Atribute Navigation */}
-            {/* Start Header Navigation */}
-            <div className="navbar-header">
-              <button
-                type="button"
-                className="navbar-toggle"
-                data-toggle="collapse"
-                data-target="#navbar-menu"
-              >
-                <i className="fa fa-bars" />
-              </button>
-              <a className="navbar-brand" href="index.html">
-                <img src="assets/img/logo.png" className="logo" alt="Logo" />
-              </a>
-            </div>
-            {/* End Header Navigation */}
-            {/* Collect the nav links, forms, and other content for toggling */}
-            <div className="collapse navbar-collapse" id="navbar-menu">
-              <ul
-                className="nav navbar-nav navbar-right"
-                data-in="#"
-                data-out="#"
-              >
-                <li className="#">
-                  <a href="index.html" className="dropdown-toggle active">
-                    Home
-                  </a>
-                </li>
-                <li className="dropdown megamenu-fw">
-                  <a href="about-us.html" className="active">
-                    About Us
-                  </a>
-                </li>
-                <li className="dropdown">
-                  <a
-                    href="certified-courses.html"
-                    className="dropdown-toggle active"
-                    data-toggle="dropdown"
-                  >
-                    Certified Courses
-                  </a>
-                  <ul className="dropdown-menu">
-                    <li>
-                      <a href="c-language.html">C Language</a>
-                    </li>
-                    <li>
-                      <a href="c++-language.html">C++ Language</a>
-                    </li>
-                    <li>
-                      <a href="java-programming.html">JAVA Programming</a>
-                    </li>
-                    <li>
-                      <a href="powerbi.html">Power BI</a>
-                    </li>
-                    <li>
-                      <a href="python.html">Python</a>
-                    </li>
-                    <li>
-                      <a href="DSA.html">
-                        DSA (Data Structures &amp; Algorithm)
-                      </a>
-                    </li>
-                    <li>
-                      <a href="full-stack-development.html">
-                        Full Stack Web Development
-                      </a>
-                    </li>
-                    <li>
-                      <a href="data-science.html">Data Science</a>
-                    </li>
-                    <li>
-                      <a href="cloud-computing.html">Cloud Computing</a>
-                    </li>
-                    <li>
-                      <a href="cyber-security.html">Cyber Security</a>
-                    </li>
-                    <li>
-                      <a href="advanced-ai.html">Advanced AI</a>
-                    </li>
-                    <li>
-                      <a href="chat-gpt.html">Chat GPT</a>
-                    </li>
-                  </ul>
-                </li>
-                <li className="dropdown">
-                  <a
-                    href="live-industrial-courses.html"
-                    className="dropdown-toggle active"
-                    data-toggle="dropdown"
-                  >
-                    Live Training Courses
-                  </a>
-                  <ul className="dropdown-menu">
-                    <li>
-                      <a href="full-stack-development.html">
-                        Full Stack Web Development
-                      </a>
-                    </li>
-                    <li>
-                      <a href="data-science.html">Data Science</a>
-                    </li>
-                    <li>
-                      <a href="cloud-computing.html">Cloud Computing</a>
-                    </li>
-                    <li>
-                      <a href="cyber-security.html">Cyber Security</a>
-                    </li>
-                    <li>
-                      <a href="advanced-ai.html">Advanced AI</a>
-                    </li>
-                    <li>
-                      <a href="chat-gpt.html">Chat GPT</a>
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <a href="contact.html">contact</a>
-                </li>
-              </ul>
-            </div>
-            {/* /.navbar-collapse */}
-          </div>
-        </nav>
-        {/* End Navigation */}
-      </header>
-      {/* End Header */}
-      {/* Start Banner 
-      ============================================= */}
+      <NavigationComponent />
       <div
         className="banner-area auto-height banner-box text-default text-light bg-gradient bg-fixed"
         style={{ backgroundImage: `url(${landingimage})` }}
@@ -293,8 +139,12 @@ export const Python = ({
                           : "tab-pane fade"
                       }
                     >
-                      <CourseDescription title={title} children={description} />
-                      {/* {coursedescriptionprop should be used in above} */}
+                      <CourseDescription
+                        title={title}
+                        courseDescriptionText={courseDescriptionText}
+                        paraElements={paraElements}
+                        outComes={outComes}
+                      />
                     </div>
                     <div
                       id="tab2"
@@ -304,17 +154,8 @@ export const Python = ({
                           : "tab-pane fade"
                       }
                     >
-                      {/* <Curriculam title={""} videoTitles={""} /> */}
                       <div className="info title">
-                        <p>
-                          The Python Programming Fundamentals course is designed
-                          to provide students with a solid foundation in Python
-                          programming. This course is suitable for beginners who
-                          have little to no prior programming experience.
-                          Through hands-on exercises and coding projects,
-                          students will gain practical experience in writing
-                          Python programs and develop problem-solving skills.
-                        </p>
+                        <p>{ciurriculum}</p>
                         <h4>List Of Courses</h4>
                         {/* Start Course List */}
                         <div className="course-list-items acd-items acd-arrow">
@@ -327,7 +168,7 @@ export const Python = ({
                                     data-parent="#accordion"
                                     href="#ac1"
                                   >
-                                    Python Programming
+                                    {coursetitle}
                                   </a>
                                 </h4>
                               </div>
@@ -340,7 +181,7 @@ export const Python = ({
                                         <span>Lecture 1.1</span>
                                       </div>
                                       <div className="item title">
-                                        <h5>Introduction of Python</h5>
+                                        <h5>{`Introduction of ${coursetitle}`}</h5>
                                       </div>
                                       <div className="item info">
                                         <span>Duration: 1 hour</span>
@@ -362,93 +203,17 @@ export const Python = ({
                           ? "tab-pane fade active in"
                           : "tab-pane fade"
                       }
-                    >
-                      <div className="info title">
-                        <div className="advisor-list-items">
-                          {/* Advisor Item */}
-                          <div className="item">
-                            <div className="thumb">
-                              <img src="assets/img/800x800.png" alt="Thumb" />
-                            </div>
-                            <div className="info">
-                              <h4>Devid Mark</h4>
-                              <span>senior lecturer</span>
-                              <p>
-                                Several carried through an of up attempt
-                                gravity. Situation to be at offending elsewhere
-                                distrusts if. Particular use for considered
-                                projection cultivated. Worth of do doubt shall
-                              </p>
-                              <ul>
-                                <li>
-                                  <a href="#">
-                                    <i className="fab fa-facebook-f" />
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="#">
-                                    <i className="fab fa-twitter" />
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="#">
-                                    <i className="fab fa-dribbble" />
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="#">
-                                    <i className="fab fa-youtube" />
-                                  </a>
-                                </li>
-                              </ul>
-                            </div>
-                          </div>
-                          {/* End Advisor Item */}
-                          {/* Advisor Item */}
-                          <div className="item">
-                            <div className="thumb">
-                              <img src="assets/img/800x800.png" alt="Thumb" />
-                            </div>
-                            <div className="info">
-                              <h4>Andolin Paul</h4>
-                              <span>Java Developer</span>
-                              <p>
-                                Several carried through an of up attempt
-                                gravity. Situation to be at offending elsewhere
-                                distrusts if. Particular use for considered
-                                projection cultivated. Worth of do doubt shall
-                              </p>
-                              <ul>
-                                <li>
-                                  <a href="#">
-                                    <i className="fab fa-facebook-f" />
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="#">
-                                    <i className="fab fa-twitter" />
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="#">
-                                    <i className="fab fa-dribbble" />
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="#">
-                                    <i className="fab fa-youtube" />
-                                  </a>
-                                </li>
-                              </ul>
-                            </div>
-                          </div>
-                          {/* End Advisor Item */}
-                        </div>
-                      </div>
-                    </div>
+                    ></div>
                     {/* End Single Tab */}
                     {/* Single Tab */}
-                    <div id="tab4" className="tab-pane fade">
+                    <div
+                      id="tab4"
+                      className={
+                        togglestate === 3
+                          ? "tab-pane fade active in"
+                          : "tab-pane fade"
+                      }
+                    >
                       <div className="info title">
                         <div className="course-rating-list">
                           <h4>Average Rating</h4>
@@ -696,27 +461,27 @@ export const Python = ({
                 <div className="trending-courses-items">
                   <div className="item">
                     <h4>
-                      <a href="c++-language.html">C++ Programming</a>
+                      <a href="/cpp-language">C++ Programming</a>
                     </h4>
                   </div>
                   <div className="item">
                     <h4>
-                      <a href="data-science.html">Data Science</a>
+                      <a href="/data-science">Data Science</a>
                     </h4>
                   </div>
                   <div className="item">
                     <h4>
-                      <a href="cloud-computing.html">Cloud Computing</a>
+                      <a href="/cloud-computing">Cloud Computing</a>
                     </h4>
                   </div>
                   <div className="item">
                     <h4>
-                      <a href="full-stack-development.html">
+                      <a href="/full-stack-development">
                         full Stack Development
                       </a>
                     </h4>
                   </div>
-                  <a href="industrial-live-training.html" className="more">
+                  <a href="/industrial-live-training" className="more">
                     All Courses <i className="fas fa-angle-double-right" />
                   </a>
                 </div>
@@ -1000,8 +765,7 @@ export const Python = ({
                         <div className="panel-body">
                           <p>
                             You can check our{" "}
-                            <a href="./refund-policy.html">refund policy</a>{" "}
-                            here.
+                            <a href="/refund-policy">refund policy</a> here.
                           </p>
                         </div>
                       </div>

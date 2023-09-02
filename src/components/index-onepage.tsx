@@ -1,111 +1,18 @@
+import { FooterSection } from "../atoms/Footer/index.tsx";
 import HeaderInformation from "../atoms/header.tsx";
+import NavigationComponent from "../atoms/Navigation/index.tsx";
+import image1 from "../assets/img/slide-bg-1.jpeg";
+import image2 from "../assets/img/800x800.png";
+import image3 from "../assets/img/700x800.png";
+import image4 from "../assets/img/800x600.png";
+import image5 from "../assets/img/100x100.png";
+import image6 from "../assets/img/150x80.png";
+
 const Onepage = () => {
   return (
     <>
       <HeaderInformation />;
-      <header id="home">
-        {/* Start Navigation */}
-        <nav className="navbar navbar-default navbar-sticky bootsnav">
-          {/* Start Top Search */}
-          <div className="container">
-            <div className="row">
-              <div className="top-search">
-                <div className="input-group">
-                  <form action="#">
-                    <input
-                      type="text"
-                      name="text"
-                      className="form-control"
-                      placeholder="Search"
-                    />
-                    <button type="submit">
-                      <i className="fas fa-search" />
-                    </button>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
-          {/* End Top Search */}
-          <div className="container">
-            {/* Start Atribute Navigation */}
-            <div className="attr-nav">
-              <ul>
-                <li className="search">
-                  <a href="#">
-                    <i className="fa fa-search" />
-                  </a>
-                </li>
-              </ul>
-            </div>
-            {/* End Atribute Navigation */}
-            {/* Start Header Navigation */}
-            <div className="navbar-header">
-              <button
-                type="button"
-                className="navbar-toggle"
-                data-toggle="collapse"
-                data-target="#navbar-menu"
-              >
-                <i className="fa fa-bars" />
-              </button>
-              <a className="navbar-brand" href="index.html">
-                <img src="assets/img/logo.png" className="logo" alt="Logo" />
-              </a>
-            </div>
-            {/* End Header Navigation */}
-            {/* Collect the nav links, forms, and other content for toggling */}
-            <div className="collapse navbar-collapse" id="navbar-menu">
-              <ul
-                className="nav navbar-nav navbar-right"
-                data-in="#"
-                data-out="#"
-              >
-                <li>
-                  <a className="smooth-menu" href="#home">
-                    Home
-                  </a>
-                </li>
-                <li>
-                  <a className="smooth-menu" href="#about">
-                    About
-                  </a>
-                </li>
-                <li>
-                  <a className="smooth-menu" href="#courses">
-                    Courses
-                  </a>
-                </li>
-                <li>
-                  <a className="smooth-menu" href="#advisor">
-                    Advisor
-                  </a>
-                </li>
-                <li>
-                  <a className="smooth-menu" href="#event">
-                    Event
-                  </a>
-                </li>
-                <li>
-                  <a className="smooth-menu" href="#blog">
-                    Blog
-                  </a>
-                </li>
-                <li>
-                  <a className="smooth-menu" href="#contact">
-                    contact
-                  </a>
-                </li>
-              </ul>
-            </div>
-            {/* /.navbar-collapse */}
-          </div>
-        </nav>
-        {/* End Navigation */}
-      </header>
-      {/* End Header */}
-      {/* Start Login Form 
-    ============================================= */}
+      <NavigationComponent />
       <form action="#" id="login-form" className="mfp-hide white-popup-block">
         <div className="col-md-4 login-social">
           <h4>Login with social</h4>
@@ -270,7 +177,7 @@ const Onepage = () => {
             <div className="item active">
               <div
                 className="slider-thumb bg-fixed"
-                style={{ backgroundImage: "url(assets/img/2440x1578.png)" }}
+                style={{ backgroundImage: `url(${image1})` }}
               />
               <div className="box-table shadow dark">
                 <div className="box-cell">
@@ -308,7 +215,7 @@ const Onepage = () => {
             <div className="item">
               <div
                 className="slider-thumb bg-fixed"
-                style={{ backgroundImage: "url(assets/img/2440x1578.png)" }}
+                style={{ backgroundImage: `url(${image1})` }}
               />
               <div className="box-table shadow dark">
                 <div className="box-cell">
@@ -346,7 +253,7 @@ const Onepage = () => {
             <div className="item">
               <div
                 className="slider-thumb bg-fixed"
-                style={{ backgroundImage: "url(assets/img/2440x1578.png)" }}
+                style={{ backgroundImage: `url(${image1})` }}
               />
               <div className="box-table shadow dark">
                 <div className="box-cell">
@@ -410,7 +317,7 @@ const Onepage = () => {
           <div className="row">
             <div className="about-info">
               <div className="col-md-6 thumb">
-                <img src="assets/img/800x800.png" alt="Thumb" />
+                <img src={image2} alt="Thumb" />
               </div>
               <div className="col-md-6 info">
                 <h5>Introduction</h5>
@@ -488,7 +395,7 @@ const Onepage = () => {
           <div className="row">
             <div
               className="col-md-6 thumb bg-cover"
-              style={{ backgroundImage: "url(assets/img/2440x1578.png)" }}
+              style={{ backgroundImage: `url(${image1})` }}
             />
             <div className="col-md-6 content">
               <div className="site-heading text-left">
@@ -572,12 +479,9 @@ const Onepage = () => {
               <div className="item">
                 <div className="col-md-5">
                   <div className="thumb">
-                    <img src="assets/img/700x800.png" alt="Thumb" />
+                    <img src={image3} alt="Thumb" />
                     <div className="live-view">
-                      <a
-                        href="assets/img/800x800.png"
-                        className="item popup-link"
-                      >
+                      <a href={image2} className="item popup-link">
                         <i className="fa fa-camera" />
                       </a>
                       <a
@@ -660,12 +564,9 @@ const Onepage = () => {
               <div className="item">
                 <div className="col-md-5">
                   <div className="thumb">
-                    <img src="assets/img/700x800.png" alt="Thumb" />
+                    <img src={image3} alt="Thumb" />
                     <div className="live-view">
-                      <a
-                        href="assets/img/800x800.png"
-                        className="item popup-link"
-                      >
+                      <a href={image2} className="item popup-link">
                         <i className="fa fa-camera" />
                       </a>
                       <a
@@ -748,12 +649,9 @@ const Onepage = () => {
               <div className="item">
                 <div className="col-md-5">
                   <div className="thumb">
-                    <img src="assets/img/700x800.png" alt="Thumb" />
+                    <img src={image3} alt="Thumb" />
                     <div className="live-view">
-                      <a
-                        href="assets/img/800x800.png"
-                        className="item popup-link"
-                      >
+                      <a href={image2} className="item popup-link">
                         <i className="fa fa-camera" />
                       </a>
                       <a
@@ -864,7 +762,7 @@ const Onepage = () => {
                 <div className="item">
                   <div className="thumb">
                     <a href="#">
-                      <img src="assets/img/800x600.png" alt="Thumb" />
+                      <img src={image4} alt="Thumb" />
                     </a>
                     <div className="price">Price: Free</div>
                   </div>
@@ -872,7 +770,7 @@ const Onepage = () => {
                     <div className="author-info">
                       <div className="thumb">
                         <a href="#">
-                          <img src="assets/img/100x100.png" alt="Thumb" />
+                          <img src={image5} alt="Thumb" />
                         </a>
                       </div>
                       <div className="others">
@@ -912,7 +810,7 @@ const Onepage = () => {
                 <div className="item">
                   <div className="thumb">
                     <a href="#">
-                      <img src="assets/img/800x600.png" alt="Thumb" />
+                      <img src={image4} alt="Thumb" />
                     </a>
                     <div className="price">Price: $12</div>
                   </div>
@@ -920,7 +818,7 @@ const Onepage = () => {
                     <div className="author-info">
                       <div className="thumb">
                         <a href="#">
-                          <img src="assets/img/100x100.png" alt="Thumb" />
+                          <img src={image5} alt="Thumb" />
                         </a>
                       </div>
                       <div className="others">
@@ -960,7 +858,7 @@ const Onepage = () => {
                 <div className="item">
                   <div className="thumb">
                     <a href="#">
-                      <img src="assets/img/800x600.png" alt="Thumb" />
+                      <img src={image4} alt="Thumb" />
                     </a>
                     <div className="price">Price: Free</div>
                   </div>
@@ -968,7 +866,7 @@ const Onepage = () => {
                     <div className="author-info">
                       <div className="thumb">
                         <a href="#">
-                          <img src="assets/img/100x100.png" alt="Thumb" />
+                          <img src={image5} alt="Thumb" />
                         </a>
                       </div>
                       <div className="others">
@@ -1008,7 +906,7 @@ const Onepage = () => {
                 <div className="item">
                   <div className="thumb">
                     <a href="#">
-                      <img src="assets/img/800x600.png" alt="Thumb" />
+                      <img src={image4} alt="Thumb" />
                     </a>
                     <div className="price">Price: $46</div>
                   </div>
@@ -1016,7 +914,7 @@ const Onepage = () => {
                     <div className="author-info">
                       <div className="thumb">
                         <a href="#">
-                          <img src="assets/img/100x100.png" alt="Thumb" />
+                          <img src={image5} alt="Thumb" />
                         </a>
                       </div>
                       <div className="others">
@@ -1056,7 +954,7 @@ const Onepage = () => {
                 <div className="item">
                   <div className="thumb">
                     <a href="#">
-                      <img src="assets/img/800x600.png" alt="Thumb" />
+                      <img src={image4} alt="Thumb" />
                     </a>
                     <div className="price">Price: $124</div>
                   </div>
@@ -1064,7 +962,7 @@ const Onepage = () => {
                     <div className="author-info">
                       <div className="thumb">
                         <a href="#">
-                          <img src="assets/img/100x100.png" alt="Thumb" />
+                          <img src={image5} alt="Thumb" />
                         </a>
                       </div>
                       <div className="others">
@@ -1131,7 +1029,7 @@ const Onepage = () => {
               <div className="col-md-3 col-sm-6 equal-height">
                 <div
                   className="item"
-                  style={{ backgroundImage: "url(assets/img/800x600.png)" }}
+                  style={{ backgroundImage: `url(${image4})` }}
                 >
                   <a href="#">
                     <i className="flaticon-feature" />
@@ -1145,7 +1043,7 @@ const Onepage = () => {
               <div className="col-md-3 col-sm-6 equal-height">
                 <div
                   className="item"
-                  style={{ backgroundImage: "url(assets/img/800x600.png)" }}
+                  style={{ backgroundImage: `url(${image4})` }}
                 >
                   <a href="#">
                     <i className="flaticon-interaction" />
@@ -1159,7 +1057,7 @@ const Onepage = () => {
               <div className="col-md-3 col-sm-6 equal-height">
                 <div
                   className="item"
-                  style={{ backgroundImage: "url(assets/img/800x600.png)" }}
+                  style={{ backgroundImage: `url(${image4})` }}
                 >
                   <a href="#">
                     <i className="flaticon-conveyor" />
@@ -1173,7 +1071,7 @@ const Onepage = () => {
               <div className="col-md-3 col-sm-6 equal-height">
                 <div
                   className="item"
-                  style={{ backgroundImage: "url(assets/img/800x600.png)" }}
+                  style={{ backgroundImage: `url(${image4})` }}
                 >
                   <a href="#">
                     <i className="flaticon-education" />
@@ -1187,7 +1085,7 @@ const Onepage = () => {
               <div className="col-md-3 col-sm-6 equal-height">
                 <div
                   className="item"
-                  style={{ backgroundImage: "url(assets/img/800x600.png)" }}
+                  style={{ backgroundImage: `url(${image4})` }}
                 >
                   <a href="#">
                     <i className="flaticon-potential" />
@@ -1201,7 +1099,7 @@ const Onepage = () => {
               <div className="col-md-3 col-sm-6 equal-height">
                 <div
                   className="item"
-                  style={{ backgroundImage: "url(assets/img/800x600.png)" }}
+                  style={{ backgroundImage: `url(${image4})` }}
                 >
                   <a href="#">
                     <i className="flaticon-print" />
@@ -1215,7 +1113,7 @@ const Onepage = () => {
               <div className="col-md-3 col-sm-6 equal-height">
                 <div
                   className="item"
-                  style={{ backgroundImage: "url(assets/img/800x600.png)" }}
+                  style={{ backgroundImage: `url(${image4})` }}
                 >
                   <a href="#">
                     <i className="flaticon-translate" />
@@ -1229,7 +1127,7 @@ const Onepage = () => {
               <div className="col-md-3 col-sm-6 equal-height">
                 <div
                   className="item"
-                  style={{ backgroundImage: "url(assets/img/800x600.png)" }}
+                  style={{ backgroundImage: `url(${image4})` }}
                 >
                   <a href="#">
                     <i className="flaticon-firewall" />
@@ -1272,7 +1170,7 @@ const Onepage = () => {
                 {/* Single Item */}
                 <div className="advisor-item">
                   <div className="info-box">
-                    <img src="assets/img/800x600.png" alt="Thumb" />
+                    <img src={image4} alt="Thumb" />
                     <div className="info-title">
                       <h4>Professon. Nuri Paul</h4>
                       <span>Chemistry specialist</span>
@@ -1307,7 +1205,8 @@ const Onepage = () => {
                 {/* Single Item */}
                 <div className="advisor-item">
                   <div className="info-box">
-                    <img src="assets/img/800x600.png" alt="Thumb" />
+                    <img src={image4} alt="Thumb" />
+
                     <div className="info-title">
                       <h4>Monayem Pruda</h4>
                       <span>Senior Developer</span>
@@ -1342,7 +1241,8 @@ const Onepage = () => {
                 {/* Single Item */}
                 <div className="advisor-item">
                   <div className="info-box">
-                    <img src="assets/img/800x600.png" alt="Thumb" />
+                    <img src={image4} alt="Thumb" />
+
                     <div className="info-title">
                       <h4>Dr. Bubly Minu</h4>
                       <span>Science specialist</span>
@@ -1377,7 +1277,8 @@ const Onepage = () => {
                 {/* Single Item */}
                 <div className="advisor-item">
                   <div className="info-box">
-                    <img src="assets/img/800x600.png" alt="Thumb" />
+                    <img src={image4} alt="Thumb" />
+
                     <div className="info-title">
                       <h4>Professon. John Doe</h4>
                       <span>Senior Writter</span>
@@ -1412,7 +1313,8 @@ const Onepage = () => {
                 {/* Single Item */}
                 <div className="advisor-item">
                   <div className="info-box">
-                    <img src="assets/img/800x600.png" alt="Thumb" />
+                    <img src={image4} alt="Thumb" />
+
                     <div className="info-title">
                       <h4>Professon. John Doe</h4>
                       <span>Senior Writter</span>
@@ -1454,7 +1356,7 @@ const Onepage = () => {
     ============================================= */}
       <div
         className="fun-factor-area default-padding bottom-less text-center bg-fixed shadow dark-hard"
-        style={{ backgroundImage: "url(assets/img/2440x1578.png)" }}
+        style={{ backgroundImage: `url(${image1})` }}
       >
         <div className="container">
           <div className="row">
@@ -1530,7 +1432,7 @@ const Onepage = () => {
               <div className="item horizontal col-md-12">
                 <div
                   className="col-md-6 thumb bg-cover"
-                  style={{ backgroundImage: "url(assets/img/1500x700.png)" }}
+                  style={{ backgroundImage: `url(${image1})` }}
                 >
                   <div className="date">
                     <h4>
@@ -1573,7 +1475,7 @@ const Onepage = () => {
               {/* Single Item */}
               <div className="item vertical col-md-6">
                 <div className="thumb">
-                  <img src="assets/img/800x600.png" alt="Thumb" />
+                  <img src={image4} alt="Thumb" />
                   <div className="date">
                     <h4>
                       <span>27</span> Feb, 2019
@@ -1615,7 +1517,7 @@ const Onepage = () => {
               {/* Single Item */}
               <div className="item vertical col-md-6">
                 <div className="thumb">
-                  <img src="assets/img/800x600.png" alt="Thumb" />
+                  <img src={image4} alt="Thumb" />
                   <div className="date">
                     <h4>
                       <span>15</span> Mar, 2019
@@ -1658,7 +1560,7 @@ const Onepage = () => {
               <div className="item horizontal col-md-12">
                 <div
                   className="col-md-6 thumb bg-cover"
-                  style={{ backgroundImage: "url(assets/img/1500x700.png)" }}
+                  style={{ backgroundImage: `url(${image1})` }}
                 >
                   <div className="date">
                     <h4>
@@ -1779,7 +1681,7 @@ const Onepage = () => {
                 </form>
               </div>
               <div className="col-md-6 thumb">
-                <img src="assets/img/800x800.png" alt="Thumb" />
+                <img src={image2} alt="Thumb" />
               </div>
             </div>
           </div>
@@ -1810,7 +1712,7 @@ const Onepage = () => {
                 {/* Single Item */}
                 <div className="item">
                   <div className="col-md-5 thumb">
-                    <img src="assets/img/800x800.png" alt="Thumb" />
+                    <img src={image2} alt="Thumb" />
                   </div>
                   <div className="col-md-7 info">
                     <p>
@@ -1826,7 +1728,7 @@ const Onepage = () => {
                 {/* Single Item */}
                 <div className="item">
                   <div className="col-md-5 thumb">
-                    <img src="assets/img/800x800.png" alt="Thumb" />
+                    <img src={image2} alt="Thumb" />
                   </div>
                   <div className="col-md-7 info">
                     <p>
@@ -1842,7 +1744,7 @@ const Onepage = () => {
                 {/* Single Item */}
                 <div className="item">
                   <div className="col-md-5 thumb">
-                    <img src="assets/img/800x800.png" alt="Thumb" />
+                    <img src={image2} alt="Thumb" />
                   </div>
                   <div className="col-md-7 info">
                     <p>
@@ -1858,7 +1760,7 @@ const Onepage = () => {
                 {/* Single Item */}
                 <div className="item">
                   <div className="col-md-5 thumb">
-                    <img src="assets/img/800x800.png" alt="Thumb" />
+                    <img src={image2} alt="Thumb" />
                   </div>
                   <div className="col-md-7 info">
                     <p>
@@ -1902,7 +1804,7 @@ const Onepage = () => {
                 <div className="item">
                   <div className="thumb">
                     <a href="#">
-                      <img src="assets/img/800x600.png" alt="Thumb" />
+                      <img src={image4} alt="Thumb" />
                     </a>
                     <div className="date">
                       <h4>
@@ -1945,7 +1847,7 @@ const Onepage = () => {
                 <div className="item">
                   <div className="thumb">
                     <a href="#">
-                      <img src="assets/img/800x600.png" alt="Thumb" />
+                      <img src={image4} alt="Thumb" />
                     </a>
                     <div className="date">
                       <h4>
@@ -1988,7 +1890,7 @@ const Onepage = () => {
                 <div className="item">
                   <div className="thumb">
                     <a href="#">
-                      <img src="assets/img/800x600.png" alt="Thumb" />
+                      <img src={image4} alt="Thumb" />
                     </a>
                     <div className="date">
                       <h4>
@@ -2048,52 +1950,52 @@ const Onepage = () => {
               <div className="clients-items owl-carousel owl-theme text-center">
                 <div className="single-item">
                   <a href="#">
-                    <img src="assets/img/150x80.png" alt="Clients" />
+                    <img src={image6} alt="Clients" />
                   </a>
                 </div>
                 <div className="single-item">
                   <a href="#">
-                    <img src="assets/img/150x80.png" alt="Clients" />
+                    <img src={image6} alt="Clients" />
                   </a>
                 </div>
                 <div className="single-item">
                   <a href="#">
-                    <img src="assets/img/150x80.png" alt="Clients" />
+                    <img src={image6} alt="Clients" />
                   </a>
                 </div>
                 <div className="single-item">
                   <a href="#">
-                    <img src="assets/img/150x80.png" alt="Clients" />
+                    <img src={image6} alt="Clients" />
                   </a>
                 </div>
                 <div className="single-item">
                   <a href="#">
-                    <img src="assets/img/150x80.png" alt="Clients" />
+                    <img src={image6} alt="Clients" />
                   </a>
                 </div>
                 <div className="single-item">
                   <a href="#">
-                    <img src="assets/img/150x80.png" alt="Clients" />
+                    <img src={image6} alt="Clients" />
                   </a>
                 </div>
                 <div className="single-item">
                   <a href="#">
-                    <img src="assets/img/150x80.png" alt="Clients" />
+                    <img src={image6} alt="Clients" />
                   </a>
                 </div>
                 <div className="single-item">
                   <a href="#">
-                    <img src="assets/img/150x80.png" alt="Clients" />
+                    <img src={image6} alt="Clients" />
                   </a>
                 </div>
                 <div className="single-item">
                   <a href="#">
-                    <img src="assets/img/150x80.png" alt="Clients" />
+                    <img src={image6} alt="Clients" />
                   </a>
                 </div>
                 <div className="single-item">
                   <a href="#">
-                    <img src="assets/img/150x80.png" alt="Clients" />
+                    <img src={image6} alt="Clients" />
                   </a>
                 </div>
               </div>
@@ -2256,172 +2158,7 @@ const Onepage = () => {
         </div>
       </div>
       {/* End Contact Info */}
-      {/* Start Footer 
-    ============================================= */}
-      <footer className="bg-dark default-padding-top text-light">
-        <div className="container">
-          <div className="row">
-            <div className="f-items">
-              <div className="col-md-4 item">
-                <div className="f-item">
-                  <img src="assets/img/logo-light.png" alt="Logo" />
-                  <p>
-                    At Seoak, we take pride in our team of highly talented
-                    professionals who possess over 15 years of combined
-                    experience in the fields of Information Technology and
-                    Corporate Training. Our primary objective is to bridge the
-                    growing gap between industry requirements and the skills
-                    possessed by prospective employees, particularly graduates
-                    interested in the area of Information Technology.
-                  </p>
-                  <p className="text-italic">
-                    Please write your email and get our amazing updates, news
-                    and support
-                  </p>
-                  <div className="subscribe">
-                    <form action="#">
-                      <div className="input-group stylish-input-group">
-                        <input
-                          type="email"
-                          placeholder="Enter your e-mail here"
-                          className="form-control"
-                          name="email"
-                        />
-                        <button type="submit">
-                          <i className="fa fa-paper-plane" />
-                        </button>
-                      </div>
-                    </form>
-                  </div>
-                </div>
-              </div>
-              <div className="col-md-2 col-sm-6 item">
-                <div className="f-item link">
-                  <h4>Links</h4>
-                  <ul>
-                    <li>
-                      <a href="#">Courses</a>
-                    </li>
-                    <li>
-                      <a href="#">Event</a>
-                    </li>
-                    <li>
-                      <a href="#">Gallery</a>
-                    </li>
-                    <li>
-                      <a href="#">Faqs</a>
-                    </li>
-                    <li>
-                      <a href="#">Teachers</a>
-                    </li>
-                    <li>
-                      <a href="#">Contact</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div className="col-md-2 col-sm-6 item">
-                <div className="f-item link">
-                  <h4>Support</h4>
-                  <ul>
-                    <li>
-                      <a href="#">Documentation</a>
-                    </li>
-                    <li>
-                      <a href="#">Forums</a>
-                    </li>
-                    <li>
-                      <a href="#">Language Packs</a>
-                    </li>
-                    <li>
-                      <a href="#">Release Status</a>
-                    </li>
-                    <li>
-                      <a href="#">LearnPress</a>
-                    </li>
-                    <li>
-                      <a href="#">Feedback</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div className="col-md-4 item">
-                <div className="f-item address">
-                  <h4>Address</h4>
-                  <ul>
-                    <li>
-                      <i className="fas fa-envelope" />
-                      <p>
-                        Email{" "}
-                        <span>
-                          <a href="mailto:support@validtheme.com">
-                            support@validtheme.com
-                          </a>
-                        </span>
-                      </p>
-                    </li>
-                    <li>
-                      <i className="fas fa-map" />
-                      <p>
-                        Office <span>123 6th St. Melbourne, FL 32904</span>
-                      </p>
-                    </li>
-                  </ul>
-                  <div className="opening-info">
-                    <h5>Opening Hours</h5>
-                    <ul>
-                      <li>
-                        {" "}
-                        <span> Mon - Tues :</span>
-                        <div className="pull-right"> 6.00 am - 10.00 pm </div>
-                      </li>
-                      <li>
-                        {" "}
-                        <span> Wednes - Thurs :</span>
-                        <div className="pull-right"> 8.00 am - 6.00 pm </div>
-                      </li>
-                      <li>
-                        {" "}
-                        <span> Sun : </span>
-                        <div className="pull-right closed"> Closed </div>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        {/* Start Footer Bottom */}
-        <div className="footer-bottom">
-          <div className="container">
-            <div className="row">
-              <div className="col-md-12">
-                <div className="col-md-6">
-                  <p>
-                    © Copyright 2019. All Rights Reserved by{" "}
-                    <a href="#">validthemes</a>
-                  </p>
-                </div>
-                <div className="col-md-6 text-right link">
-                  <ul>
-                    <li>
-                      <a href="#">Terms of user</a>
-                    </li>
-                    <li>
-                      <a href="#">License</a>
-                    </li>
-                    <li>
-                      <a href="#">Support</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        {/* End Footer Bottom */}
-      </footer>
+      <FooterSection />
     </>
   );
 };
