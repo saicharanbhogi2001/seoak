@@ -1065,7 +1065,7 @@ export const CoursePage = () => {
     case "/data-science" || "live-data-science":
       return (
         <CourseModule
-          coursetitle={"Full Stack Web Development"}
+          coursetitle={"Data Science"}
           imgtitle={dataScience}
           courseDescriptionText={
             <>
