@@ -14,6 +14,7 @@ import fullStackImage from "../assets/img/fullstackwebdevelopment.png";
 import DataScienceImage from "../assets/img/datascience.png";
 import cloudImage from "../assets/img/cloudcomputing.png";
 import dsaImage from "../assets/img/dsa.png";
+import { Link } from "react-router-dom";
 
 const CertifiedCourses = () => {
   return (
@@ -30,9 +31,9 @@ const CertifiedCourses = () => {
               <h1>Certified Courses</h1>
               <ul className="breadcrumb">
                 <li>
-                  <a href="#">
+                  <Link to="#">
                     <i className="fas fa-home" /> Home
-                  </a>
+                  </Link>
                 </li>
                 <li className="active">Course</li>
               </ul>
@@ -51,13 +52,13 @@ const CertifiedCourses = () => {
               <div className="col-md-4 col-sm-6 equal-height">
                 <div className="item">
                   <div className="thumb">
-                    <a href="#">
+                    <Link to="#">
                       <img
                         src={javaImage}
                         alt="Thumb"
                         style={{ height: "300px" }}
                       />
-                    </a>
+                    </Link>
                     <div className="price">
                       <b>Price: 5,000₹</b>
                     </div>
@@ -65,10 +66,10 @@ const CertifiedCourses = () => {
                   <div className="info">
                     <div className="author-info">
                       {/* <div class="thumb">
-                                  <a href="#"><img src="assets/img/100x100.png" alt="Thumb"></a>
+                                  <Link to="#"><img src="assets/img/100x100.png" alt="Thumb"></Link>
                               </div>
                               <div class="others">
-                                  <a href="#">Munil Druva</a>
+                                  <Link to="#">Munil Druva</Link>
                                   <div class="rating">
                                       <i class="fas fa-star"></i>
                                       <i class="fas fa-star"></i>
@@ -80,7 +81,7 @@ const CertifiedCourses = () => {
                               </div> */}
                     </div>
                     <h4>
-                      <a href="#">Java Programming</a>
+                      <Link to="#">Java Programming</Link>
                     </h4>
                     {/* <p>
                               Would day nor ask walls known. But preserved advantage are but and certainty earnestly enjoyment.
@@ -94,7 +95,7 @@ const CertifiedCourses = () => {
                           <i className="fas fa-clock" /> 15:00hrs
                         </li>
                       </ul>
-                      <a href="/java-programming">Know More</a>
+                      <Link to="/java-programming">Know More</Link>
                     </div>
                   </div>
                 </div>
@@ -104,13 +105,13 @@ const CertifiedCourses = () => {
               <div className="col-md-4 col-sm-6 equal-height">
                 <div className="item">
                   <div className="thumb">
-                    <a href="#">
+                    <Link to="#">
                       <img
                         src={cImage}
                         alt="Thumb"
                         style={{ height: "300px" }}
                       />
-                    </a>
+                    </Link>
                     <div className="price">
                       <b>Price: 5,000₹</b>
                     </div>
@@ -118,10 +119,10 @@ const CertifiedCourses = () => {
                   <div className="info">
                     <div className="author-info">
                       {/* <div class="thumb">
-                                  <a href="#"><img src="assets/img/100x100.png" alt="Thumb"></a>
+                                  <Link to="#"><img src="assets/img/100x100.png" alt="Thumb"></Link>
                               </div>
                               <div class="others">
-                                  <a href="#">Munil Druva</a>
+                                  <Link to="#">Munil Druva</Link>
                                   <div class="rating">
                                       <i class="fas fa-star"></i>
                                       <i class="fas fa-star"></i>
@@ -133,7 +134,7 @@ const CertifiedCourses = () => {
                               </div> */}
                     </div>
                     <h4>
-                      <a href="#">C Language</a>
+                      <Link to="#">C Language</Link>
                     </h4>
                     {/* <p>
                               Would day nor ask walls known. But preserved advantage are but and certainty earnestly enjoyment.
@@ -147,7 +148,7 @@ const CertifiedCourses = () => {
                           <i className="fas fa-clock" /> 10:00hrs
                         </li>
                       </ul>
-                      <a href="/c-language">Know More</a>
+                      <Link to="/c-language">Know More</Link>
                     </div>
                   </div>
                 </div>
@@ -157,13 +158,13 @@ const CertifiedCourses = () => {
               <div className="col-md-4 col-sm-6 equal-height">
                 <div className="item">
                   <div className="thumb">
-                    <a href="#">
+                    <Link to="#">
                       <img
                         src={cppImage}
                         alt="Thumb"
                         style={{ height: "300px" }}
                       />
-                    </a>
+                    </Link>
                     <div className="price">
                       <b>Price: 5,000₹</b>
                     </div>
@@ -171,10 +172,10 @@ const CertifiedCourses = () => {
                   <div className="info">
                     <div className="author-info">
                       {/* <div class="thumb">
-                                  <a href="#"><img src="assets/img/100x100.png" alt="Thumb"></a>
+                                  <Link to="#"><img src="assets/img/100x100.png" alt="Thumb"></Link>
                               </div>
                               <div class="others">
-                                  <a href="#">Munil Druva</a>
+                                  <Link to="#">Munil Druva</Link>
                                   <div class="rating">
                                       <i class="fas fa-star"></i>
                                       <i class="fas fa-star"></i>
@@ -186,7 +187,7 @@ const CertifiedCourses = () => {
                               </div> */}
                     </div>
                     <h4>
-                      <a href="#">C++ Language</a>
+                      <Link to="#">C++ Language</Link>
                     </h4>
                     {/* <p>
                               Would day nor ask walls known. But preserved advantage are but and certainty earnestly enjoyment.
@@ -200,7 +201,7 @@ const CertifiedCourses = () => {
                           <i className="fas fa-clock" /> 10:00
                         </li>
                       </ul>
-                      <a href="/cpp-language">Know More</a>
+                      <Link to="/cpp-language">Know More</Link>
                     </div>
                   </div>
                 </div>
@@ -210,13 +211,13 @@ const CertifiedCourses = () => {
               <div className="col-md-4 col-sm-6 equal-height">
                 <div className="item">
                   <div className="thumb">
-                    <a href="#">
+                    <Link to="#">
                       <img
                         src={powerbiImage}
                         alt="Thumb"
                         style={{ height: "300px" }}
                       />
-                    </a>
+                    </Link>
                     <div className="price">
                       <b>Price: 5,000₹</b>
                     </div>
@@ -224,10 +225,10 @@ const CertifiedCourses = () => {
                   <div className="info">
                     <div className="author-info">
                       {/* <div class="thumb">
-                                  <a href="#"><img src="assets/img/100x100.png" alt="Thumb"></a>
+                                  <Link to="#"><img src="assets/img/100x100.png" alt="Thumb"></Link>
                               </div>
                               <div class="others">
-                                  <a href="#">Munil Druva</a>
+                                  <Link to="#">Munil Druva</Link>
                                   <div class="rating">
                                       <i class="fas fa-star"></i>
                                       <i class="fas fa-star"></i>
@@ -239,7 +240,7 @@ const CertifiedCourses = () => {
                               </div> */}
                     </div>
                     <h4>
-                      <a href="#">Power BI</a>
+                      <Link to="#">Power BI</Link>
                     </h4>
                     {/* <p>
                               Would day nor ask walls known. But preserved advantage are but and certainty earnestly enjoyment.
@@ -253,7 +254,7 @@ const CertifiedCourses = () => {
                           <i className="fas fa-clock" /> 48:00hrs
                         </li>
                       </ul>
-                      <a href="/powerbi">Know More</a>
+                      <Link to="/powerbi">Know More</Link>
                     </div>
                   </div>
                 </div>
@@ -263,13 +264,13 @@ const CertifiedCourses = () => {
               <div className="col-md-4 col-sm-6 equal-height">
                 <div className="item">
                   <div className="thumb">
-                    <a href="#">
+                    <Link to="#">
                       <img
                         src={artificalIntelliganceImage}
                         alt="Thumb"
                         style={{ height: "300px" }}
                       />
-                    </a>
+                    </Link>
                     <div className="price">
                       <b>Price: 5,000₹</b>
                     </div>
@@ -277,10 +278,10 @@ const CertifiedCourses = () => {
                   <div className="info">
                     <div className="author-info">
                       {/* <div class="thumb">
-                                  <a href="#"><img src="assets/img/100x100.png" alt="Thumb"></a>
+                                  <Link to="#"><img src="assets/img/100x100.png" alt="Thumb"></Link>
                               </div>
                               <div class="others">
-                                  <a href="#">Munil Druva</a>
+                                  <Link to="#">Munil Druva</Link>
                                   <div class="rating">
                                       <i class="fas fa-star"></i>
                                       <i class="fas fa-star"></i>
@@ -292,7 +293,7 @@ const CertifiedCourses = () => {
                               </div> */}
                     </div>
                     <h4>
-                      <a href="#">Artificial Intelligence</a>
+                      <Link to="#">Artificial Intelligence</Link>
                     </h4>
                     {/* <p>
                               Would day nor ask walls known. But preserved advantage are but and certainty earnestly enjoyment.
@@ -306,7 +307,7 @@ const CertifiedCourses = () => {
                           <i className="fas fa-clock" /> 48:00hrs
                         </li>
                       </ul>
-                      <a href="/advanced-ai">Know More</a>
+                      <Link to="/advanced-ai">Know More</Link>
                     </div>
                   </div>
                 </div>
@@ -316,13 +317,13 @@ const CertifiedCourses = () => {
               <div className="col-md-4 col-sm-6 equal-height">
                 <div className="item">
                   <div className="thumb">
-                    <a href="#">
+                    <Link to="#">
                       <img
                         src={cybersecurityImage}
                         alt="Thumb"
                         style={{ height: "300px" }}
                       />
-                    </a>
+                    </Link>
                     <div className="price">
                       <b>Price: 5,000₹</b>
                     </div>
@@ -330,10 +331,10 @@ const CertifiedCourses = () => {
                   <div className="info">
                     <div className="author-info">
                       {/* <div class="thumb">
-                                  <a href="#"><img src="assets/img/100x100.png" alt="Thumb"></a>
+                                  <Link to="#"><img src="assets/img/100x100.png" alt="Thumb"></Link>
                               </div>
                               <div class="others">
-                                  <a href="#">Akua Paul</a>
+                                  <Link to="#">Akua Paul</Link>
                                   <div class="rating">
                                       <i class="fas fa-star"></i>
                                       <i class="fas fa-star"></i>
@@ -345,7 +346,7 @@ const CertifiedCourses = () => {
                               </div> */}
                     </div>
                     <h4>
-                      <a href="#">Cyber Security</a>
+                      <Link to="#">Cyber Security</Link>
                     </h4>
                     {/* <p>
                               Would day nor ask walls known. But preserved advantage are but and certainty earnestly enjoyment.
@@ -359,7 +360,7 @@ const CertifiedCourses = () => {
                           <i className="fas fa-clock" /> 48:00hrs
                         </li>
                       </ul>
-                      <a href="/cyber-security">Know More</a>
+                      <Link to="/cyber-security">Know More</Link>
                     </div>
                   </div>
                 </div>
@@ -369,13 +370,13 @@ const CertifiedCourses = () => {
               <div className="col-md-4 col-sm-6 equal-height">
                 <div className="item">
                   <div className="thumb">
-                    <a href="#">
+                    <Link to="#">
                       <img
                         src={chatgptImage}
                         alt="Thumb"
                         style={{ height: "300px" }}
                       />
-                    </a>
+                    </Link>
                     <div className="price">
                       <b>Price: 5,000₹</b>
                     </div>
@@ -383,10 +384,10 @@ const CertifiedCourses = () => {
                   <div className="info">
                     <div className="author-info">
                       {/* <div class="thumb">
-                                  <a href="#"><img src="assets/img/100x100.png" alt="Thumb"></a>
+                                  <Link to="#"><img src="assets/img/100x100.png" alt="Thumb"></Link>
                               </div>
                               <div class="others">
-                                  <a href="#">Jonathom Kiyam</a>
+                                  <Link to="#">Jonathom Kiyam</Link>
                                   <div class="rating">
                                       <i class="fas fa-star"></i>
                                       <i class="fas fa-star"></i>
@@ -398,7 +399,7 @@ const CertifiedCourses = () => {
                               </div> */}
                     </div>
                     <h4>
-                      <a href="#">chat-GPT</a>
+                      <Link to="#">chat-GPT</Link>
                     </h4>
                     {/* <p>
                               Would day nor ask walls known. But preserved advantage are but and certainty earnestly enjoyment.
@@ -412,7 +413,7 @@ const CertifiedCourses = () => {
                           <i className="fas fa-clock" /> 48:00hrs
                         </li>
                       </ul>
-                      <a href="/chat-gpt">Know More</a>
+                      <Link to="/chat-gpt">Know More</Link>
                     </div>
                   </div>
                 </div>
@@ -422,13 +423,13 @@ const CertifiedCourses = () => {
               <div className="col-md-4 col-sm-6 equal-height">
                 <div className="item">
                   <div className="thumb">
-                    <a href="#">
+                    <Link to="#">
                       <img
                         src={fullStackImage}
                         alt="Thumb"
                         style={{ height: "300px" }}
                       />
-                    </a>
+                    </Link>
                     <div className="price">
                       <b>Price: 5,000₹</b>
                     </div>
@@ -436,10 +437,10 @@ const CertifiedCourses = () => {
                   <div className="info">
                     <div className="author-info">
                       {/* <div class="thumb">
-                                  <a href="#"><img src="assets/img/100x100.png" alt="Thumb"></a>
+                                  <Link to="#"><img src="assets/img/100x100.png" alt="Thumb"></Link>
                               </div>
                               <div class="others">
-                                  <a href="#">Huma Park</a>
+                                  <Link to="#">Huma Park</Link>
                                   <div class="rating">
                                       <i class="fas fa-star"></i>
                                       <i class="fas fa-star"></i>
@@ -451,7 +452,7 @@ const CertifiedCourses = () => {
                               </div> */}
                     </div>
                     <h4>
-                      <a href="#">Full Stack Web Development</a>
+                      <Link to="#">Full Stack Web Development</Link>
                     </h4>
                     {/* <p>
                               Would day nor ask walls known. But preserved advantage are but and certainty earnestly enjoyment.
@@ -465,7 +466,7 @@ const CertifiedCourses = () => {
                           <i className="fas fa-clock" /> 48:00hrs
                         </li>
                       </ul>
-                      <a href="/full-stack-development">Know More</a>
+                      <Link to="/full-stack-development">Know More</Link>
                     </div>
                   </div>
                 </div>
@@ -475,13 +476,13 @@ const CertifiedCourses = () => {
               <div className="col-md-4 col-sm-6 equal-height">
                 <div className="item">
                   <div className="thumb">
-                    <a href="#">
+                    <Link to="#">
                       <img
                         src={DataScienceImage}
                         alt="Thumb"
                         style={{ height: "300px" }}
                       />
-                    </a>
+                    </Link>
                     <div className="price">
                       <b>Price: 5,000₹</b>
                     </div>
@@ -489,10 +490,10 @@ const CertifiedCourses = () => {
                   <div className="info">
                     <div className="author-info">
                       {/* <div class="thumb">
-                                  <a href="#"><img src="assets/img/100x100.png" alt="Thumb"></a>
+                                  <Link to="#"><img src="assets/img/100x100.png" alt="Thumb"></Link>
                               </div>
                               <div class="others">
-                                  <a href="#">Prokash Timer</a>
+                                  <Link to="#">Prokash Timer</Link>
                                   <div class="rating">
                                       <i class="fas fa-star"></i> 
                                       <i class="fas fa-star"></i>
@@ -504,7 +505,7 @@ const CertifiedCourses = () => {
                               </div> */}
                     </div>
                     <h4>
-                      <a href="#">Data Science</a>
+                      <Link to="#">Data Science</Link>
                     </h4>
                     {/* <p>
                               Would day nor ask walls known. But preserved advantage are but and certainty earnestly enjoyment.
@@ -518,7 +519,7 @@ const CertifiedCourses = () => {
                           <i className="fas fa-clock" /> 48:00hrs
                         </li>
                       </ul>
-                      <a href="/data-science">Know More</a>
+                      <Link to="/data-science">Know More</Link>
                     </div>
                   </div>
                 </div>
@@ -528,13 +529,13 @@ const CertifiedCourses = () => {
               <div className="col-md-4 col-sm-6 equal-height">
                 <div className="item">
                   <div className="thumb">
-                    <a href="#">
+                    <Link to="#">
                       <img
                         src={cloudImage}
                         alt="Thumb"
                         style={{ height: "300px" }}
                       />
-                    </a>
+                    </Link>
                     <div className="price">
                       <b>Price: 5,000₹</b>
                     </div>
@@ -542,10 +543,10 @@ const CertifiedCourses = () => {
                   <div className="info">
                     <div className="author-info">
                       {/* <div class="thumb">
-                                  <a href="#"><img src="assets/img/100x100.png" alt="Thumb"></a>
+                                  <Link to="#"><img src="assets/img/100x100.png" alt="Thumb"></Link>
                               </div>
                               <div class="others">
-                                  <a href="#">Drunal Trula</a>
+                                  <Link to="#">Drunal Trula</Link>
                                   <div class="rating">
                                       <i class="fas fa-star"></i>
                                       <i class="fas fa-star"></i>
@@ -557,7 +558,7 @@ const CertifiedCourses = () => {
                               </div> */}
                     </div>
                     <h4>
-                      <a href="#">Cloud Computing</a>
+                      <Link to="#">Cloud Computing</Link>
                     </h4>
                     {/* <p>
                               Would day nor ask walls known. But preserved advantage are but and certainty earnestly enjoyment.
@@ -571,7 +572,7 @@ const CertifiedCourses = () => {
                           <i className="fas fa-clock" /> 48:00hrs
                         </li>
                       </ul>
-                      <a href="/cloud-computing">Enroll Now</a>
+                      <Link to="/cloud-computing">Enroll Now</Link>
                     </div>
                   </div>
                 </div>
@@ -581,13 +582,13 @@ const CertifiedCourses = () => {
               <div className="col-md-4 col-sm-6 equal-height">
                 <div className="item">
                   <div className="thumb">
-                    <a href="#">
+                    <Link to="#">
                       <img
                         src={pythonImage}
                         alt="Thumb"
                         style={{ height: "300px" }}
                       />
-                    </a>
+                    </Link>
                     <div className="price">
                       <b>Price: 5,000₹</b>
                     </div>
@@ -595,10 +596,10 @@ const CertifiedCourses = () => {
                   <div className="info">
                     <div className="author-info">
                       {/* <div class="thumb">
-                                  <a href="#"><img src="assets/img/100x100.png" alt="Thumb"></a>
+                                  <Link to="#"><img src="assets/img/100x100.png" alt="Thumb"></Link>
                               </div>
                               <div class="others">
-                                  <a href="#">Drunal Trula</a>
+                                  <Link to="#">Drunal Trula</Link>
                                   <div class="rating">
                                       <i class="fas fa-star"></i>
                                       <i class="fas fa-star"></i>
@@ -610,7 +611,7 @@ const CertifiedCourses = () => {
                               </div> */}
                     </div>
                     <h4>
-                      <a href="#">Python Programming</a>
+                      <Link to="#">Python Programming</Link>
                     </h4>
                     {/* <p>
                               Would day nor ask walls known. But preserved advantage are but and certainty earnestly enjoyment.
@@ -624,7 +625,7 @@ const CertifiedCourses = () => {
                           <i className="fas fa-clock" /> 48:00hrs
                         </li>
                       </ul>
-                      <a href="/python">Enroll Now</a>
+                      <Link to="/python">Enroll Now</Link>
                     </div>
                   </div>
                 </div>
@@ -634,13 +635,13 @@ const CertifiedCourses = () => {
               <div className="col-md-4 col-sm-6 equal-height">
                 <div className="item">
                   <div className="thumb">
-                    <a href="#">
+                    <Link to="#">
                       <img
                         src={dsaImage}
                         alt="Thumb"
                         style={{ height: "300px" }}
                       />
-                    </a>
+                    </Link>
                     <div className="price">
                       <b>Price: 5,000₹</b>
                     </div>
@@ -648,10 +649,10 @@ const CertifiedCourses = () => {
                   <div className="info">
                     <div className="author-info">
                       {/* <div class="thumb">
-                                  <a href="#"><img src="assets/img/100x100.png" alt="Thumb"></a>
+                                  <Link to="#"><img src="assets/img/100x100.png" alt="Thumb"></Link>
                               </div>
                               <div class="others">
-                                  <a href="#">Drunal Trula</a>
+                                  <Link to="#">Drunal Trula</Link>
                                   <div class="rating">
                                       <i class="fas fa-star"></i>
                                       <i class="fas fa-star"></i>
@@ -663,7 +664,7 @@ const CertifiedCourses = () => {
                               </div> */}
                     </div>
                     <h4>
-                      <a href="#">Data Structures &amp; Algorithm</a>
+                      <Link to="#">Data Structures &amp; Algorithm</Link>
                     </h4>
                     {/* <p>
                               Would day nor ask walls known. But preserved advantage are but and certainty earnestly enjoyment.
@@ -677,7 +678,7 @@ const CertifiedCourses = () => {
                           <i className="fas fa-clock" /> 48:00hrs
                         </li>
                       </ul>
-                      <a href="/dsa">Enroll Now</a>
+                      <Link to="/dsa">Enroll Now</Link>
                     </div>
                   </div>
                 </div>

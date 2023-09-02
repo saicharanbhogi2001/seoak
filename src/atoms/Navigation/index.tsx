@@ -43,9 +43,9 @@ const NavigationComponent = () => {
             >
               <i className="fa fa-bars" />
             </button>
-            <a className="navbar-brand" href="/">
+            <Link className="navbar-brand" to="/">
               <img src={SeoakLogo} className="logo" alt="Logo" />
-            </a>
+            </Link>
           </div>
           <div className="collapse navbar-collapse" id="navbar-menu">
             <ul
@@ -54,99 +54,101 @@ const NavigationComponent = () => {
               data-out="#"
             >
               <li className="#">
-                <Link to={"/"} >Home</Link>
+                <Link to={"/"}>Home</Link>
               </li>
               <li className="dropdown megamenu-fw">
-              <Link to={"/about-us"} >About Us</Link>
+                <Link to={"/about-us"}>About Us</Link>
               </li>
               <li className="dropdown">
-                <a
-                  href="/certified-courses"
+                <Link
+                  to="/certified-courses"
                   className="dropdown-toggle active"
                   data-toggle="dropdown"
                   onMouseEnter={() => setshowCertifiedCourses(true)}
                 >
                   Certified Courses
-                </a>
+                </Link>
                 {showCertifiedCourses && (
                   <ul
                     className="dropdown-menu"
                     onMouseLeave={() => setshowCertifiedCourses(false)}
                   >
                     <li>
-                      <a href="/c-language">C Language</a>
+                      <Link to="/c-language">C Language</Link>
                     </li>
                     <li>
-                      <a href="/cpp-language">C++ Language</a>
+                      <Link to="/cpp-language">C++ Language</Link>
                     </li>
                     <li>
-                      <a href="/java-programming">JAVA Programming</a>
+                      <Link to="/java-programming">JAVA Programming</Link>
                     </li>
                     <li>
-                      <a href="/powerbi">Power BI</a>
+                      <Link to="/powerbi">Power BI</Link>
                     </li>
                     <li>
-                      <a href="/python">Python</a>
+                      <Link to="/python">Python</Link>
                     </li>
                     <li>
-                      <a href="/dsa">DSA (Data Structures &amp; Algorithm)</a>
+                      <Link to="/dsa">
+                        DSA (Data Structures &amp; Algorithm)
+                      </Link>
                     </li>
                     <li>
-                      <a href="/full-stack-development">
+                      <Link to="/full-stack-development">
                         Full Stack Web Development
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="/data-science">Data Science</a>
+                      <Link to="/data-science">Data Science</Link>
                     </li>
                     <li>
-                      <a href="/cloud-computing">Cloud Computing</a>
+                      <Link to="/cloud-computing">Cloud Computing</Link>
                     </li>
                     <li>
-                      <a href="/cyber-security">Cyber Security</a>
+                      <Link to="/cyber-security">Cyber Security</Link>
                     </li>
                     <li>
-                      <a href="/advanced-ai">Advanced AI</a>
+                      <Link to="/advanced-ai">Advanced AI</Link>
                     </li>
                     <li>
-                      <a href="/chat-gpt">Chat GPT</a>
+                      <Link to="/chat-gpt">Chat GPT</Link>
                     </li>
                   </ul>
                 )}
               </li>
               <li className="dropdown">
-                <a
-                  href="/live-industrial-courses"
+                <Link
+                  to="/live-industrial-courses"
                   className="dropdown-toggle active"
                   data-toggle="dropdown"
                 >
                   Live Training Courses
-                </a>
+                </Link>
                 <ul className="dropdown-menu">
                   <li>
-                    <a href="/full-stack-development">
+                    <Link to="/full-stack-development">
                       Full Stack Web Development
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="/data-science">Data Science</a>
+                    <Link to="/data-science">Data Science</Link>
                   </li>
                   <li>
-                    <a href="/cloud-computing">Cloud Computing</a>
+                    <Link to="/cloud-computing">Cloud Computing</Link>
                   </li>
                   <li>
-                    <a href="/cyber-security">Cyber Security</a>
+                    <Link to="/cyber-security">Cyber Security</Link>
                   </li>
                   <li>
-                    <a href="/advanced-ai">Advanced AI</a>
+                    <Link to="/advanced-ai">Advanced AI</Link>
                   </li>
                   <li>
-                    <a href="/chat-gpt">Chat GPT</a>
+                    <Link to="/chat-gpt">Chat GPT</Link>
                   </li>
                 </ul>
               </li>
               <li>
-                <a href="/contact">contact</a>
+                <Link to="/contact">contact</Link>
               </li>
             </ul>
           </div>

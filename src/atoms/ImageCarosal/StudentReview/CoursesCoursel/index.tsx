@@ -7,6 +7,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Image100 from "../../../../assets/img/100x100.png";
 import artifiacalImage from "../../../../assets/img/artificialintelligence.png";
 import { CoruselComponent } from "./style";
+import { Link } from "react-router-dom";
 // import { ArrowLeft, ArrowRight } from "react-feather";
 
 function CoursesCarousel() {
@@ -58,9 +59,9 @@ function CoursesCarousel() {
         <Slider {...settings}>
           <div className="item">
             <div className="thumb">
-              <a href="#">
+              <Link to="#">
                 <img src={artifiacalImage} alt="Thumb" />
-              </a>
+              </Link>
               <div className="price">
                 <b>Price: 10,000₹</b>
               </div>
@@ -68,12 +69,12 @@ function CoursesCarousel() {
             <div className="info">
               <div className="author-info">
                 <div className="thumb">
-                  <a href="#">
+                  <Link to="#">
                     <img src={Image100} alt="Thumb" />
-                  </a>
+                  </Link>
                 </div>
                 <div className="others">
-                  <a href="#">Munil Druva</a>
+                  <Link to="#">Munil Druva</Link>
                   <div className="rating">
                     <i className="fas fa-star"></i>
                     <i className="fas fa-star"></i>
@@ -85,7 +86,7 @@ function CoursesCarousel() {
                 </div>
               </div>
               <h4>
-                <a href="#">Artificial Intelligence</a>
+                <Link to="#">Artificial Intelligence</Link>
               </h4>
               <p>
                 Would day nor ask walls known. But preserved advantage are but
@@ -100,15 +101,15 @@ function CoursesCarousel() {
                     <i className="fas fa-clock"></i> 72:00hrs
                   </li>
                 </ul>
-                <a href="live-advanced-ai.html">Know Now</a>
+                <Link to="live-advanced-ai.html">Know Now</Link>
               </div>
             </div>
           </div>
           <div className="item">
             <div className="thumb">
-              <a href="#">
+              <Link to="#">
                 <img src={artifiacalImage} alt="Thumb" />
-              </a>
+              </Link>
               <div className="price">
                 <b>Price: 10,000₹</b>
               </div>
@@ -116,12 +117,12 @@ function CoursesCarousel() {
             <div className="info">
               <div className="author-info">
                 <div className="thumb">
-                  <a href="#">
+                  <Link to="#">
                     <img src={Image100} alt="Thumb" />
-                  </a>
+                  </Link>
                 </div>
                 <div className="others">
-                  <a href="#">Munil Druva</a>
+                  <Link to="#">Munil Druva</Link>
                   <div className="rating">
                     <i className="fas fa-star"></i>
                     <i className="fas fa-star"></i>
@@ -133,7 +134,7 @@ function CoursesCarousel() {
                 </div>
               </div>
               <h4>
-                <a href="#">Artificial Intelligence</a>
+                <Link to="#">Artificial Intelligence</Link>
               </h4>
               <p>
                 Would day nor ask walls known. But preserved advantage are but
@@ -148,15 +149,15 @@ function CoursesCarousel() {
                     <i className="fas fa-clock"></i> 72:00hrs
                   </li>
                 </ul>
-                <a href="live-advanced-ai.html">Know Now</a>
+                <Link to="live-advanced-ai.html">Know Now</Link>
               </div>
             </div>
           </div>
           <div className="item">
             <div className="thumb">
-              <a href="#">
+              <Link to="#">
                 <img src={artifiacalImage} alt="Thumb" />
-              </a>
+              </Link>
               <div className="price">
                 <b>Price: 10,000₹</b>
               </div>
@@ -164,12 +165,12 @@ function CoursesCarousel() {
             <div className="info">
               <div className="author-info">
                 <div className="thumb">
-                  <a href="#">
+                  <Link to="#">
                     <img src={Image100} alt="Thumb" />
-                  </a>
+                  </Link>
                 </div>
                 <div className="others">
-                  <a href="#">Munil Druva</a>
+                  <Link to="#">Munil Druva</Link>
                   <div className="rating">
                     <i className="fas fa-star"></i>
                     <i className="fas fa-star"></i>
@@ -181,7 +182,7 @@ function CoursesCarousel() {
                 </div>
               </div>
               <h4>
-                <a href="#">Artificial Intelligence</a>
+                <Link to="#">Artificial Intelligence</Link>
               </h4>
               <p>
                 Would day nor ask walls known. But preserved advantage are but
@@ -196,15 +197,15 @@ function CoursesCarousel() {
                     <i className="fas fa-clock"></i> 72:00hrs
                   </li>
                 </ul>
-                <a href="live-advanced-ai.html">Know Now</a>
+                <Link to="live-advanced-ai.html">Know Now</Link>
               </div>
             </div>
           </div>
           <div className="item">
             <div className="thumb">
-              <a href="#">
+              <Link to="#">
                 <img src={artifiacalImage} alt="Thumb" />
-              </a>
+              </Link>
               <div className="price">
                 <b>Price: 10,000₹</b>
               </div>
@@ -212,12 +213,12 @@ function CoursesCarousel() {
             <div className="info">
               <div className="author-info">
                 <div className="thumb">
-                  <a href="#">
+                  <Link to="#">
                     <img src={Image100} alt="Thumb" />
-                  </a>
+                  </Link>
                 </div>
                 <div className="others">
-                  <a href="#">Munil Druva</a>
+                  <Link to="#">Munil Druva</Link>
                   <div className="rating">
                     <i className="fas fa-star"></i>
                     <i className="fas fa-star"></i>
@@ -229,7 +230,7 @@ function CoursesCarousel() {
                 </div>
               </div>
               <h4>
-                <a href="#">Artificial Intelligence</a>
+                <Link to="#">Artificial Intelligence</Link>
               </h4>
               <p>
                 Would day nor ask walls known. But preserved advantage are but
@@ -244,7 +245,7 @@ function CoursesCarousel() {
                     <i className="fas fa-clock"></i> 72:00hrs
                   </li>
                 </ul>
-                <a href="live-advanced-ai.html">Know Now</a>
+                <Link to="live-advanced-ai.html">Know Now</Link>
               </div>
             </div>
           </div>

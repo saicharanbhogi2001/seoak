@@ -2,6 +2,7 @@ import { FooterSection } from "../atoms/Footer/index.tsx";
 import HeaderInformation from "../atoms/header.tsx";
 import NavigationComponent from "../atoms/Navigation/index.tsx";
 import image1 from "../assets/img/about-bg.jpg";
+import { Link } from "react-router-dom";
 
 export const PrivacyPolicy = () => {
   return (
@@ -18,9 +19,9 @@ export const PrivacyPolicy = () => {
               <h1>Privacy Policy</h1>
               <ul className="breadcrumb">
                 <li>
-                  <a href="#">
+                  <Link to="#">
                     <i className="fas fa-home" /> Home
-                  </a>
+                  </Link>
                 </li>
                 <li className="active">Privacy Policy</li>
               </ul>

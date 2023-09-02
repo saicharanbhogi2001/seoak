@@ -2,6 +2,7 @@ import { FooterSection } from "../atoms/Footer/index.tsx";
 import NavigationComponent from "../atoms/Navigation/index.tsx";
 import HeaderInformation from "../atoms/header.tsx";
 import Error404Image from "../assets/img/about-bg.jpg";
+import { Link } from "react-router-dom";
 
 const ErrorPage = () => {
   return (
@@ -18,12 +19,12 @@ const ErrorPage = () => {
               <h1>Error Page</h1>
               <ul className="breadcrumb">
                 <li>
-                  <a href="#">
+                  <Link to="#">
                     <i className="fas fa-home" /> Home
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#">Page</a>
+                  <Link to="#">Page</Link>
                 </li>
                 <li className="active">404</li>
               </ul>
@@ -44,32 +45,32 @@ const ErrorPage = () => {
                 The page you are looking is not available or has been removed.
                 Try going to Home Page by using the button below.
               </p>
-              <a className="btn btn-dark effect btn-md" href="#">
+              <Link className="btn btn-dark effect btn-md" to="#">
                 Back To Home
-              </a>
-              <a className="btn btn-dark border btn-md" href="#">
+              </Link>
+              <Link className="btn btn-dark border btn-md" to="#">
                 Contact Us
-              </a>
+              </Link>
               <ul>
                 <li className="facebook">
-                  <a href="#">
+                  <Link to="#">
                     <i className="fab fa-facebook-f" />
-                  </a>
+                  </Link>
                 </li>
                 <li className="twitter">
-                  <a href="#">
+                  <Link to="#">
                     <i className="fab fa-twitter" />
-                  </a>
+                  </Link>
                 </li>
                 <li className="linkedin">
-                  <a href="#">
+                  <Link to="#">
                     <i className="fab fa-linkedin-in" />
-                  </a>
+                  </Link>
                 </li>
                 <li className="pinterest">
-                  <a href="#">
+                  <Link to="#">
                     <i className="fab fa-pinterest" />
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>

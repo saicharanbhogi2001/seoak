@@ -8,6 +8,7 @@ import chatgptImage from "../assets/img/CHATGPT.png";
 import fullStackImage from "../assets/img/fullstackwebdevelopment.png";
 import DataScienceImage from "../assets/img/datascience.png";
 import cloudImage from "../assets/img/cloudcomputing.png";
+import { Link } from "react-router-dom";
 const LiveIndustrialCourses = () => {
   return (
     <>
@@ -23,9 +24,9 @@ const LiveIndustrialCourses = () => {
               <h1>Live Training Courses</h1>
               <ul className="breadcrumb">
                 <li>
-                  <a href="#">
+                  <Link to="#">
                     <i className="fas fa-home" /> Home
-                  </a>
+                  </Link>
                 </li>
                 <li className="active">Course</li>
               </ul>
@@ -44,13 +45,13 @@ const LiveIndustrialCourses = () => {
               <div className="col-md-4 col-sm-6 equal-height">
                 <div className="item">
                   <div className="thumb">
-                    <a href="#">
+                    <Link to="#">
                       <img
                         src={artificalIntelliganceImage}
                         alt="Thumb"
                         style={{ height: "300px" }}
                       />
-                    </a>
+                    </Link>
                     <div className="price">
                       <b>Price: 10,000₹</b>
                     </div>
@@ -58,10 +59,10 @@ const LiveIndustrialCourses = () => {
                   <div className="info">
                     <div className="author-info">
                       {/* <div class="thumb">
-                                    <a href="#"><img src="assets/img/100x100.png" alt="Thumb"></a>
+                                    <Link to="#"><img src="assets/img/100x100.png" alt="Thumb"></Link>
                                 </div>
                                 <div class="others">
-                                    <a href="#">Munil Druva</a>
+                                    <Link to="#">Munil Druva</Link>
                                     <div class="rating">
                                         <i class="fas fa-star"></i>
                                         <i class="fas fa-star"></i>
@@ -73,7 +74,7 @@ const LiveIndustrialCourses = () => {
                                 </div> */}
                     </div>
                     <h4>
-                      <a href="#">Artificial Intelligence</a>
+                      <Link to="#">Artificial Intelligence</Link>
                     </h4>
                     {/* <p>
                                 Would day nor ask walls known. But preserved advantage are but and certainty earnestly enjoyment.
@@ -87,7 +88,7 @@ const LiveIndustrialCourses = () => {
                           <i className="fas fa-clock" /> 72:00hrs
                         </li>
                       </ul>
-                      <a href="/live-advanced-ai">Know More</a>
+                      <Link to="/live-advanced-ai">Know More</Link>
                     </div>
                   </div>
                 </div>
@@ -97,13 +98,13 @@ const LiveIndustrialCourses = () => {
               <div className="col-md-4 col-sm-6 equal-height">
                 <div className="item">
                   <div className="thumb">
-                    <a href="#">
+                    <Link to="#">
                       <img
                         src={cybersecurityImage}
                         alt="Thumb"
                         style={{ height: "300px" }}
                       />
-                    </a>
+                    </Link>
                     <div className="price">
                       <b>Price: 10,000₹</b>
                     </div>
@@ -111,10 +112,10 @@ const LiveIndustrialCourses = () => {
                   <div className="info">
                     <div className="author-info">
                       {/* <div class="thumb">
-                                    <a href="#"><img src="assets/img/100x100.png" alt="Thumb"></a>
+                                    <Link to="#"><img src="assets/img/100x100.png" alt="Thumb"></Link>
                                 </div>
                                 <div class="others">
-                                    <a href="#">Akua Paul</a>
+                                    <Link to="#">Akua Paul</Link>
                                     <div class="rating">
                                         <i class="fas fa-star"></i>
                                         <i class="fas fa-star"></i>
@@ -126,7 +127,7 @@ const LiveIndustrialCourses = () => {
                                 </div> */}
                     </div>
                     <h4>
-                      <a href="#">Cyber Security</a>
+                      <Link to="#">Cyber Security</Link>
                     </h4>
                     {/* <p>
                                 Would day nor ask walls known. But preserved advantage are but and certainty earnestly enjoyment.
@@ -140,7 +141,7 @@ const LiveIndustrialCourses = () => {
                           <i className="fas fa-clock" /> 72:00hrs
                         </li>
                       </ul>
-                      <a href="/live-cyber-security">Know More</a>
+                      <Link to="/live-cyber-security">Know More</Link>
                     </div>
                   </div>
                 </div>
@@ -150,13 +151,13 @@ const LiveIndustrialCourses = () => {
               <div className="col-md-4 col-sm-6 equal-height">
                 <div className="item">
                   <div className="thumb">
-                    <a href="#">
+                    <Link to="#">
                       <img
                         src={chatgptImage}
                         alt="Thumb"
                         style={{ height: "300px" }}
                       />
-                    </a>
+                    </Link>
                     <div className="price">
                       <b>Price: 10,000₹</b>
                     </div>
@@ -164,10 +165,10 @@ const LiveIndustrialCourses = () => {
                   <div className="info">
                     <div className="author-info">
                       {/* <div class="thumb">
-                                    <a href="#"><img src="assets/img/100x100.png" alt="Thumb"></a>
+                                    <Link to="#"><img src="assets/img/100x100.png" alt="Thumb"></Link>
                                 </div>
                                 <div class="others">
-                                    <a href="#">Jonathom Kiyam</a>
+                                    <Link to="#">Jonathom Kiyam</Link>
                                     <div class="rating">
                                         <i class="fas fa-star"></i>
                                         <i class="fas fa-star"></i>
@@ -179,7 +180,7 @@ const LiveIndustrialCourses = () => {
                                 </div> */}
                     </div>
                     <h4>
-                      <a href="#">chat-GPT</a>
+                      <Link to="#">chat-GPT</Link>
                     </h4>
                     {/* <p>
                                 Would day nor ask walls known. But preserved advantage are but and certainty earnestly enjoyment.
@@ -193,7 +194,7 @@ const LiveIndustrialCourses = () => {
                           <i className="fas fa-clock" /> 72:00hrs
                         </li>
                       </ul>
-                      <a href="/live-chat-gpt">Know More</a>
+                      <Link to="/live-chat-gpt">Know More</Link>
                     </div>
                   </div>
                 </div>
@@ -203,13 +204,13 @@ const LiveIndustrialCourses = () => {
               <div className="col-md-4 col-sm-6 equal-height">
                 <div className="item">
                   <div className="thumb">
-                    <a href="#">
+                    <Link to="#">
                       <img
                         src={fullStackImage}
                         alt="Thumb"
                         style={{ height: "300px" }}
                       />
-                    </a>
+                    </Link>
                     <div className="price">
                       <b>Price: 10,000₹</b>
                     </div>
@@ -217,10 +218,10 @@ const LiveIndustrialCourses = () => {
                   <div className="info">
                     <div className="author-info">
                       {/* <div class="thumb">
-                                    <a href="#"><img src="assets/img/100x100.png" alt="Thumb"></a>
+                                    <Link to="#"><img src="assets/img/100x100.png" alt="Thumb"></Link>
                                 </div>
                                 <div class="others">
-                                    <a href="#">Huma Park</a>
+                                    <Link to="#">Huma Park</Link>
                                     <div class="rating">
                                         <i class="fas fa-star"></i>
                                         <i class="fas fa-star"></i>
@@ -232,7 +233,7 @@ const LiveIndustrialCourses = () => {
                                 </div> */}
                     </div>
                     <h4>
-                      <a href="#">Full Stack Web Development</a>
+                      <Link to="#">Full Stack Web Development</Link>
                     </h4>
                     {/* <p>
                                 Would day nor ask walls known. But preserved advantage are but and certainty earnestly enjoyment.
@@ -246,7 +247,7 @@ const LiveIndustrialCourses = () => {
                           <i className="fas fa-clock" /> 72:00hrs
                         </li>
                       </ul>
-                      <a href="/live-full-stack-development">Know More</a>
+                      <Link to="/live-full-stack-development">Know More</Link>
                     </div>
                   </div>
                 </div>
@@ -256,13 +257,13 @@ const LiveIndustrialCourses = () => {
               <div className="col-md-4 col-sm-6 equal-height">
                 <div className="item">
                   <div className="thumb">
-                    <a href="#">
+                    <Link to="#">
                       <img
                         src={DataScienceImage}
                         alt="Thumb"
                         style={{ height: "300px" }}
                       />
-                    </a>
+                    </Link>
                     <div className="price">
                       <b>Price: 10,000₹</b>
                     </div>
@@ -270,10 +271,10 @@ const LiveIndustrialCourses = () => {
                   <div className="info">
                     <div className="author-info">
                       {/* <div class="thumb">
-                                    <a href="#"><img src="assets/img/100x100.png" alt="Thumb"></a>
+                                    <Link to="#"><img src="assets/img/100x100.png" alt="Thumb"></Link>
                                 </div>
                                 <div class="others">
-                                    <a href="#">Prokash Timer</a>
+                                    <Link to="#">Prokash Timer</Link>
                                     <div class="rating">
                                         <i class="fas fa-star"></i>
                                         <i class="fas fa-star"></i>
@@ -285,7 +286,7 @@ const LiveIndustrialCourses = () => {
                                 </div> */}
                     </div>
                     <h4>
-                      <a href="#">Data Science</a>
+                      <Link to="#">Data Science</Link>
                     </h4>
                     {/* <p>
                                 Would day nor ask walls known. But preserved advantage are but and certainty earnestly enjoyment.
@@ -299,7 +300,7 @@ const LiveIndustrialCourses = () => {
                           <i className="fas fa-clock" /> 72:00hrs
                         </li>
                       </ul>
-                      <a href="/live-data-science">Know More</a>
+                      <Link to="/live-data-science">Know More</Link>
                     </div>
                   </div>
                 </div>
@@ -309,13 +310,13 @@ const LiveIndustrialCourses = () => {
               <div className="col-md-4 col-sm-6 equal-height">
                 <div className="item">
                   <div className="thumb">
-                    <a href="#">
+                    <Link to="#">
                       <img
                         src={cloudImage}
                         alt="Thumb"
                         style={{ height: "300px" }}
                       />
-                    </a>
+                    </Link>
                     <div className="price">
                       <b>Price: 10,000₹</b>
                     </div>
@@ -323,10 +324,10 @@ const LiveIndustrialCourses = () => {
                   <div className="info">
                     <div className="author-info">
                       {/* <div class="thumb">
-                                    <a href="#"><img src="assets/img/100x100.png" alt="Thumb"></a>
+                                    <Link to="#"><img src="assets/img/100x100.png" alt="Thumb"></Link>
                                 </div>
                                 <div class="others">
-                                    <a href="#">Drunal Trula</a>
+                                    <Link to="#">Drunal Trula</Link>
                                     <div class="rating">
                                         <i class="fas fa-star"></i>
                                         <i class="fas fa-star"></i>
@@ -338,7 +339,7 @@ const LiveIndustrialCourses = () => {
                                 </div> */}
                     </div>
                     <h4>
-                      <a href="#">Cloud Computing</a>
+                      <Link to="#">Cloud Computing</Link>
                     </h4>
                     {/* <p>
                                 Would day nor ask walls known. But preserved advantage are but and certainty earnestly enjoyment.
@@ -352,7 +353,7 @@ const LiveIndustrialCourses = () => {
                           <i className="fas fa-clock" /> 72:00hrs
                         </li>
                       </ul>
-                      <a href="#">Enroll Now</a>
+                      <Link to="#">Enroll Now</Link>
                     </div>
                   </div>
                 </div>

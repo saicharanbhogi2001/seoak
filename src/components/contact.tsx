@@ -2,6 +2,7 @@ import { FooterSection } from "../atoms/Footer/index.tsx";
 import HeaderInformation from "../atoms/header.tsx";
 import NavigationComponent from "../atoms/Navigation/index.tsx";
 import BackGroundImage from "../assets/img/contact.jpeg";
+import { Link } from "react-router-dom";
 const Contact = () => {
   return (
     <>
@@ -17,9 +18,9 @@ const Contact = () => {
               <h1>Contact Us</h1>
               <ul className="breadcrumb">
                 <li>
-                  <a href="#">
+                  <Link to="#">
                     <i className="fas fa-home" /> Home
-                  </a>
+                  </Link>
                 </li>
                 <li className="active">Contact</li>
               </ul>

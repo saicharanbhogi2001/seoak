@@ -1,5 +1,7 @@
 // import { useNavigate } from "react-router-dom";
 
+import { Link } from "react-router-dom";
+
 const HeaderInformation = () => {
   // const navigate = useNavigate();
   return (
@@ -31,12 +33,12 @@ const HeaderInformation = () => {
             </div>
           </div>
           <div className="user-login text-right col-md-4">
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeM_1nUTx2DaBUxSR5xXgoTjKfE71wt0trYPAHYSf8t5QWB8g/viewform">
+            <Link to="https://docs.google.com/forms/d/e/1FAIpQLSeM_1nUTx2DaBUxSR5xXgoTjKfE71wt0trYPAHYSf8t5QWB8g/viewform">
               <i className="fas fa-edit" /> Register
-            </a>
-            <a className="popup-with-form" href="/sign-in">
+            </Link>
+            <Link className="popup-with-form" to="/sign-in">
               <i className="fas fa-user" /> Login
-            </a>
+            </Link>
           </div>
         </div>
       </div>
