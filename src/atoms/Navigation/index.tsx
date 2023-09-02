@@ -66,7 +66,7 @@ const NavigationComponent = () => {
                   data-toggle="dropdown"
                   onMouseEnter={() => setshowCertifiedCourses(true)}
                 >
-                  Certified Courses
+                  SEOAK BASICS
                 </Link>
                 {showCertifiedCourses && (
                   <ul
@@ -93,7 +93,7 @@ const NavigationComponent = () => {
                         DSA (Data Structures &amp; Algorithm)
                       </Link>
                     </li>
-                    <li>
+                    {/* <li>
                       <Link to="/full-stack-development">
                         Full Stack Web Development
                       </Link>
@@ -103,8 +103,8 @@ const NavigationComponent = () => {
                     </li>
                     <li>
                       <Link to="/cloud-computing">Cloud Computing</Link>
-                    </li>
-                    <li>
+                    </li> */}
+                    {/* <li>
                       <Link to="/cyber-security">Cyber Security</Link>
                     </li>
                     <li>
@@ -112,7 +112,7 @@ const NavigationComponent = () => {
                     </li>
                     <li>
                       <Link to="/chat-gpt">Chat GPT</Link>
-                    </li>
+                    </li> */}
                   </ul>
                 )}
               </li>
@@ -133,17 +133,9 @@ const NavigationComponent = () => {
                   <li>
                     <Link to="/data-science">Data Science</Link>
                   </li>
-                  <li>
-                    <Link to="/cloud-computing">Cloud Computing</Link>
-                  </li>
-                  <li>
-                    <Link to="/cyber-security">Cyber Security</Link>
-                  </li>
+
                   <li>
                     <Link to="/advanced-ai">Advanced AI</Link>
-                  </li>
-                  <li>
-                    <Link to="/chat-gpt">Chat GPT</Link>
                   </li>
                 </ul>
               </li>
