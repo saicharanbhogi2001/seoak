@@ -27,7 +27,7 @@ export const CourseModule = ({
 }: CourseProps) => {
   const [handleFaqState, setHandleFaqState] = useState(1);
   const [togglestate, setToggleState] = useState(1);
-  const title = "COURSE DESCRIPTION";
+  // const = "COURSE DESCRIPTION";
   return (
     <>
       <HeaderInformation />
@@ -140,7 +140,6 @@ export const CourseModule = ({
                       }
                     >
                       <CourseDescription
-                        title={title}
                         courseDescriptionText={courseDescriptionText}
                         paraElements={paraElements}
                         outComes={outComes}

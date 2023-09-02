@@ -20,7 +20,7 @@ import ActivePerformer from "../assets/img/Active Performer.jpg";
 import contactform from "../assets/img/contactform800,800.png";
 import { StudentReview } from "../atoms/ImageCarosal/StudentReview";
 import nsdc from "../assets/img/nsdc800,600.png";
-import DraggableCardSlider from "../atoms/imageSlider";
+// import DraggableCardSlider from "../atoms/imageSlider";
 import { FooterSection } from "../atoms/Footer/index.tsx";
 // import CoursesCarousel from "../atoms/ImageCarosal/StudentReview/CoursesCoursel/index.tsx";
 interface NumberProps {
@@ -348,13 +348,13 @@ const HostPage = () => {
               </p>
             </div>
             <div className="col-md-8 clients">
-              <DraggableCardSlider>
-                <img src={Capgeminie150} alt="Clients" />
-                <img src={ibm} alt="Clients" />
-                <img src={hp} alt="Clients" />
-                <img src={Dell} alt="Clients" />
-                <img src={google} alt="Clients" />
-              </DraggableCardSlider>
+              {/* <DraggableCardSlider> */}
+              <img src={Capgeminie150} alt="Clients" />
+              <img src={ibm} alt="Clients" />
+              <img src={hp} alt="Clients" />
+              <img src={Dell} alt="Clients" />
+              <img src={google} alt="Clients" />
+              {/* </DraggableCardSlider> */}
             </div>
           </div>
         </div>
