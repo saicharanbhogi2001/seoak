@@ -1,5 +1,5 @@
 import ErrorPage from "./components/404";
-import {  HashRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { CoursePage } from "./components/Module";
 import LoginPage from "./components/login";
 import AboutUs from "./components/about-us";
@@ -46,7 +46,7 @@ function App() {
         <Route path="/dsa" element={<CoursePage />} />
         <Route path="/faq" element={<Faq />} />
         <Route path="/index-onepage" element={<Onepage />} />
-        <Route path="/full-stack-develepment" element={<CoursePage />} />
+        <Route path="/full-stack-development" element={<CoursePage />} />
         <Route path="/java-programming" element={<CoursePage />} />
         <Route path="/live-advanced-ai" element={<CoursePage />} />
         <Route path="/live-cloud-computing" element={<CoursePage />} />

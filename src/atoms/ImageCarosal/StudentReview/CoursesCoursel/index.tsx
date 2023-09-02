@@ -101,7 +101,7 @@ function CoursesCarousel() {
                     <i className="fas fa-clock"></i> 72:00hrs
                   </li>
                 </ul>
-                <Link to="live-advanced-ai.html">Know Now</Link>
+                <Link to="/live-advanced-ai">Know Now</Link>
               </div>
             </div>
           </div>
@@ -149,7 +149,7 @@ function CoursesCarousel() {
                     <i className="fas fa-clock"></i> 72:00hrs
                   </li>
                 </ul>
-                <Link to="live-advanced-ai.html">Know Now</Link>
+                <Link to="/live-advanced-ai">Know Now</Link>
               </div>
             </div>
           </div>
@@ -197,7 +197,7 @@ function CoursesCarousel() {
                     <i className="fas fa-clock"></i> 72:00hrs
                   </li>
                 </ul>
-                <Link to="live-advanced-ai.html">Know Now</Link>
+                <Link to="/live-advanced-ai">Know Now</Link>
               </div>
             </div>
           </div>
@@ -245,7 +245,7 @@ function CoursesCarousel() {
                     <i className="fas fa-clock"></i> 72:00hrs
                   </li>
                 </ul>
-                <Link to="live-advanced-ai.html">Know Now</Link>
+                <Link to="/live-advanced-ai">Know Now</Link>
               </div>
             </div>
           </div>
