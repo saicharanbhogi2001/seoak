@@ -3,7 +3,7 @@ import { EnrolledContainer } from "./style";
 import { useSpring, animated } from "react-spring";
 import { RegistrationForm } from "../RegistrationForm";
 import { FooterSection } from "../Footer";
-import NavigationComponent, { Header } from "../HeaderNavbar";
+// import NavigationComponent, { Header } from "../HeaderNavbar";
 import { CourseDescription } from "../CourseDescription";
 import { Curriculam } from "../Curriculam";
 import { CertifiedCourseSection } from "../CertifiedCourses";
@@ -54,7 +54,7 @@ export const EnrolledCountSection = () => {
   return (
     <>
       {/* <Header /> */}
-      <NavigationComponent />
+      {/* <NavigationComponent /> */}
       <EnrolledContainer>
         <Grid container rowSpacing={1} columnSpacing={2}>
           {enrolledsection.map((item) => (
