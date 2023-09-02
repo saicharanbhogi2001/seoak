@@ -121,22 +121,27 @@ export const FooterSection = () => {
             </div>
             <div className="col-md-4 item">
               <div className="f-item address">
-                <h4>Address</h4>
+                <h4>SEOAK Extras</h4>
                 <ul>
                   <li>
-                    <i className="fas fa-envelope" />
+                    {/* <i className="fas fa-envelope" /> */}
                     <p>
-                      Email{" "}
-                      <span>
+                      Cheat sheets
+                      {/* <span>
                         <Link to="mailto:">support@seoak.in</Link>
-                      </span>
+                       
+                      </span> */}
                     </p>
                   </li>
                   <li>
-                    <i className="fas fa-map" />
-                    <p>
-                      Office <span> Madhapur, Hyderabad.</span>
-                    </p>
+                    {/* <i className="fas fa-map" /> */}
+                    <p>Roadmaps</p>
+                  </li>
+                  <li>
+                    <p>Events</p>
+                  </li>
+                  <li>
+                    <p>Blogs</p>
                   </li>
                 </ul>
                 <h4 style={{ margin: "16px 0" }}>SOCIAL MEDIA</h4>
