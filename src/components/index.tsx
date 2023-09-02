@@ -18,7 +18,6 @@ import ActivePerformer from "../assets/img/Active Performer.jpg";
 import contactform from "../assets/img/contactform800,800.png";
 import { StudentReview } from "../atoms/ImageCarosal/StudentReview";
 import nsdc from "../assets/img/nsdc800,600.png";
-import { ReactSlider } from "../atoms/DraggableSlider";
 import DraggableCardSlider from "../atoms/imageSlider";
 interface NumberProps {
   n: number;
@@ -1082,22 +1081,7 @@ const HostPage = () => {
                     </div>
                   </div>
                   <div className="info">
-                    <div className="author-info">
-                      {/* <div class="thumb">
-                                  <a href="#"><img src="assets/img/100x100.png" alt="Thumb"></a>
-                              </div>
-                              <div class="others">
-                                  <a href="#">Jonathom Kiyam</a>
-                                  <div class="rating">
-                                      <i class="fas fa-star"></i>
-                                      <i class="fas fa-star"></i>
-                                      <i class="fas fa-star"></i>
-                                      <i class="fas fa-star"></i>
-                                      <i class="fas fa-star"></i>
-                                      <span>4.9 (2,655)</span>
-                                  </div>
-                              </div> */}
-                    </div>
+                    <div className="author-info"></div>
                     <h4>
                       <a href="#">Cyber Security</a>
                     </h4>

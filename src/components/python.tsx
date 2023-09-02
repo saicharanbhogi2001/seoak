@@ -19,6 +19,7 @@ export const Python = ({
   imgtitle,
   courseDescriptionpara,
 }: CourseProps) => {
+  const [handleFaqState, setHandleFaqState] = useState(1);
   const [togglestate, setToggleState] = useState(1);
   const title = "COURSE DESCRIPTION";
   const description =
@@ -880,7 +881,10 @@ export const Python = ({
                 <div className="acd-items acd-arrow">
                   <div className="panel-group symb" id="accordion">
                     <div className="panel panel-default">
-                      <div className="panel-heading">
+                      <div
+                        className="panel-heading"
+                        onClick={() => setHandleFaqState(1)}
+                      >
                         <h4 className="panel-title">
                           <a
                             data-toggle="collapse"
@@ -891,7 +895,13 @@ export const Python = ({
                           </a>
                         </h4>
                       </div>
-                      <div id="ac1" className="panel-collapse collapse in">
+                      <div
+                        className={
+                          handleFaqState === 1
+                            ? "panel-collapse collapse in"
+                            : "panel-collapse collapse"
+                        }
+                      >
                         <div className="panel-body">
                           <p>
                             Medium of instruction and program delivery is 100%
@@ -901,7 +911,10 @@ export const Python = ({
                         </div>
                       </div>
                     </div>
-                    <div className="panel panel-default">
+                    <div
+                      className="panel panel-default"
+                      onClick={() => setHandleFaqState(2)}
+                    >
                       <div className="panel-heading">
                         <h4 className="panel-title">
                           <a
@@ -913,7 +926,14 @@ export const Python = ({
                           </a>
                         </h4>
                       </div>
-                      <div id="ac2" className="panel-collapse collapse">
+                      <div
+                        id="ac2"
+                        className={
+                          handleFaqState === 2
+                            ? "panel-collapse collapse in"
+                            : "panel-collapse collapse"
+                        }
+                      >
                         <div className="panel-body">
                           <p>
                             Upon successful completion of this course, you will
@@ -923,7 +943,10 @@ export const Python = ({
                         </div>
                       </div>
                     </div>
-                    <div className="panel panel-default">
+                    <div
+                      className="panel panel-default"
+                      onClick={() => setHandleFaqState(3)}
+                    >
                       <div className="panel-heading">
                         <h4 className="panel-title">
                           <a
@@ -935,7 +958,14 @@ export const Python = ({
                           </a>
                         </h4>
                       </div>
-                      <div id="ac3" className="panel-collapse collapse">
+                      <div
+                        id="ac3"
+                        className={
+                          handleFaqState === 3
+                            ? "panel-collapse collapse in"
+                            : "panel-collapse collapse"
+                        }
+                      >
                         <div className="panel-body">
                           <p>
                             You have various options to contact us, You can
@@ -944,7 +974,10 @@ export const Python = ({
                         </div>
                       </div>
                     </div>
-                    <div className="panel panel-default">
+                    <div
+                      className="panel panel-default"
+                      onClick={() => setHandleFaqState(4)}
+                    >
                       <div className="panel-heading">
                         <h4 className="panel-title">
                           <a
@@ -956,7 +989,14 @@ export const Python = ({
                           </a>
                         </h4>
                       </div>
-                      <div id="ac4" className="panel-collapse collapse">
+                      <div
+                        id="ac4"
+                        className={
+                          handleFaqState === 4
+                            ? "panel-collapse collapse in"
+                            : "panel-collapse collapse"
+                        }
+                      >
                         <div className="panel-body">
                           <p>
                             You can check our{" "}
