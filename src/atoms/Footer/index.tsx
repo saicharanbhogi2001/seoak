@@ -91,7 +91,7 @@ export const FooterSection = () => {
                     <Link to="/contact">contact</Link>
                   </li>
                   <li>
-                    <Link to="/home">Faq's</Link>
+                    <Link to="/faq">Faq's</Link>
                   </li>
                 </ul>
               </div>
@@ -123,24 +123,45 @@ export const FooterSection = () => {
                 </ul>
                 <h4 style={{ margin: "16px 0" }}>SOCIAL MEDIA</h4>
                 <div className="social-media-links">
-                  <li style={{ gap: 10, display: "flex" }}>
-                    <Link to="">
+                  <li
+                    style={{ gap: 10, display: "flex", textDecoration: "none" }}
+                  >
+                    <Link
+                      style={{ textDecoration: "none" }}
+                      to="https://www.facebook.com/seoakofficial"
+                      target="_blank"
+                    >
                       <i className="fab fa-facebook-f" />
                     </Link>
-                    <Link to="">
+                    <Link
+                      style={{ textDecoration: "none" }}
+                      to="https://www.instagram.com/seoakofficial/"
+                      target="_blank"
+                    >
                       <i className="fab fa-instagram" />
                     </Link>
-                    <Link to="">
+                    <Link
+                      style={{ textDecoration: "none" }}
+                      to="https://twitter.com/seoakofficial"
+                      target="_blank"
+                    >
                       <i className="fab fa-twitter" />
                     </Link>
-                    <Link to="">
+                    <Link
+                      style={{ textDecoration: "none" }}
+                      to="https://www.youtube.com/@SeoakIndia"
+                      target="_blank"
+                    >
                       <i className="fab fa-youtube" />
                     </Link>
-                    <Link to="">
+                    <Link
+                      style={{ textDecoration: "none" }}
+                      to="https://www.linkedin.com/company/seaokofficial/"
+                      target="_blank"
+                    >
                       <i className="fab fa-linkedin" />
                     </Link>
                   </li>
-                  =-97654321+igvc
                 </div>
               </div>
             </div>
