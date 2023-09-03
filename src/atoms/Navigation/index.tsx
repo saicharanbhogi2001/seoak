@@ -9,20 +9,20 @@ const NavigationComponent = () => {
     useState<boolean>(false);
   const [showmobileNavigation, setMobileNavigation] = useState<boolean>(false);
 
-  useEffect(() => {
-    function handleClickOutside(event: MouseEvent) {
-      if (
-        navbarref.current &&
-        !navbarref.current.contains(event.target as Node)
-      ) {
-        setMobileNavigation(false);
-      }
-    }
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
-  }, [showmobileNavigation]);
+  // useEffect(() => {
+  //   function handleClickOutside(event: MouseEvent) {
+  //     if (
+  //       navbarref.current &&
+  //       !navbarref.current.contains(event.target as Node)
+  //     ) {
+  //       setMobileNavigation(false);
+  //     }
+  //   }
+  //   document.addEventListener("mousedown", handleClickOutside);
+  //   return () => {
+  //     document.removeEventListener("mousedown", handleClickOutside);
+  //   };
+  // }, [showmobileNavigation]);
 
   return (
     <header id="home">
@@ -89,7 +89,7 @@ const NavigationComponent = () => {
               </li>
               <li className="dropdown">
                 <Link
-                  to="/certified-courses"
+                  to="/seoak-basics"
                   className="dropdown-toggle active"
                   data-toggle="dropdown"
                   onMouseEnter={() => setshowCertifiedCourses(true)}
@@ -123,7 +123,7 @@ const NavigationComponent = () => {
                     </li>
                     {/* <li>
                       <Link to="/full-stack-development">
-                        Full Stack Web Development
+                        Full Stack Development
                       </Link>
                     </li>
                     <li>
@@ -155,7 +155,7 @@ const NavigationComponent = () => {
                 <ul className="dropdown-menu">
                   <li>
                     <Link to="/full-stack-development">
-                      Full Stack Web Development
+                      Full Stack Development
                     </Link>
                   </li>
                   <li>

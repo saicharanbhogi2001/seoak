@@ -70,7 +70,6 @@ const Contact = () => {
                     <h4>Email Us</h4>
                     <span>support@seoak.in</span>
                     <br />
-                    <span>info@seoak.in</span>
                   </div>
                 </div>
               </div>

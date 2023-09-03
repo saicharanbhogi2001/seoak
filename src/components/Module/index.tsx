@@ -915,14 +915,14 @@ export const CoursePage = () => {
     case "/full-stack-development" || "/live-full-stack-development":
       return (
         <CourseModule
-          coursetitle={"Full Stack Web Development"}
+          coursetitle={"Full Stack Development"}
           imgtitle={fullstack}
           courseDescriptionText={
             <>
               <p>
-                Full Stack Web Development refers to the ability to develop both
-                the front-end and back-end components of a web application. A
-                Full Stack Web Developer is proficient in both client-side
+                Full Stack Development refers to the ability to develop both the
+                front-end and back-end components of a web application. A Full
+                Stack Web Developer is proficient in both client-side
                 technologies (HTML, CSS, JavaScript) for designing user
                 interfaces and server-side technologies (such as Node.js,
                 Python, or PHP) for handling data and business logic. Full Stack
@@ -930,7 +930,7 @@ export const CoursePage = () => {
                 web development process, from concept to deployment.
               </p>
               <p>
-                The Full Stack Web Development course provides students with the
+                The Full Stack Development course provides students with the
                 skills and knowledge necessary to develop dynamic and
                 interactive web applications. This course covers both front-end
                 and back-end technologies and emphasizes hands-on learning

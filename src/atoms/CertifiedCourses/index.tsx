@@ -68,8 +68,7 @@ export const CertifiedCourseSection = ({ title = "" }: CertifiedProps) => {
     { title: "Cloud Computing" },
     { title: "C++ Language" },
     { title: "Power BI" },
-    { title: "Full Stack Web Development" },
-    { title: "Cyber Security" },
+    { title: "Full Stack Development" },
   ];
   return (
     <CertifiedCourseContainer>

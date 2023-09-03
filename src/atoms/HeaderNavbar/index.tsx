@@ -66,7 +66,7 @@ const navbarTiles = [
     icon: null,
   },
   {
-    tile: "Certified Courses",
+    tile: "Seoak Basics",
     icon: <ChevronDown size={14} />,
     courses: [
       {

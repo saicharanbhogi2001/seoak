@@ -11,18 +11,11 @@ const options = [
   {
     course: "Choose Subject",
   },
-  { course: "Full Stack Web Development" },
+  { course: "Full Stack Development" },
   {
     course: "Data Science",
   },
-  { course: "Cloud Computing" },
-  {
-    course: "Cyber Security",
-  },
   { course: "Advanced AI" },
-  {
-    course: "Chat GPT",
-  },
   { course: "C Language" },
   {
     course: "C++ Language",
