@@ -21,6 +21,7 @@ import { TermsandCondition } from "./components/terms-and-conditions";
 import { EnrolledCountSection } from "./atoms/EnrolledSection";
 import { PromiseCardsSection } from "./Organisms/PromiseCardsSection";
 import CertifiedCourses from "./components/certified-courses";
+import { SeoakExtrasPage } from "./components/SeoakExtras";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HostPage />} />
         <Route path="/sign-in" element={<LoginPage />} />
+        <Route path="/Seoak-extras" element={<SeoakExtrasPage />} />
         <Route path="/live-chat-gpt" element={<CoursePage />} />
         <Route path="/error" element={<ErrorPage />} />
         <Route path="/about-us" element={<AboutUs />} />

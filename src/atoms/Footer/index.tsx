@@ -51,24 +51,24 @@ export const FooterSection = () => {
               <div className="f-item link">
                 <h4>Top Courses</h4>
                 <ul>
-                  <li>
+                  <li style={{ textDecoration: "none" }}>
                     <Link to="/full-stack-development">
                       Full Stack Web Development
                     </Link>
                   </li>
-                  <li>
+                  <li style={{ textDecoration: "none" }}>
                     <Link to="/data-science">Data Science</Link>
                   </li>
-                  <li>
+                  <li style={{ textDecoration: "none" }}>
                     <Link to="/cloud-computing">Cloud Computing</Link>
                   </li>
-                  <li>
+                  <li style={{ textDecoration: "none" }}>
                     <Link to="/cyber-security">Cyber Security</Link>
                   </li>
-                  <li>
+                  <li style={{ textDecoration: "none" }}>
                     <Link to="/advanced-ai">Advanced AI</Link>
                   </li>
-                  <li>
+                  <li style={{ textDecoration: "none" }}>
                     <Link to="/chat-gpt">Chat GPT</Link>
                   </li>
                 </ul>
@@ -78,19 +78,19 @@ export const FooterSection = () => {
               <div className="f-item link">
                 <h4>Use Full Links</h4>
                 <ul>
-                  <li>
+                  <li style={{ textDecoration: "none" }}>
                     <Link to="/">Home</Link>
                   </li>
-                  <li>
+                  <li style={{ textDecoration: "none" }}>
                     <Link to={"/about-us"}>About Us</Link>
                   </li>
-                  <li>
+                  <li style={{ textDecoration: "none" }}>
                     <Link to="/certified-courses">SEOAK BASICS</Link>
                   </li>
-                  <li>
+                  <li style={{ textDecoration: "none" }}>
                     <Link to="/contact">contact</Link>
                   </li>
-                  <li>
+                  <li style={{ textDecoration: "none" }}>
                     <Link to="/faq">Faq's</Link>
                   </li>
                 </ul>
@@ -98,29 +98,23 @@ export const FooterSection = () => {
             </div>
             <div className="col-md-4 item">
               <div className="f-item address">
-                <h4>SEOAK Extras</h4>
-                <ul>
-                  <li>
-                    {/* <i className="fas fa-envelope" /> */}
-                    <p>
-                      Cheat sheets
-                      {/* <span>
-                        <Link to="mailto:">support@seoak.in</Link>
-                       
-                      </span> */}
-                    </p>
-                  </li>
-                  <li>
-                    {/* <i className="fas fa-map" /> */}
-                    <p>Roadmaps</p>
-                  </li>
-                  <li>
-                    <p>Events</p>
-                  </li>
-                  <li>
-                    <p>Blogs</p>
-                  </li>
-                </ul>
+                <div className="f-item link">
+                  <h4>Seoak Extras</h4>
+                  <ul>
+                    <li style={{ textDecoration: "none" }}>
+                      <Link to={"/Seoak-extras"}>Cheat Sheets</Link>
+                    </li>
+                    <li style={{ textDecoration: "none" }}>
+                      <Link to={"/Seoak-extras"}>Road Maps</Link>
+                    </li>
+                    <li style={{ textDecoration: "none" }}>
+                      <Link to={"/Seoak-extras"}>Events</Link>
+                    </li>
+                    <li style={{ textDecoration: "none" }}>
+                      <Link to={"/Seoak-extras"}>Blogs</Link>
+                    </li>
+                  </ul>
+                </div>
                 <h4 style={{ margin: "16px 0" }}>SOCIAL MEDIA</h4>
                 <div className="social-media-links">
                   <li
