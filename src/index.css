@@ -280,11 +280,11 @@ input {
   }
 }
 .navbar-toggle {
-    border: none;
-    padding: 0;
-    font-size: 18px;
-    position: relative;
-    top: 5px;
+  border: none;
+  padding: 0;
+  font-size: 18px;
+  position: relative;
+  top: 5px;
 }
 .certificate-section {
   display: flex;
@@ -454,6 +454,13 @@ input {
 .default-padding.bottom-30 {
   padding-top: 120px;
   padding-bottom: 70px;
+}
+.our-promise-paddng {
+  padding-top: 0px;
+  padding-bottom: 70px;
+}
+.pricetag {
+  font-weight: 800;
 }
 
 .default-padding.bottom-20 {

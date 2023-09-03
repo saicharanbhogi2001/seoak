@@ -363,7 +363,7 @@ const HostPage = () => {
       </div>
       <div
         id="top-categories"
-        className="top-cat-area bg-gray default-padding bottom-less"
+        className="top-cat-area bg-gray our-promise-paddng"
       >
         <div className="container">
           <div className="row">
@@ -748,7 +748,7 @@ const HostPage = () => {
                       </div>
                     </div>
                     <h4>
-                      <Link to="#">Full Stack Web Development</Link>
+                      <Link to="#">Full Stack Development</Link>
                     </h4>
                     <p>
                       Would day nor ask walls known. But preserved advantage are
@@ -1140,21 +1140,21 @@ const HostPage = () => {
                 "I cannot thank the training and placement department of SEOAK enough for their unwavering dedication to providing exceptional training and creating abundant placement opportunities."
               }
               studentName={"Praveen"}
-              studentDomain={"Full Stack Web Development"}
+              studentDomain={"Full Stack Development"}
             />
             <StudentReview
               domainInfo={
                 "I cannot thank the training and placement department of SEOAK enough for their unwavering dedication to providing exceptional training and creating abundant placement opportunities."
               }
               studentName={"Praveen"}
-              studentDomain={"Full Stack Web Development"}
+              studentDomain={"Full Stack Development"}
             />
             <StudentReview
               domainInfo={
                 "I cannot thank the training and placement department of SEOAK enough for their unwavering dedication to providing exceptional training and creating abundant placement opportunities."
               }
               studentName={"Praveen"}
-              studentDomain={"Full Stack Web Development"}
+              studentDomain={"Full Stack Development"}
             />
           </div>
           <div className="row">
@@ -1173,7 +1173,7 @@ const HostPage = () => {
                       opportunities.
                     </p>
                     <h4>Praveen Kumar</h4>
-                    <span>Full Stack Web Development</span>
+                    <span>Full Stack Development</span>
                   </div>
                 </div>
                 {/* Single Item */}
@@ -1351,7 +1351,7 @@ const HostPage = () => {
                       <div className="form-group">
                         <select>
                           <option value={1}>Choose Subject</option>
-                          <option value={2}>Full Stack Web Development</option>
+                          <option value={2}>Full Stack Development</option>
                           <option value={4}>Data Science</option>
                           <option value={5}>Cloud Computing</option>
                           <option value={6}>Cyber Security</option>

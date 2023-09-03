@@ -20,7 +20,7 @@ import { Teachers } from "./components/teachers";
 import { TermsandCondition } from "./components/terms-and-conditions";
 import { EnrolledCountSection } from "./atoms/EnrolledSection";
 import { PromiseCardsSection } from "./Organisms/PromiseCardsSection";
-import CertifiedCourses from "./components/certified-courses";
+import CertifiedCourses from "./components/CertifiedCourses";
 import { SeoakExtrasPage } from "./components/SeoakExtras";
 
 function App() {
@@ -37,7 +37,7 @@ function App() {
         <Route path="/advanced-ai" element={<CoursePage />} />
         <Route path="/c-language" element={<CoursePage />} />
         <Route path="/cpp-language" element={<CoursePage />} />
-        <Route path="/certified-courses" element={<CertifiedCourses />} />
+        <Route path="/seoak-basics" element={<CertifiedCourses />} />
         <Route path="/cloud-computing" element={<CoursePage />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/course-details" element={<CourseDetails />} />

@@ -53,24 +53,24 @@ export const FooterSection = () => {
                 <ul>
                   <li style={{ textDecoration: "none" }}>
                     <Link to="/full-stack-development">
-                      Full Stack Web Development
+                      Full Stack Development
                     </Link>
                   </li>
                   <li style={{ textDecoration: "none" }}>
                     <Link to="/data-science">Data Science</Link>
                   </li>
-                  <li style={{ textDecoration: "none" }}>
+                  {/* <li style={{ textDecoration: "none" }}>
                     <Link to="/cloud-computing">Cloud Computing</Link>
-                  </li>
-                  <li style={{ textDecoration: "none" }}>
+                  </li> */}
+                  {/* <li style={{ textDecoration: "none" }}>
                     <Link to="/cyber-security">Cyber Security</Link>
-                  </li>
+                  </li> */}
                   <li style={{ textDecoration: "none" }}>
                     <Link to="/advanced-ai">Advanced AI</Link>
                   </li>
-                  <li style={{ textDecoration: "none" }}>
+                  {/* <li style={{ textDecoration: "none" }}>
                     <Link to="/chat-gpt">Chat GPT</Link>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
             </div>
@@ -85,7 +85,7 @@ export const FooterSection = () => {
                     <Link to={"/about-us"}>About Us</Link>
                   </li>
                   <li style={{ textDecoration: "none" }}>
-                    <Link to="/certified-courses">SEOAK BASICS</Link>
+                    <Link to="/seoak-basics">SEOAK BASICS</Link>
                   </li>
                   <li style={{ textDecoration: "none" }}>
                     <Link to="/contact">contact</Link>
@@ -105,7 +105,7 @@ export const FooterSection = () => {
                       <Link to={"/Seoak-extras"}>Cheat Sheets</Link>
                     </li>
                     <li style={{ textDecoration: "none" }}>
-                      <Link to={"/Seoak-extras"}>Road Maps</Link>
+                      <Link to={"/Seoak-extras"}>Roadmaps</Link>
                     </li>
                     <li style={{ textDecoration: "none" }}>
                       <Link to={"/Seoak-extras"}>Events</Link>
@@ -169,7 +169,7 @@ export const FooterSection = () => {
               <div className="col-md-6">
                 <p>
                   © Copyright 2023. All Rights Reserved by
-                  <Link to="#">SEOAK INNOVATIONS PRIVATE LIMITED </Link>{" "}
+                  <Link to="#"> SEOAK INNOVATIONS PRIVATE LIMITED </Link>{" "}
                   Developed By <Link to="#">RAAB</Link>
                 </p>
               </div>

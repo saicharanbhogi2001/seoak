@@ -1,6 +1,7 @@
 import HeaderInformation from "../atoms/header";
 import NavigationComponent from "../atoms/Navigation";
 import BackGroundImage from "../assets/img/contact.jpeg";
+import { FooterSection } from "../atoms/Footer";
 
 export const SeoakExtrasPage = () => {
   return (
@@ -27,6 +28,7 @@ export const SeoakExtrasPage = () => {
           </div>
         </div>
       </div>
+      <FooterSection />
     </>
   );
 };

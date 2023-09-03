@@ -29,6 +29,8 @@ export const CourseModule = ({
   const [handleFaqState, setHandleFaqState] = useState(1);
   const [togglestate, setToggleState] = useState(1);
   // const = "COURSE DESCRIPTION";
+  const livecourses = ["Full Stack Development", "Data Science", "Advanced AI"];
+  const livecoursPrice = livecourses.includes(coursetitle);
   return (
     <>
       <HeaderInformation />
@@ -85,7 +87,9 @@ export const CourseModule = ({
                     </div>
                     <div className="item price">
                       <h4>Price</h4>
-                      <span>5000₹</span>
+                      <span className="pricetag">
+                        {livecoursPrice ? "10000₹" : "5000₹"}
+                      </span>
                     </div>
                     <div className="align-right">
                       <Link
@@ -266,7 +270,7 @@ export const CourseModule = ({
             <div className="col-md-4">
               <div className="sidebar">
                 <aside>
-                  <CertifiedCourseSection title={"Certified Courses"} />
+                  <CertifiedCourseSection title={"Seoak Basics"} />
                   <PopularCourses />
                 </aside>
               </div>
@@ -520,7 +524,7 @@ export const CourseModule = ({
                       opportunities.
                     </p>
                     <h4>Praveen Kumar</h4>
-                    <span>Full Stack Web Development</span>
+                    <span>Full Stack Development</span>
                   </div>
                 </div>
                 {/* Single Item */}
