@@ -1,11 +1,28 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import "./style.css";
 import SeoakLogo from "../../assets/img/logo.png";
 import { Link } from "react-router-dom";
 
 const NavigationComponent = () => {
+  const navbarref = useRef<HTMLDivElement | null>(null);
   const [showCertifiedCourses, setshowCertifiedCourses] =
     useState<boolean>(false);
+  const [showmobileNavigation, setMobileNavigation] = useState<boolean>(false);
+
+  useEffect(() => {
+    function handleClickOutside(event: MouseEvent) {
+      if (
+        navbarref.current &&
+        !navbarref.current.contains(event.target as Node)
+      ) {
+        setMobileNavigation(false);
+      }
+    }
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [showmobileNavigation]);
 
   return (
     <header id="home">
@@ -41,13 +58,24 @@ const NavigationComponent = () => {
               data-toggle="collapse"
               data-target="#navbar-menu"
             >
-              <i className="fa fa-bars" />
+              <i
+                ref={navbarref}
+                style={{ backgroundColor: "black" }}
+                onClick={() => setMobileNavigation((p) => !p)}
+                className="fa fa-bars"
+              />
             </button>
             <Link className="navbar-brand" to="/">
               <img src={SeoakLogo} className="logo" alt="Logo" />
             </Link>
           </div>
-          <div className="collapse navbar-collapse" id="navbar-menu">
+          <div
+            className={
+              showmobileNavigation
+                ? "collapse navbar-collapse in"
+                : "collapse navbar-collapse"
+            }
+          >
             <ul
               className="nav navbar-nav navbar-right"
               data-in="#"

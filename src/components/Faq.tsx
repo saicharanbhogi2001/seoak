@@ -3,7 +3,9 @@ import HeaderInformation from "../atoms/header.tsx";
 import NavigationComponent from "../atoms/Navigation/index.tsx";
 import FaqImage from "../assets/img/about-bg.jpg";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 const Faq = () => {
+  const [handleFaqState, setHandleFaqState] = useState(1);
   return (
     <>
       <HeaderInformation />
@@ -39,9 +41,13 @@ const Faq = () => {
               <div className="acd-items acd-arrow">
                 <div className="panel-group symb" id="accordion">
                   <div className="panel panel-default">
-                    <div className="panel-heading">
+                    <div
+                      className="panel-heading"
+                      onClick={() => setHandleFaqState(1)}
+                    >
                       <h4 className="panel-title">
                         <Link
+                          style={{ textDecoration: "none" }}
                           data-toggle="collapse"
                           data-parent="#accordion"
                           to="#ac1"
@@ -50,7 +56,13 @@ const Faq = () => {
                         </Link>
                       </h4>
                     </div>
-                    <div id="ac1" className="panel-collapse collapse in">
+                    <div
+                      className={
+                        handleFaqState === 1
+                          ? "panel-collapse collapse in"
+                          : "panel-collapse collapse"
+                      }
+                    >
                       <div className="panel-body">
                         <p>
                           Medium of instruction and program delivery is 100%
@@ -60,10 +72,14 @@ const Faq = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="panel panel-default">
+                  <div
+                    className="panel panel-default"
+                    onClick={() => setHandleFaqState(2)}
+                  >
                     <div className="panel-heading">
                       <h4 className="panel-title">
                         <Link
+                          style={{ textDecoration: "none" }}
                           data-toggle="collapse"
                           data-parent="#accordion"
                           to="#ac2"
@@ -72,7 +88,14 @@ const Faq = () => {
                         </Link>
                       </h4>
                     </div>
-                    <div id="ac2" className="panel-collapse collapse">
+                    <div
+                      id="ac2"
+                      className={
+                        handleFaqState === 2
+                          ? "panel-collapse collapse in"
+                          : "panel-collapse collapse"
+                      }
+                    >
                       <div className="panel-body">
                         <p>
                           Upon successful completion of this course, you will be
@@ -82,10 +105,14 @@ const Faq = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="panel panel-default">
+                  <div
+                    className="panel panel-default"
+                    onClick={() => setHandleFaqState(3)}
+                  >
                     <div className="panel-heading">
                       <h4 className="panel-title">
                         <Link
+                          style={{ textDecoration: "none" }}
                           data-toggle="collapse"
                           data-parent="#accordion"
                           to="#ac3"
@@ -94,7 +121,14 @@ const Faq = () => {
                         </Link>
                       </h4>
                     </div>
-                    <div id="ac3" className="panel-collapse collapse">
+                    <div
+                      id="ac3"
+                      className={
+                        handleFaqState === 3
+                          ? "panel-collapse collapse in"
+                          : "panel-collapse collapse"
+                      }
+                    >
                       <div className="panel-body">
                         <p>
                           You have various options to contact us, You can
@@ -103,10 +137,14 @@ const Faq = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="panel panel-default">
+                  <div
+                    className="panel panel-default"
+                    onClick={() => setHandleFaqState(4)}
+                  >
                     <div className="panel-heading">
                       <h4 className="panel-title">
                         <Link
+                          style={{ textDecoration: "none" }}
                           data-toggle="collapse"
                           data-parent="#accordion"
                           to="#ac4"
@@ -115,11 +153,24 @@ const Faq = () => {
                         </Link>
                       </h4>
                     </div>
-                    <div id="ac4" className="panel-collapse collapse">
+                    <div
+                      id="ac4"
+                      className={
+                        handleFaqState === 4
+                          ? "panel-collapse collapse in"
+                          : "panel-collapse collapse"
+                      }
+                    >
                       <div className="panel-body">
                         <p>
                           You can check our{" "}
-                          <Link to="/refund-policy">refund policy</Link> here.
+                          <Link
+                            style={{ textDecoration: "none" }}
+                            to="/refund-policy"
+                          >
+                            refund policy
+                          </Link>{" "}
+                          here.
                         </p>
                       </div>
                     </div>
